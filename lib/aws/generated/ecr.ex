@@ -2694,6 +2694,7 @@ defmodule AWS.ECR do
   @spec batch_check_layer_availability(map(), batch_check_layer_availability_request(), list()) ::
           {:ok, batch_check_layer_availability_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, batch_check_layer_availability_errors()}
   def batch_check_layer_availability(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -2719,6 +2720,7 @@ defmodule AWS.ECR do
   @spec batch_delete_image(map(), batch_delete_image_request(), list()) ::
           {:ok, batch_delete_image_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, batch_delete_image_errors()}
   def batch_delete_image(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -2739,6 +2741,7 @@ defmodule AWS.ECR do
   @spec batch_get_image(map(), batch_get_image_request(), list()) ::
           {:ok, batch_get_image_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, batch_get_image_errors()}
   def batch_get_image(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -2756,6 +2759,7 @@ defmodule AWS.ECR do
         ) ::
           {:ok, batch_get_repository_scanning_configuration_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, batch_get_repository_scanning_configuration_errors()}
   def batch_get_repository_scanning_configuration(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -2782,6 +2786,7 @@ defmodule AWS.ECR do
   @spec complete_layer_upload(map(), complete_layer_upload_request(), list()) ::
           {:ok, complete_layer_upload_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, complete_layer_upload_errors()}
   def complete_layer_upload(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -2801,6 +2806,7 @@ defmodule AWS.ECR do
   @spec create_pull_through_cache_rule(map(), create_pull_through_cache_rule_request(), list()) ::
           {:ok, create_pull_through_cache_rule_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_pull_through_cache_rule_errors()}
   def create_pull_through_cache_rule(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -2818,6 +2824,7 @@ defmodule AWS.ECR do
   @spec create_repository(map(), create_repository_request(), list()) ::
           {:ok, create_repository_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_repository_errors()}
   def create_repository(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -2843,6 +2850,7 @@ defmodule AWS.ECR do
         ) ::
           {:ok, create_repository_creation_template_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_repository_creation_template_errors()}
   def create_repository_creation_template(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -2856,6 +2864,7 @@ defmodule AWS.ECR do
   @spec delete_lifecycle_policy(map(), delete_lifecycle_policy_request(), list()) ::
           {:ok, delete_lifecycle_policy_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_lifecycle_policy_errors()}
   def delete_lifecycle_policy(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -2869,6 +2878,7 @@ defmodule AWS.ECR do
   @spec delete_pull_through_cache_rule(map(), delete_pull_through_cache_rule_request(), list()) ::
           {:ok, delete_pull_through_cache_rule_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_pull_through_cache_rule_errors()}
   def delete_pull_through_cache_rule(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -2882,6 +2892,7 @@ defmodule AWS.ECR do
   @spec delete_registry_policy(map(), delete_registry_policy_request(), list()) ::
           {:ok, delete_registry_policy_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_registry_policy_errors()}
   def delete_registry_policy(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -2899,6 +2910,7 @@ defmodule AWS.ECR do
   @spec delete_repository(map(), delete_repository_request(), list()) ::
           {:ok, delete_repository_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_repository_errors()}
   def delete_repository(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -2916,6 +2928,7 @@ defmodule AWS.ECR do
         ) ::
           {:ok, delete_repository_creation_template_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_repository_creation_template_errors()}
   def delete_repository_creation_template(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -2929,6 +2942,7 @@ defmodule AWS.ECR do
   @spec delete_repository_policy(map(), delete_repository_policy_request(), list()) ::
           {:ok, delete_repository_policy_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_repository_policy_errors()}
   def delete_repository_policy(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -2946,6 +2960,7 @@ defmodule AWS.ECR do
         ) ::
           {:ok, describe_image_replication_status_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, describe_image_replication_status_errors()}
   def describe_image_replication_status(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -2959,6 +2974,7 @@ defmodule AWS.ECR do
   @spec describe_image_scan_findings(map(), describe_image_scan_findings_request(), list()) ::
           {:ok, describe_image_scan_findings_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, describe_image_scan_findings_errors()}
   def describe_image_scan_findings(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -2983,6 +2999,7 @@ defmodule AWS.ECR do
   @spec describe_images(map(), describe_images_request(), list()) ::
           {:ok, describe_images_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, describe_images_errors()}
   def describe_images(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -3000,6 +3017,7 @@ defmodule AWS.ECR do
         ) ::
           {:ok, describe_pull_through_cache_rules_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, describe_pull_through_cache_rules_errors()}
   def describe_pull_through_cache_rules(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -3017,6 +3035,7 @@ defmodule AWS.ECR do
   @spec describe_registry(map(), describe_registry_request(), list()) ::
           {:ok, describe_registry_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, describe_registry_errors()}
   def describe_registry(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -3030,6 +3049,7 @@ defmodule AWS.ECR do
   @spec describe_repositories(map(), describe_repositories_request(), list()) ::
           {:ok, describe_repositories_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, describe_repositories_errors()}
   def describe_repositories(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -3051,6 +3071,7 @@ defmodule AWS.ECR do
         ) ::
           {:ok, describe_repository_creation_templates_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, describe_repository_creation_templates_errors()}
   def describe_repository_creation_templates(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -3064,6 +3085,7 @@ defmodule AWS.ECR do
   @spec get_account_setting(map(), get_account_setting_request(), list()) ::
           {:ok, get_account_setting_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_account_setting_errors()}
   def get_account_setting(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -3088,6 +3110,7 @@ defmodule AWS.ECR do
   @spec get_authorization_token(map(), get_authorization_token_request(), list()) ::
           {:ok, get_authorization_token_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_authorization_token_errors()}
   def get_authorization_token(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -3112,6 +3135,7 @@ defmodule AWS.ECR do
   @spec get_download_url_for_layer(map(), get_download_url_for_layer_request(), list()) ::
           {:ok, get_download_url_for_layer_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_download_url_for_layer_errors()}
   def get_download_url_for_layer(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -3125,6 +3149,7 @@ defmodule AWS.ECR do
   @spec get_lifecycle_policy(map(), get_lifecycle_policy_request(), list()) ::
           {:ok, get_lifecycle_policy_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_lifecycle_policy_errors()}
   def get_lifecycle_policy(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -3139,6 +3164,7 @@ defmodule AWS.ECR do
   @spec get_lifecycle_policy_preview(map(), get_lifecycle_policy_preview_request(), list()) ::
           {:ok, get_lifecycle_policy_preview_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_lifecycle_policy_preview_errors()}
   def get_lifecycle_policy_preview(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -3152,6 +3178,7 @@ defmodule AWS.ECR do
   @spec get_registry_policy(map(), get_registry_policy_request(), list()) ::
           {:ok, get_registry_policy_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_registry_policy_errors()}
   def get_registry_policy(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -3169,6 +3196,7 @@ defmodule AWS.ECR do
         ) ::
           {:ok, get_registry_scanning_configuration_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_registry_scanning_configuration_errors()}
   def get_registry_scanning_configuration(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -3182,6 +3210,7 @@ defmodule AWS.ECR do
   @spec get_repository_policy(map(), get_repository_policy_request(), list()) ::
           {:ok, get_repository_policy_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_repository_policy_errors()}
   def get_repository_policy(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -3205,6 +3234,7 @@ defmodule AWS.ECR do
   @spec initiate_layer_upload(map(), initiate_layer_upload_request(), list()) ::
           {:ok, initiate_layer_upload_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, initiate_layer_upload_errors()}
   def initiate_layer_upload(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -3226,6 +3256,7 @@ defmodule AWS.ECR do
   @spec list_images(map(), list_images_request(), list()) ::
           {:ok, list_images_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_images_errors()}
   def list_images(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -3239,6 +3270,7 @@ defmodule AWS.ECR do
   @spec list_tags_for_resource(map(), list_tags_for_resource_request(), list()) ::
           {:ok, list_tags_for_resource_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_tags_for_resource_errors()}
   def list_tags_for_resource(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -3252,6 +3284,7 @@ defmodule AWS.ECR do
   @spec put_account_setting(map(), put_account_setting_request(), list()) ::
           {:ok, put_account_setting_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, put_account_setting_errors()}
   def put_account_setting(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -3275,6 +3308,7 @@ defmodule AWS.ECR do
   @spec put_image(map(), put_image_request(), list()) ::
           {:ok, put_image_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, put_image_errors()}
   def put_image(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -3299,6 +3333,7 @@ defmodule AWS.ECR do
         ) ::
           {:ok, put_image_scanning_configuration_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, put_image_scanning_configuration_errors()}
   def put_image_scanning_configuration(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -3316,6 +3351,7 @@ defmodule AWS.ECR do
   @spec put_image_tag_mutability(map(), put_image_tag_mutability_request(), list()) ::
           {:ok, put_image_tag_mutability_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, put_image_tag_mutability_errors()}
   def put_image_tag_mutability(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -3332,6 +3368,7 @@ defmodule AWS.ECR do
   @spec put_lifecycle_policy(map(), put_lifecycle_policy_request(), list()) ::
           {:ok, put_lifecycle_policy_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, put_lifecycle_policy_errors()}
   def put_lifecycle_policy(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -3350,6 +3387,7 @@ defmodule AWS.ECR do
   @spec put_registry_policy(map(), put_registry_policy_request(), list()) ::
           {:ok, put_registry_policy_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, put_registry_policy_errors()}
   def put_registry_policy(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -3367,6 +3405,7 @@ defmodule AWS.ECR do
         ) ::
           {:ok, put_registry_scanning_configuration_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, put_registry_scanning_configuration_errors()}
   def put_registry_scanning_configuration(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -3396,6 +3435,7 @@ defmodule AWS.ECR do
   @spec put_replication_configuration(map(), put_replication_configuration_request(), list()) ::
           {:ok, put_replication_configuration_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, put_replication_configuration_errors()}
   def put_replication_configuration(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -3413,6 +3453,7 @@ defmodule AWS.ECR do
   @spec set_repository_policy(map(), set_repository_policy_request(), list()) ::
           {:ok, set_repository_policy_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, set_repository_policy_errors()}
   def set_repository_policy(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -3435,6 +3476,7 @@ defmodule AWS.ECR do
   @spec start_image_scan(map(), start_image_scan_request(), list()) ::
           {:ok, start_image_scan_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, start_image_scan_errors()}
   def start_image_scan(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -3451,6 +3493,7 @@ defmodule AWS.ECR do
   @spec start_lifecycle_policy_preview(map(), start_lifecycle_policy_preview_request(), list()) ::
           {:ok, start_lifecycle_policy_preview_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, start_lifecycle_policy_preview_errors()}
   def start_lifecycle_policy_preview(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -3467,6 +3510,7 @@ defmodule AWS.ECR do
   @spec tag_resource(map(), tag_resource_request(), list()) ::
           {:ok, tag_resource_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, tag_resource_errors()}
   def tag_resource(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -3480,6 +3524,7 @@ defmodule AWS.ECR do
   @spec untag_resource(map(), untag_resource_request(), list()) ::
           {:ok, untag_resource_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, untag_resource_errors()}
   def untag_resource(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -3493,6 +3538,7 @@ defmodule AWS.ECR do
   @spec update_pull_through_cache_rule(map(), update_pull_through_cache_rule_request(), list()) ::
           {:ok, update_pull_through_cache_rule_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_pull_through_cache_rule_errors()}
   def update_pull_through_cache_rule(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -3510,6 +3556,7 @@ defmodule AWS.ECR do
         ) ::
           {:ok, update_repository_creation_template_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_repository_creation_template_errors()}
   def update_repository_creation_template(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -3533,6 +3580,7 @@ defmodule AWS.ECR do
   @spec upload_layer_part(map(), upload_layer_part_request(), list()) ::
           {:ok, upload_layer_part_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, upload_layer_part_errors()}
   def upload_layer_part(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -3557,6 +3605,7 @@ defmodule AWS.ECR do
         ) ::
           {:ok, validate_pull_through_cache_rule_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, validate_pull_through_cache_rule_errors()}
   def validate_pull_through_cache_rule(%Client{} = client, input, options \\ []) do
     meta = metadata()

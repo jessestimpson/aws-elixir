@@ -3950,6 +3950,7 @@ defmodule AWS.WorkSpaces do
   @spec accept_account_link_invitation(map(), accept_account_link_invitation_request(), list()) ::
           {:ok, accept_account_link_invitation_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, accept_account_link_invitation_errors()}
   def accept_account_link_invitation(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -3972,6 +3973,7 @@ defmodule AWS.WorkSpaces do
   @spec associate_connection_alias(map(), associate_connection_alias_request(), list()) ::
           {:ok, associate_connection_alias_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, associate_connection_alias_errors()}
   def associate_connection_alias(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -3985,6 +3987,7 @@ defmodule AWS.WorkSpaces do
   @spec associate_ip_groups(map(), associate_ip_groups_request(), list()) ::
           {:ok, associate_ip_groups_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, associate_ip_groups_errors()}
   def associate_ip_groups(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -3998,6 +4001,7 @@ defmodule AWS.WorkSpaces do
   @spec associate_workspace_application(map(), associate_workspace_application_request(), list()) ::
           {:ok, associate_workspace_application_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, associate_workspace_application_errors()}
   def associate_workspace_application(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -4015,6 +4019,7 @@ defmodule AWS.WorkSpaces do
   @spec authorize_ip_rules(map(), authorize_ip_rules_request(), list()) ::
           {:ok, authorize_ip_rules_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, authorize_ip_rules_errors()}
   def authorize_ip_rules(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -4045,6 +4050,7 @@ defmodule AWS.WorkSpaces do
   @spec copy_workspace_image(map(), copy_workspace_image_request(), list()) ::
           {:ok, copy_workspace_image_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, copy_workspace_image_errors()}
   def copy_workspace_image(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -4058,6 +4064,7 @@ defmodule AWS.WorkSpaces do
   @spec create_account_link_invitation(map(), create_account_link_invitation_request(), list()) ::
           {:ok, create_account_link_invitation_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_account_link_invitation_errors()}
   def create_account_link_invitation(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -4077,6 +4084,7 @@ defmodule AWS.WorkSpaces do
   @spec create_connect_client_add_in(map(), create_connect_client_add_in_request(), list()) ::
           {:ok, create_connect_client_add_in_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_connect_client_add_in_errors()}
   def create_connect_client_add_in(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -4094,6 +4102,7 @@ defmodule AWS.WorkSpaces do
   @spec create_connection_alias(map(), create_connection_alias_request(), list()) ::
           {:ok, create_connection_alias_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_connection_alias_errors()}
   def create_connection_alias(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -4125,6 +4134,7 @@ defmodule AWS.WorkSpaces do
   @spec create_ip_group(map(), create_ip_group_request(), list()) ::
           {:ok, create_ip_group_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_ip_group_errors()}
   def create_ip_group(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -4138,6 +4148,7 @@ defmodule AWS.WorkSpaces do
   @spec create_standby_workspaces(map(), create_standby_workspaces_request(), list()) ::
           {:ok, create_standby_workspaces_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_standby_workspaces_errors()}
   def create_standby_workspaces(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -4151,6 +4162,7 @@ defmodule AWS.WorkSpaces do
   @spec create_tags(map(), create_tags_request(), list()) ::
           {:ok, create_tags_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_tags_errors()}
   def create_tags(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -4185,6 +4197,7 @@ defmodule AWS.WorkSpaces do
   @spec create_updated_workspace_image(map(), create_updated_workspace_image_request(), list()) ::
           {:ok, create_updated_workspace_image_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_updated_workspace_image_errors()}
   def create_updated_workspace_image(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -4203,6 +4216,7 @@ defmodule AWS.WorkSpaces do
   @spec create_workspace_bundle(map(), create_workspace_bundle_request(), list()) ::
           {:ok, create_workspace_bundle_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_workspace_bundle_errors()}
   def create_workspace_bundle(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -4216,6 +4230,7 @@ defmodule AWS.WorkSpaces do
   @spec create_workspace_image(map(), create_workspace_image_request(), list()) ::
           {:ok, create_workspace_image_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_workspace_image_errors()}
   def create_workspace_image(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -4252,6 +4267,7 @@ defmodule AWS.WorkSpaces do
   @spec create_workspaces(map(), create_workspaces_request(), list()) ::
           {:ok, create_workspaces_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_workspaces_errors()}
   def create_workspaces(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -4265,6 +4281,7 @@ defmodule AWS.WorkSpaces do
   @spec create_workspaces_pool(map(), create_workspaces_pool_request(), list()) ::
           {:ok, create_workspaces_pool_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_workspaces_pool_errors()}
   def create_workspaces_pool(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -4278,6 +4295,7 @@ defmodule AWS.WorkSpaces do
   @spec delete_account_link_invitation(map(), delete_account_link_invitation_request(), list()) ::
           {:ok, delete_account_link_invitation_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_account_link_invitation_errors()}
   def delete_account_link_invitation(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -4302,6 +4320,7 @@ defmodule AWS.WorkSpaces do
   @spec delete_client_branding(map(), delete_client_branding_request(), list()) ::
           {:ok, delete_client_branding_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_client_branding_errors()}
   def delete_client_branding(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -4316,6 +4335,7 @@ defmodule AWS.WorkSpaces do
   @spec delete_connect_client_add_in(map(), delete_connect_client_add_in_request(), list()) ::
           {:ok, delete_connect_client_add_in_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_connect_client_add_in_errors()}
   def delete_connect_client_add_in(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -4346,6 +4366,7 @@ defmodule AWS.WorkSpaces do
   @spec delete_connection_alias(map(), delete_connection_alias_request(), list()) ::
           {:ok, delete_connection_alias_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_connection_alias_errors()}
   def delete_connection_alias(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -4362,6 +4383,7 @@ defmodule AWS.WorkSpaces do
   @spec delete_ip_group(map(), delete_ip_group_request(), list()) ::
           {:ok, delete_ip_group_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_ip_group_errors()}
   def delete_ip_group(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -4375,6 +4397,7 @@ defmodule AWS.WorkSpaces do
   @spec delete_tags(map(), delete_tags_request(), list()) ::
           {:ok, delete_tags_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_tags_errors()}
   def delete_tags(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -4393,6 +4416,7 @@ defmodule AWS.WorkSpaces do
   @spec delete_workspace_bundle(map(), delete_workspace_bundle_request(), list()) ::
           {:ok, delete_workspace_bundle_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_workspace_bundle_errors()}
   def delete_workspace_bundle(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -4411,6 +4435,7 @@ defmodule AWS.WorkSpaces do
   @spec delete_workspace_image(map(), delete_workspace_image_request(), list()) ::
           {:ok, delete_workspace_image_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_workspace_image_errors()}
   def delete_workspace_image(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -4424,6 +4449,7 @@ defmodule AWS.WorkSpaces do
   @spec deploy_workspace_applications(map(), deploy_workspace_applications_request(), list()) ::
           {:ok, deploy_workspace_applications_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, deploy_workspace_applications_errors()}
   def deploy_workspace_applications(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -4457,6 +4483,7 @@ defmodule AWS.WorkSpaces do
   @spec deregister_workspace_directory(map(), deregister_workspace_directory_request(), list()) ::
           {:ok, deregister_workspace_directory_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, deregister_workspace_directory_errors()}
   def deregister_workspace_directory(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -4472,6 +4499,7 @@ defmodule AWS.WorkSpaces do
   @spec describe_account(map(), describe_account_request(), list()) ::
           {:ok, describe_account_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, describe_account_errors()}
   def describe_account(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -4487,6 +4515,7 @@ defmodule AWS.WorkSpaces do
   @spec describe_account_modifications(map(), describe_account_modifications_request(), list()) ::
           {:ok, describe_account_modifications_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, describe_account_modifications_errors()}
   def describe_account_modifications(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -4505,6 +4534,7 @@ defmodule AWS.WorkSpaces do
         ) ::
           {:ok, describe_application_associations_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, describe_application_associations_errors()}
   def describe_application_associations(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -4519,6 +4549,7 @@ defmodule AWS.WorkSpaces do
   @spec describe_applications(map(), describe_applications_request(), list()) ::
           {:ok, describe_applications_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, describe_applications_errors()}
   def describe_applications(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -4532,6 +4563,7 @@ defmodule AWS.WorkSpaces do
   @spec describe_bundle_associations(map(), describe_bundle_associations_request(), list()) ::
           {:ok, describe_bundle_associations_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, describe_bundle_associations_errors()}
   def describe_bundle_associations(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -4555,6 +4587,7 @@ defmodule AWS.WorkSpaces do
   @spec describe_client_branding(map(), describe_client_branding_request(), list()) ::
           {:ok, describe_client_branding_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, describe_client_branding_errors()}
   def describe_client_branding(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -4568,6 +4601,7 @@ defmodule AWS.WorkSpaces do
   @spec describe_client_properties(map(), describe_client_properties_request(), list()) ::
           {:ok, describe_client_properties_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, describe_client_properties_errors()}
   def describe_client_properties(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -4581,6 +4615,7 @@ defmodule AWS.WorkSpaces do
   @spec describe_connect_client_add_ins(map(), describe_connect_client_add_ins_request(), list()) ::
           {:ok, describe_connect_client_add_ins_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, describe_connect_client_add_ins_errors()}
   def describe_connect_client_add_ins(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -4604,6 +4639,7 @@ defmodule AWS.WorkSpaces do
         ) ::
           {:ok, describe_connection_alias_permissions_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, describe_connection_alias_permissions_errors()}
   def describe_connection_alias_permissions(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -4621,6 +4657,7 @@ defmodule AWS.WorkSpaces do
   @spec describe_connection_aliases(map(), describe_connection_aliases_request(), list()) ::
           {:ok, describe_connection_aliases_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, describe_connection_aliases_errors()}
   def describe_connection_aliases(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -4634,6 +4671,7 @@ defmodule AWS.WorkSpaces do
   @spec describe_image_associations(map(), describe_image_associations_request(), list()) ::
           {:ok, describe_image_associations_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, describe_image_associations_errors()}
   def describe_image_associations(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -4647,6 +4685,7 @@ defmodule AWS.WorkSpaces do
   @spec describe_ip_groups(map(), describe_ip_groups_request(), list()) ::
           {:ok, describe_ip_groups_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, describe_ip_groups_errors()}
   def describe_ip_groups(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -4660,6 +4699,7 @@ defmodule AWS.WorkSpaces do
   @spec describe_tags(map(), describe_tags_request(), list()) ::
           {:ok, describe_tags_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, describe_tags_errors()}
   def describe_tags(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -4673,6 +4713,7 @@ defmodule AWS.WorkSpaces do
   @spec describe_workspace_associations(map(), describe_workspace_associations_request(), list()) ::
           {:ok, describe_workspace_associations_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, describe_workspace_associations_errors()}
   def describe_workspace_associations(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -4688,6 +4729,7 @@ defmodule AWS.WorkSpaces do
   @spec describe_workspace_bundles(map(), describe_workspace_bundles_request(), list()) ::
           {:ok, describe_workspace_bundles_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, describe_workspace_bundles_errors()}
   def describe_workspace_bundles(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -4701,6 +4743,7 @@ defmodule AWS.WorkSpaces do
   @spec describe_workspace_directories(map(), describe_workspace_directories_request(), list()) ::
           {:ok, describe_workspace_directories_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, describe_workspace_directories_errors()}
   def describe_workspace_directories(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -4719,6 +4762,7 @@ defmodule AWS.WorkSpaces do
         ) ::
           {:ok, describe_workspace_image_permissions_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, describe_workspace_image_permissions_errors()}
   def describe_workspace_image_permissions(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -4736,6 +4780,7 @@ defmodule AWS.WorkSpaces do
   @spec describe_workspace_images(map(), describe_workspace_images_request(), list()) ::
           {:ok, describe_workspace_images_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, describe_workspace_images_errors()}
   def describe_workspace_images(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -4749,6 +4794,7 @@ defmodule AWS.WorkSpaces do
   @spec describe_workspace_snapshots(map(), describe_workspace_snapshots_request(), list()) ::
           {:ok, describe_workspace_snapshots_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, describe_workspace_snapshots_errors()}
   def describe_workspace_snapshots(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -4766,6 +4812,7 @@ defmodule AWS.WorkSpaces do
   @spec describe_workspaces(map(), describe_workspaces_request(), list()) ::
           {:ok, describe_workspaces_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, describe_workspaces_errors()}
   def describe_workspaces(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -4783,6 +4830,7 @@ defmodule AWS.WorkSpaces do
         ) ::
           {:ok, describe_workspaces_connection_status_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, describe_workspaces_connection_status_errors()}
   def describe_workspaces_connection_status(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -4800,6 +4848,7 @@ defmodule AWS.WorkSpaces do
         ) ::
           {:ok, describe_workspaces_pool_sessions_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, describe_workspaces_pool_sessions_errors()}
   def describe_workspaces_pool_sessions(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -4813,6 +4862,7 @@ defmodule AWS.WorkSpaces do
   @spec describe_workspaces_pools(map(), describe_workspaces_pools_request(), list()) ::
           {:ok, describe_workspaces_pools_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, describe_workspaces_pools_errors()}
   def describe_workspaces_pools(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -4837,6 +4887,7 @@ defmodule AWS.WorkSpaces do
   @spec disassociate_connection_alias(map(), disassociate_connection_alias_request(), list()) ::
           {:ok, disassociate_connection_alias_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, disassociate_connection_alias_errors()}
   def disassociate_connection_alias(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -4851,6 +4902,7 @@ defmodule AWS.WorkSpaces do
   @spec disassociate_ip_groups(map(), disassociate_ip_groups_request(), list()) ::
           {:ok, disassociate_ip_groups_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, disassociate_ip_groups_errors()}
   def disassociate_ip_groups(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -4868,6 +4920,7 @@ defmodule AWS.WorkSpaces do
         ) ::
           {:ok, disassociate_workspace_application_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, disassociate_workspace_application_errors()}
   def disassociate_workspace_application(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -4881,6 +4934,7 @@ defmodule AWS.WorkSpaces do
   @spec get_account_link(map(), get_account_link_request(), list()) ::
           {:ok, get_account_link_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_account_link_errors()}
   def get_account_link(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -4923,6 +4977,7 @@ defmodule AWS.WorkSpaces do
   @spec import_client_branding(map(), import_client_branding_request(), list()) ::
           {:ok, import_client_branding_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, import_client_branding_errors()}
   def import_client_branding(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -4943,6 +4998,7 @@ defmodule AWS.WorkSpaces do
   @spec import_workspace_image(map(), import_workspace_image_request(), list()) ::
           {:ok, import_workspace_image_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, import_workspace_image_errors()}
   def import_workspace_image(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -4956,6 +5012,7 @@ defmodule AWS.WorkSpaces do
   @spec list_account_links(map(), list_account_links_request(), list()) ::
           {:ok, list_account_links_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_account_links_errors()}
   def list_account_links(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -4987,6 +5044,7 @@ defmodule AWS.WorkSpaces do
         ) ::
           {:ok, list_available_management_cidr_ranges_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_available_management_cidr_ranges_errors()}
   def list_available_management_cidr_ranges(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -5014,6 +5072,7 @@ defmodule AWS.WorkSpaces do
   @spec migrate_workspace(map(), migrate_workspace_request(), list()) ::
           {:ok, migrate_workspace_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, migrate_workspace_errors()}
   def migrate_workspace(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -5028,6 +5087,7 @@ defmodule AWS.WorkSpaces do
   @spec modify_account(map(), modify_account_request(), list()) ::
           {:ok, modify_account_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, modify_account_errors()}
   def modify_account(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -5046,6 +5106,7 @@ defmodule AWS.WorkSpaces do
         ) ::
           {:ok, modify_certificate_based_auth_properties_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, modify_certificate_based_auth_properties_errors()}
   def modify_certificate_based_auth_properties(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -5059,6 +5120,7 @@ defmodule AWS.WorkSpaces do
   @spec modify_client_properties(map(), modify_client_properties_request(), list()) ::
           {:ok, modify_client_properties_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, modify_client_properties_errors()}
   def modify_client_properties(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -5076,6 +5138,7 @@ defmodule AWS.WorkSpaces do
   @spec modify_saml_properties(map(), modify_saml_properties_request(), list()) ::
           {:ok, modify_saml_properties_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, modify_saml_properties_errors()}
   def modify_saml_properties(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -5092,6 +5155,7 @@ defmodule AWS.WorkSpaces do
   @spec modify_selfservice_permissions(map(), modify_selfservice_permissions_request(), list()) ::
           {:ok, modify_selfservice_permissions_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, modify_selfservice_permissions_errors()}
   def modify_selfservice_permissions(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -5105,6 +5169,7 @@ defmodule AWS.WorkSpaces do
   @spec modify_streaming_properties(map(), modify_streaming_properties_request(), list()) ::
           {:ok, modify_streaming_properties_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, modify_streaming_properties_errors()}
   def modify_streaming_properties(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -5127,6 +5192,7 @@ defmodule AWS.WorkSpaces do
         ) ::
           {:ok, modify_workspace_access_properties_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, modify_workspace_access_properties_errors()}
   def modify_workspace_access_properties(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -5144,6 +5210,7 @@ defmodule AWS.WorkSpaces do
         ) ::
           {:ok, modify_workspace_creation_properties_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, modify_workspace_creation_properties_errors()}
   def modify_workspace_creation_properties(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -5164,6 +5231,7 @@ defmodule AWS.WorkSpaces do
   @spec modify_workspace_properties(map(), modify_workspace_properties_request(), list()) ::
           {:ok, modify_workspace_properties_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, modify_workspace_properties_errors()}
   def modify_workspace_properties(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -5184,6 +5252,7 @@ defmodule AWS.WorkSpaces do
   @spec modify_workspace_state(map(), modify_workspace_state_request(), list()) ::
           {:ok, modify_workspace_state_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, modify_workspace_state_errors()}
   def modify_workspace_state(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -5204,6 +5273,7 @@ defmodule AWS.WorkSpaces do
   @spec reboot_workspaces(map(), reboot_workspaces_request(), list()) ::
           {:ok, reboot_workspaces_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, reboot_workspaces_errors()}
   def reboot_workspaces(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -5229,6 +5299,7 @@ defmodule AWS.WorkSpaces do
   @spec rebuild_workspaces(map(), rebuild_workspaces_request(), list()) ::
           {:ok, rebuild_workspaces_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, rebuild_workspaces_errors()}
   def rebuild_workspaces(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -5251,6 +5322,7 @@ defmodule AWS.WorkSpaces do
   @spec register_workspace_directory(map(), register_workspace_directory_request(), list()) ::
           {:ok, register_workspace_directory_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, register_workspace_directory_errors()}
   def register_workspace_directory(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -5264,6 +5336,7 @@ defmodule AWS.WorkSpaces do
   @spec reject_account_link_invitation(map(), reject_account_link_invitation_request(), list()) ::
           {:ok, reject_account_link_invitation_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, reject_account_link_invitation_errors()}
   def reject_account_link_invitation(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -5287,6 +5360,7 @@ defmodule AWS.WorkSpaces do
   @spec restore_workspace(map(), restore_workspace_request(), list()) ::
           {:ok, restore_workspace_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, restore_workspace_errors()}
   def restore_workspace(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -5300,6 +5374,7 @@ defmodule AWS.WorkSpaces do
   @spec revoke_ip_rules(map(), revoke_ip_rules_request(), list()) ::
           {:ok, revoke_ip_rules_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, revoke_ip_rules_errors()}
   def revoke_ip_rules(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -5316,6 +5391,7 @@ defmodule AWS.WorkSpaces do
   @spec start_workspaces(map(), start_workspaces_request(), list()) ::
           {:ok, start_workspaces_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def start_workspaces(%Client{} = client, input, options \\ []) do
     meta = metadata()
 
@@ -5331,6 +5407,7 @@ defmodule AWS.WorkSpaces do
   @spec start_workspaces_pool(map(), start_workspaces_pool_request(), list()) ::
           {:ok, start_workspaces_pool_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, start_workspaces_pool_errors()}
   def start_workspaces_pool(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -5348,6 +5425,7 @@ defmodule AWS.WorkSpaces do
   @spec stop_workspaces(map(), stop_workspaces_request(), list()) ::
           {:ok, stop_workspaces_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def stop_workspaces(%Client{} = client, input, options \\ []) do
     meta = metadata()
 
@@ -5363,6 +5441,7 @@ defmodule AWS.WorkSpaces do
   @spec stop_workspaces_pool(map(), stop_workspaces_pool_request(), list()) ::
           {:ok, stop_workspaces_pool_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, stop_workspaces_pool_errors()}
   def stop_workspaces_pool(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -5411,6 +5490,7 @@ defmodule AWS.WorkSpaces do
   @spec terminate_workspaces(map(), terminate_workspaces_request(), list()) ::
           {:ok, terminate_workspaces_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def terminate_workspaces(%Client{} = client, input, options \\ []) do
     meta = metadata()
 
@@ -5423,6 +5503,7 @@ defmodule AWS.WorkSpaces do
   @spec terminate_workspaces_pool(map(), terminate_workspaces_pool_request(), list()) ::
           {:ok, terminate_workspaces_pool_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, terminate_workspaces_pool_errors()}
   def terminate_workspaces_pool(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -5440,6 +5521,7 @@ defmodule AWS.WorkSpaces do
         ) ::
           {:ok, terminate_workspaces_pool_session_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, terminate_workspaces_pool_session_errors()}
   def terminate_workspaces_pool_session(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -5456,6 +5538,7 @@ defmodule AWS.WorkSpaces do
   @spec update_connect_client_add_in(map(), update_connect_client_add_in_request(), list()) ::
           {:ok, update_connect_client_add_in_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_connect_client_add_in_errors()}
   def update_connect_client_add_in(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -5497,6 +5580,7 @@ defmodule AWS.WorkSpaces do
         ) ::
           {:ok, update_connection_alias_permission_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_connection_alias_permission_errors()}
   def update_connection_alias_permission(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -5512,6 +5596,7 @@ defmodule AWS.WorkSpaces do
   @spec update_rules_of_ip_group(map(), update_rules_of_ip_group_request(), list()) ::
           {:ok, update_rules_of_ip_group_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_rules_of_ip_group_errors()}
   def update_rules_of_ip_group(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -5536,6 +5621,7 @@ defmodule AWS.WorkSpaces do
   @spec update_workspace_bundle(map(), update_workspace_bundle_request(), list()) ::
           {:ok, update_workspace_bundle_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_workspace_bundle_errors()}
   def update_workspace_bundle(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -5583,6 +5669,7 @@ defmodule AWS.WorkSpaces do
         ) ::
           {:ok, update_workspace_image_permission_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_workspace_image_permission_errors()}
   def update_workspace_image_permission(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -5596,6 +5683,7 @@ defmodule AWS.WorkSpaces do
   @spec update_workspaces_pool(map(), update_workspaces_pool_request(), list()) ::
           {:ok, update_workspaces_pool_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_workspaces_pool_errors()}
   def update_workspaces_pool(%Client{} = client, input, options \\ []) do
     meta = metadata()

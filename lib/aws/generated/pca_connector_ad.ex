@@ -1352,6 +1352,7 @@ defmodule AWS.PcaConnectorAd do
   @spec create_connector(map(), create_connector_request(), list()) ::
           {:ok, create_connector_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_connector_errors()}
   def create_connector(%Client{} = client, input, options \\ []) do
     url_path = "/connectors"
@@ -1382,6 +1383,7 @@ defmodule AWS.PcaConnectorAd do
   @spec create_directory_registration(map(), create_directory_registration_request(), list()) ::
           {:ok, create_directory_registration_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_directory_registration_errors()}
   def create_directory_registration(%Client{} = client, input, options \\ []) do
     url_path = "/directoryRegistrations"
@@ -1421,6 +1423,7 @@ defmodule AWS.PcaConnectorAd do
         ) ::
           {:ok, nil, any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_service_principal_name_errors()}
   def create_service_principal_name(
         %Client{} = client,
@@ -1461,6 +1464,7 @@ defmodule AWS.PcaConnectorAd do
   @spec create_template(map(), create_template_request(), list()) ::
           {:ok, create_template_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_template_errors()}
   def create_template(%Client{} = client, input, options \\ []) do
     url_path = "/templates"
@@ -1497,6 +1501,7 @@ defmodule AWS.PcaConnectorAd do
         ) ::
           {:ok, nil, any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_template_group_access_control_entry_errors()}
   def create_template_group_access_control_entry(
         %Client{} = client,
@@ -1538,6 +1543,7 @@ defmodule AWS.PcaConnectorAd do
   @spec delete_connector(map(), String.t(), delete_connector_request(), list()) ::
           {:ok, nil, any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_connector_errors()}
   def delete_connector(%Client{} = client, connector_arn, input, options \\ []) do
     url_path = "/connectors/#{AWS.Util.encode_uri(connector_arn)}"
@@ -1574,6 +1580,7 @@ defmodule AWS.PcaConnectorAd do
         ) ::
           {:ok, nil, any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_directory_registration_errors()}
   def delete_directory_registration(
         %Client{} = client,
@@ -1615,6 +1622,7 @@ defmodule AWS.PcaConnectorAd do
         ) ::
           {:ok, nil, any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_service_principal_name_errors()}
   def delete_service_principal_name(
         %Client{} = client,
@@ -1654,6 +1662,7 @@ defmodule AWS.PcaConnectorAd do
   @spec delete_template(map(), String.t(), delete_template_request(), list()) ::
           {:ok, nil, any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_template_errors()}
   def delete_template(%Client{} = client, template_arn, input, options \\ []) do
     url_path = "/templates/#{AWS.Util.encode_uri(template_arn)}"
@@ -1688,6 +1697,7 @@ defmodule AWS.PcaConnectorAd do
         ) ::
           {:ok, nil, any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_template_group_access_control_entry_errors()}
   def delete_template_group_access_control_entry(
         %Client{} = client,
@@ -1727,6 +1737,7 @@ defmodule AWS.PcaConnectorAd do
   @spec get_connector(map(), String.t(), list()) ::
           {:ok, get_connector_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_connector_errors()}
   def get_connector(%Client{} = client, connector_arn, options \\ []) do
     url_path = "/connectors/#{AWS.Util.encode_uri(connector_arn)}"
@@ -1744,6 +1755,7 @@ defmodule AWS.PcaConnectorAd do
   @spec get_directory_registration(map(), String.t(), list()) ::
           {:ok, get_directory_registration_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_directory_registration_errors()}
   def get_directory_registration(%Client{} = client, directory_registration_arn, options \\ []) do
     url_path = "/directoryRegistrations/#{AWS.Util.encode_uri(directory_registration_arn)}"
@@ -1762,6 +1774,7 @@ defmodule AWS.PcaConnectorAd do
   @spec get_service_principal_name(map(), String.t(), String.t(), list()) ::
           {:ok, get_service_principal_name_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_service_principal_name_errors()}
   def get_service_principal_name(
         %Client{} = client,
@@ -1788,6 +1801,7 @@ defmodule AWS.PcaConnectorAd do
   @spec get_template(map(), String.t(), list()) ::
           {:ok, get_template_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_template_errors()}
   def get_template(%Client{} = client, template_arn, options \\ []) do
     url_path = "/templates/#{AWS.Util.encode_uri(template_arn)}"
@@ -1805,6 +1819,7 @@ defmodule AWS.PcaConnectorAd do
   @spec get_template_group_access_control_entry(map(), String.t(), String.t(), list()) ::
           {:ok, get_template_group_access_control_entry_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_template_group_access_control_entry_errors()}
   def get_template_group_access_control_entry(
         %Client{} = client,
@@ -1831,6 +1846,7 @@ defmodule AWS.PcaConnectorAd do
   @spec list_connectors(map(), String.t() | nil, String.t() | nil, list()) ::
           {:ok, list_connectors_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_connectors_errors()}
   def list_connectors(%Client{} = client, max_results \\ nil, next_token \\ nil, options \\ []) do
     url_path = "/connectors"
@@ -1864,6 +1880,7 @@ defmodule AWS.PcaConnectorAd do
   @spec list_directory_registrations(map(), String.t() | nil, String.t() | nil, list()) ::
           {:ok, list_directory_registrations_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_directory_registrations_errors()}
   def list_directory_registrations(
         %Client{} = client,
@@ -1907,6 +1924,7 @@ defmodule AWS.PcaConnectorAd do
         ) ::
           {:ok, list_service_principal_names_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_service_principal_names_errors()}
   def list_service_principal_names(
         %Client{} = client,
@@ -1946,6 +1964,7 @@ defmodule AWS.PcaConnectorAd do
   @spec list_tags_for_resource(map(), String.t(), list()) ::
           {:ok, list_tags_for_resource_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_tags_for_resource_errors()}
   def list_tags_for_resource(%Client{} = client, resource_arn, options \\ []) do
     url_path = "/tags/#{AWS.Util.encode_uri(resource_arn)}"
@@ -1969,6 +1988,7 @@ defmodule AWS.PcaConnectorAd do
         ) ::
           {:ok, list_template_group_access_control_entries_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_template_group_access_control_entries_errors()}
   def list_template_group_access_control_entries(
         %Client{} = client,
@@ -2006,6 +2026,7 @@ defmodule AWS.PcaConnectorAd do
   @spec list_templates(map(), String.t(), String.t() | nil, String.t() | nil, list()) ::
           {:ok, list_templates_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_templates_errors()}
   def list_templates(
         %Client{} = client,
@@ -2050,6 +2071,7 @@ defmodule AWS.PcaConnectorAd do
   @spec tag_resource(map(), String.t(), tag_resource_request(), list()) ::
           {:ok, nil, any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, tag_resource_errors()}
   def tag_resource(%Client{} = client, resource_arn, input, options \\ []) do
     url_path = "/tags/#{AWS.Util.encode_uri(resource_arn)}"
@@ -2078,6 +2100,7 @@ defmodule AWS.PcaConnectorAd do
   @spec untag_resource(map(), String.t(), untag_resource_request(), list()) ::
           {:ok, nil, any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, untag_resource_errors()}
   def untag_resource(%Client{} = client, resource_arn, input, options \\ []) do
     url_path = "/tags/#{AWS.Util.encode_uri(resource_arn)}"
@@ -2112,6 +2135,7 @@ defmodule AWS.PcaConnectorAd do
   @spec update_template(map(), String.t(), update_template_request(), list()) ::
           {:ok, nil, any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_template_errors()}
   def update_template(%Client{} = client, template_arn, input, options \\ []) do
     url_path = "/templates/#{AWS.Util.encode_uri(template_arn)}"
@@ -2147,6 +2171,7 @@ defmodule AWS.PcaConnectorAd do
         ) ::
           {:ok, nil, any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_template_group_access_control_entry_errors()}
   def update_template_group_access_control_entry(
         %Client{} = client,

@@ -4007,6 +4007,7 @@ defmodule AWS.Inspector2 do
   @spec associate_member(map(), associate_member_request(), list()) ::
           {:ok, associate_member_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, associate_member_errors()}
   def associate_member(%Client{} = client, input, options \\ []) do
     url_path = "/members/associate"
@@ -4036,6 +4037,7 @@ defmodule AWS.Inspector2 do
   @spec batch_get_account_status(map(), batch_get_account_status_request(), list()) ::
           {:ok, batch_get_account_status_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, batch_get_account_status_errors()}
   def batch_get_account_status(%Client{} = client, input, options \\ []) do
     url_path = "/status/batch/get"
@@ -4065,6 +4067,7 @@ defmodule AWS.Inspector2 do
   @spec batch_get_code_snippet(map(), batch_get_code_snippet_request(), list()) ::
           {:ok, batch_get_code_snippet_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, batch_get_code_snippet_errors()}
   def batch_get_code_snippet(%Client{} = client, input, options \\ []) do
     url_path = "/codesnippet/batchget"
@@ -4093,6 +4096,7 @@ defmodule AWS.Inspector2 do
   @spec batch_get_finding_details(map(), batch_get_finding_details_request(), list()) ::
           {:ok, batch_get_finding_details_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, batch_get_finding_details_errors()}
   def batch_get_finding_details(%Client{} = client, input, options \\ []) do
     url_path = "/findings/details/batch/get"
@@ -4121,6 +4125,7 @@ defmodule AWS.Inspector2 do
   @spec batch_get_free_trial_info(map(), batch_get_free_trial_info_request(), list()) ::
           {:ok, batch_get_free_trial_info_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, batch_get_free_trial_info_errors()}
   def batch_get_free_trial_info(%Client{} = client, input, options \\ []) do
     url_path = "/freetrialinfo/batchget"
@@ -4157,6 +4162,7 @@ defmodule AWS.Inspector2 do
         ) ::
           {:ok, batch_get_member_ec2_deep_inspection_status_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, batch_get_member_ec2_deep_inspection_status_errors()}
   def batch_get_member_ec2_deep_inspection_status(%Client{} = client, input, options \\ []) do
     url_path = "/ec2deepinspectionstatus/member/batch/get"
@@ -4193,6 +4199,7 @@ defmodule AWS.Inspector2 do
         ) ::
           {:ok, batch_update_member_ec2_deep_inspection_status_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, batch_update_member_ec2_deep_inspection_status_errors()}
   def batch_update_member_ec2_deep_inspection_status(%Client{} = client, input, options \\ []) do
     url_path = "/ec2deepinspectionstatus/member/batch/update"
@@ -4221,6 +4228,7 @@ defmodule AWS.Inspector2 do
   @spec cancel_findings_report(map(), cancel_findings_report_request(), list()) ::
           {:ok, cancel_findings_report_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, cancel_findings_report_errors()}
   def cancel_findings_report(%Client{} = client, input, options \\ []) do
     url_path = "/reporting/cancel"
@@ -4249,6 +4257,7 @@ defmodule AWS.Inspector2 do
   @spec cancel_sbom_export(map(), cancel_sbom_export_request(), list()) ::
           {:ok, cancel_sbom_export_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, cancel_sbom_export_errors()}
   def cancel_sbom_export(%Client{} = client, input, options \\ []) do
     url_path = "/sbomexport/cancel"
@@ -4277,6 +4286,7 @@ defmodule AWS.Inspector2 do
   @spec create_cis_scan_configuration(map(), create_cis_scan_configuration_request(), list()) ::
           {:ok, create_cis_scan_configuration_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_cis_scan_configuration_errors()}
   def create_cis_scan_configuration(%Client{} = client, input, options \\ []) do
     url_path = "/cis/scan-configuration/create"
@@ -4308,6 +4318,7 @@ defmodule AWS.Inspector2 do
   @spec create_filter(map(), create_filter_request(), list()) ::
           {:ok, create_filter_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_filter_errors()}
   def create_filter(%Client{} = client, input, options \\ []) do
     url_path = "/filters/create"
@@ -4340,6 +4351,7 @@ defmodule AWS.Inspector2 do
   @spec create_findings_report(map(), create_findings_report_request(), list()) ::
           {:ok, create_findings_report_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_findings_report_errors()}
   def create_findings_report(%Client{} = client, input, options \\ []) do
     url_path = "/reporting/create"
@@ -4368,6 +4380,7 @@ defmodule AWS.Inspector2 do
   @spec create_sbom_export(map(), create_sbom_export_request(), list()) ::
           {:ok, create_sbom_export_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_sbom_export_errors()}
   def create_sbom_export(%Client{} = client, input, options \\ []) do
     url_path = "/sbomexport/create"
@@ -4396,6 +4409,7 @@ defmodule AWS.Inspector2 do
   @spec delete_cis_scan_configuration(map(), delete_cis_scan_configuration_request(), list()) ::
           {:ok, delete_cis_scan_configuration_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_cis_scan_configuration_errors()}
   def delete_cis_scan_configuration(%Client{} = client, input, options \\ []) do
     url_path = "/cis/scan-configuration/delete"
@@ -4424,6 +4438,7 @@ defmodule AWS.Inspector2 do
   @spec delete_filter(map(), delete_filter_request(), list()) ::
           {:ok, delete_filter_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_filter_errors()}
   def delete_filter(%Client{} = client, input, options \\ []) do
     url_path = "/filters/delete"
@@ -4457,6 +4472,7 @@ defmodule AWS.Inspector2 do
         ) ::
           {:ok, describe_organization_configuration_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, describe_organization_configuration_errors()}
   def describe_organization_configuration(%Client{} = client, input, options \\ []) do
     url_path = "/organizationconfiguration/describe"
@@ -4488,6 +4504,7 @@ defmodule AWS.Inspector2 do
   @spec disable(map(), disable_request(), list()) ::
           {:ok, disable_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, disable_errors()}
   def disable(%Client{} = client, input, options \\ []) do
     url_path = "/disable"
@@ -4516,6 +4533,7 @@ defmodule AWS.Inspector2 do
   @spec disable_delegated_admin_account(map(), disable_delegated_admin_account_request(), list()) ::
           {:ok, disable_delegated_admin_account_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, disable_delegated_admin_account_errors()}
   def disable_delegated_admin_account(%Client{} = client, input, options \\ []) do
     url_path = "/delegatedadminaccounts/disable"
@@ -4544,6 +4562,7 @@ defmodule AWS.Inspector2 do
   @spec disassociate_member(map(), disassociate_member_request(), list()) ::
           {:ok, disassociate_member_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, disassociate_member_errors()}
   def disassociate_member(%Client{} = client, input, options \\ []) do
     url_path = "/members/disassociate"
@@ -4572,6 +4591,7 @@ defmodule AWS.Inspector2 do
   @spec enable(map(), enable_request(), list()) ::
           {:ok, enable_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, enable_errors()}
   def enable(%Client{} = client, input, options \\ []) do
     url_path = "/enable"
@@ -4601,6 +4621,7 @@ defmodule AWS.Inspector2 do
   @spec enable_delegated_admin_account(map(), enable_delegated_admin_account_request(), list()) ::
           {:ok, enable_delegated_admin_account_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, enable_delegated_admin_account_errors()}
   def enable_delegated_admin_account(%Client{} = client, input, options \\ []) do
     url_path = "/delegatedadminaccounts/enable"
@@ -4629,6 +4650,7 @@ defmodule AWS.Inspector2 do
   @spec get_cis_scan_report(map(), get_cis_scan_report_request(), list()) ::
           {:ok, get_cis_scan_report_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_cis_scan_report_errors()}
   def get_cis_scan_report(%Client{} = client, input, options \\ []) do
     url_path = "/cis/scan/report/get"
@@ -4657,6 +4679,7 @@ defmodule AWS.Inspector2 do
   @spec get_cis_scan_result_details(map(), get_cis_scan_result_details_request(), list()) ::
           {:ok, get_cis_scan_result_details_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_cis_scan_result_details_errors()}
   def get_cis_scan_result_details(%Client{} = client, input, options \\ []) do
     url_path = "/cis/scan-result/details/get"
@@ -4685,6 +4708,7 @@ defmodule AWS.Inspector2 do
   @spec get_configuration(map(), get_configuration_request(), list()) ::
           {:ok, get_configuration_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_configuration_errors()}
   def get_configuration(%Client{} = client, input, options \\ []) do
     url_path = "/configuration/get"
@@ -4715,6 +4739,7 @@ defmodule AWS.Inspector2 do
   @spec get_delegated_admin_account(map(), get_delegated_admin_account_request(), list()) ::
           {:ok, get_delegated_admin_account_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_delegated_admin_account_errors()}
   def get_delegated_admin_account(%Client{} = client, input, options \\ []) do
     url_path = "/delegatedadminaccounts/get"
@@ -4748,6 +4773,7 @@ defmodule AWS.Inspector2 do
         ) ::
           {:ok, get_ec2_deep_inspection_configuration_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_ec2_deep_inspection_configuration_errors()}
   def get_ec2_deep_inspection_configuration(%Client{} = client, input, options \\ []) do
     url_path = "/ec2deepinspectionconfiguration/get"
@@ -4776,6 +4802,7 @@ defmodule AWS.Inspector2 do
   @spec get_encryption_key(map(), String.t(), String.t(), list()) ::
           {:ok, get_encryption_key_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_encryption_key_errors()}
   def get_encryption_key(%Client{} = client, resource_type, scan_type, options \\ []) do
     url_path = "/encryptionkey/get"
@@ -4807,6 +4834,7 @@ defmodule AWS.Inspector2 do
   @spec get_findings_report_status(map(), get_findings_report_status_request(), list()) ::
           {:ok, get_findings_report_status_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_findings_report_status_errors()}
   def get_findings_report_status(%Client{} = client, input, options \\ []) do
     url_path = "/reporting/status/get"
@@ -4835,6 +4863,7 @@ defmodule AWS.Inspector2 do
   @spec get_member(map(), get_member_request(), list()) ::
           {:ok, get_member_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_member_errors()}
   def get_member(%Client{} = client, input, options \\ []) do
     url_path = "/members/get"
@@ -4863,6 +4892,7 @@ defmodule AWS.Inspector2 do
   @spec get_sbom_export(map(), get_sbom_export_request(), list()) ::
           {:ok, get_sbom_export_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_sbom_export_errors()}
   def get_sbom_export(%Client{} = client, input, options \\ []) do
     url_path = "/sbomexport/get"
@@ -4891,6 +4921,7 @@ defmodule AWS.Inspector2 do
   @spec list_account_permissions(map(), list_account_permissions_request(), list()) ::
           {:ok, list_account_permissions_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_account_permissions_errors()}
   def list_account_permissions(%Client{} = client, input, options \\ []) do
     url_path = "/accountpermissions/list"
@@ -4919,6 +4950,7 @@ defmodule AWS.Inspector2 do
   @spec list_cis_scan_configurations(map(), list_cis_scan_configurations_request(), list()) ::
           {:ok, list_cis_scan_configurations_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_cis_scan_configurations_errors()}
   def list_cis_scan_configurations(%Client{} = client, input, options \\ []) do
     url_path = "/cis/scan-configuration/list"
@@ -4951,6 +4983,7 @@ defmodule AWS.Inspector2 do
         ) ::
           {:ok, list_cis_scan_results_aggregated_by_checks_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_cis_scan_results_aggregated_by_checks_errors()}
   def list_cis_scan_results_aggregated_by_checks(%Client{} = client, input, options \\ []) do
     url_path = "/cis/scan-result/check/list"
@@ -4983,6 +5016,7 @@ defmodule AWS.Inspector2 do
         ) ::
           {:ok, list_cis_scan_results_aggregated_by_target_resource_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_cis_scan_results_aggregated_by_target_resource_errors()}
   def list_cis_scan_results_aggregated_by_target_resource(
         %Client{} = client,
@@ -5015,6 +5049,7 @@ defmodule AWS.Inspector2 do
   @spec list_cis_scans(map(), list_cis_scans_request(), list()) ::
           {:ok, list_cis_scans_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_cis_scans_errors()}
   def list_cis_scans(%Client{} = client, input, options \\ []) do
     url_path = "/cis/scan/list"
@@ -5043,6 +5078,7 @@ defmodule AWS.Inspector2 do
   @spec list_coverage(map(), list_coverage_request(), list()) ::
           {:ok, list_coverage_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_coverage_errors()}
   def list_coverage(%Client{} = client, input, options \\ []) do
     url_path = "/coverage/list"
@@ -5071,6 +5107,7 @@ defmodule AWS.Inspector2 do
   @spec list_coverage_statistics(map(), list_coverage_statistics_request(), list()) ::
           {:ok, list_coverage_statistics_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_coverage_statistics_errors()}
   def list_coverage_statistics(%Client{} = client, input, options \\ []) do
     url_path = "/coverage/statistics/list"
@@ -5100,6 +5137,7 @@ defmodule AWS.Inspector2 do
   @spec list_delegated_admin_accounts(map(), list_delegated_admin_accounts_request(), list()) ::
           {:ok, list_delegated_admin_accounts_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_delegated_admin_accounts_errors()}
   def list_delegated_admin_accounts(%Client{} = client, input, options \\ []) do
     url_path = "/delegatedadminaccounts/list"
@@ -5128,6 +5166,7 @@ defmodule AWS.Inspector2 do
   @spec list_filters(map(), list_filters_request(), list()) ::
           {:ok, list_filters_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_filters_errors()}
   def list_filters(%Client{} = client, input, options \\ []) do
     url_path = "/filters/list"
@@ -5156,6 +5195,7 @@ defmodule AWS.Inspector2 do
   @spec list_finding_aggregations(map(), list_finding_aggregations_request(), list()) ::
           {:ok, list_finding_aggregations_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_finding_aggregations_errors()}
   def list_finding_aggregations(%Client{} = client, input, options \\ []) do
     url_path = "/findings/aggregation/list"
@@ -5184,6 +5224,7 @@ defmodule AWS.Inspector2 do
   @spec list_findings(map(), list_findings_request(), list()) ::
           {:ok, list_findings_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_findings_errors()}
   def list_findings(%Client{} = client, input, options \\ []) do
     url_path = "/findings/list"
@@ -5214,6 +5255,7 @@ defmodule AWS.Inspector2 do
   @spec list_members(map(), list_members_request(), list()) ::
           {:ok, list_members_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_members_errors()}
   def list_members(%Client{} = client, input, options \\ []) do
     url_path = "/members/list"
@@ -5242,6 +5284,7 @@ defmodule AWS.Inspector2 do
   @spec list_tags_for_resource(map(), String.t(), list()) ::
           {:ok, list_tags_for_resource_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_tags_for_resource_errors()}
   def list_tags_for_resource(%Client{} = client, resource_arn, options \\ []) do
     url_path = "/tags/#{AWS.Util.encode_uri(resource_arn)}"
@@ -5259,6 +5302,7 @@ defmodule AWS.Inspector2 do
   @spec list_usage_totals(map(), list_usage_totals_request(), list()) ::
           {:ok, list_usage_totals_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_usage_totals_errors()}
   def list_usage_totals(%Client{} = client, input, options \\ []) do
     url_path = "/usage/list"
@@ -5290,6 +5334,7 @@ defmodule AWS.Inspector2 do
   @spec reset_encryption_key(map(), reset_encryption_key_request(), list()) ::
           {:ok, reset_encryption_key_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, reset_encryption_key_errors()}
   def reset_encryption_key(%Client{} = client, input, options \\ []) do
     url_path = "/encryptionkey/reset"
@@ -5318,6 +5363,7 @@ defmodule AWS.Inspector2 do
   @spec search_vulnerabilities(map(), search_vulnerabilities_request(), list()) ::
           {:ok, search_vulnerabilities_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, search_vulnerabilities_errors()}
   def search_vulnerabilities(%Client{} = client, input, options \\ []) do
     url_path = "/vulnerabilities/search"
@@ -5352,6 +5398,7 @@ defmodule AWS.Inspector2 do
   @spec send_cis_session_health(map(), send_cis_session_health_request(), list()) ::
           {:ok, send_cis_session_health_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, send_cis_session_health_errors()}
   def send_cis_session_health(%Client{} = client, input, options \\ []) do
     url_path = "/cissession/health/send"
@@ -5386,6 +5433,7 @@ defmodule AWS.Inspector2 do
   @spec send_cis_session_telemetry(map(), send_cis_session_telemetry_request(), list()) ::
           {:ok, send_cis_session_telemetry_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, send_cis_session_telemetry_errors()}
   def send_cis_session_telemetry(%Client{} = client, input, options \\ []) do
     url_path = "/cissession/telemetry/send"
@@ -5420,6 +5468,7 @@ defmodule AWS.Inspector2 do
   @spec start_cis_session(map(), start_cis_session_request(), list()) ::
           {:ok, start_cis_session_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, start_cis_session_errors()}
   def start_cis_session(%Client{} = client, input, options \\ []) do
     url_path = "/cissession/start"
@@ -5454,6 +5503,7 @@ defmodule AWS.Inspector2 do
   @spec stop_cis_session(map(), stop_cis_session_request(), list()) ::
           {:ok, stop_cis_session_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, stop_cis_session_errors()}
   def stop_cis_session(%Client{} = client, input, options \\ []) do
     url_path = "/cissession/stop"
@@ -5482,6 +5532,7 @@ defmodule AWS.Inspector2 do
   @spec tag_resource(map(), String.t(), tag_resource_request(), list()) ::
           {:ok, tag_resource_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, tag_resource_errors()}
   def tag_resource(%Client{} = client, resource_arn, input, options \\ []) do
     url_path = "/tags/#{AWS.Util.encode_uri(resource_arn)}"
@@ -5510,6 +5561,7 @@ defmodule AWS.Inspector2 do
   @spec untag_resource(map(), String.t(), untag_resource_request(), list()) ::
           {:ok, untag_resource_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, untag_resource_errors()}
   def untag_resource(%Client{} = client, resource_arn, input, options \\ []) do
     url_path = "/tags/#{AWS.Util.encode_uri(resource_arn)}"
@@ -5543,6 +5595,7 @@ defmodule AWS.Inspector2 do
   @spec update_cis_scan_configuration(map(), update_cis_scan_configuration_request(), list()) ::
           {:ok, update_cis_scan_configuration_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_cis_scan_configuration_errors()}
   def update_cis_scan_configuration(%Client{} = client, input, options \\ []) do
     url_path = "/cis/scan-configuration/update"
@@ -5575,6 +5628,7 @@ defmodule AWS.Inspector2 do
   @spec update_configuration(map(), update_configuration_request(), list()) ::
           {:ok, update_configuration_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_configuration_errors()}
   def update_configuration(%Client{} = client, input, options \\ []) do
     url_path = "/configuration/update"
@@ -5608,6 +5662,7 @@ defmodule AWS.Inspector2 do
         ) ::
           {:ok, update_ec2_deep_inspection_configuration_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_ec2_deep_inspection_configuration_errors()}
   def update_ec2_deep_inspection_configuration(%Client{} = client, input, options \\ []) do
     url_path = "/ec2deepinspectionconfiguration/update"
@@ -5639,6 +5694,7 @@ defmodule AWS.Inspector2 do
   @spec update_encryption_key(map(), update_encryption_key_request(), list()) ::
           {:ok, update_encryption_key_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_encryption_key_errors()}
   def update_encryption_key(%Client{} = client, input, options \\ []) do
     url_path = "/encryptionkey/update"
@@ -5668,6 +5724,7 @@ defmodule AWS.Inspector2 do
   @spec update_filter(map(), update_filter_request(), list()) ::
           {:ok, update_filter_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_filter_errors()}
   def update_filter(%Client{} = client, input, options \\ []) do
     url_path = "/filters/update"
@@ -5702,6 +5759,7 @@ defmodule AWS.Inspector2 do
         ) ::
           {:ok, update_org_ec2_deep_inspection_configuration_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_org_ec2_deep_inspection_configuration_errors()}
   def update_org_ec2_deep_inspection_configuration(%Client{} = client, input, options \\ []) do
     url_path = "/ec2deepinspectionconfiguration/org/update"
@@ -5734,6 +5792,7 @@ defmodule AWS.Inspector2 do
         ) ::
           {:ok, update_organization_configuration_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_organization_configuration_errors()}
   def update_organization_configuration(%Client{} = client, input, options \\ []) do
     url_path = "/organizationconfiguration/update"

@@ -911,6 +911,7 @@ defmodule AWS.TimestreamInfluxDB do
   @spec create_db_cluster(map(), create_db_cluster_input(), list()) ::
           {:ok, create_db_cluster_output(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_db_cluster_errors()}
   def create_db_cluster(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -924,6 +925,7 @@ defmodule AWS.TimestreamInfluxDB do
   @spec create_db_instance(map(), create_db_instance_input(), list()) ::
           {:ok, create_db_instance_output(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_db_instance_errors()}
   def create_db_instance(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -938,6 +940,7 @@ defmodule AWS.TimestreamInfluxDB do
   @spec create_db_parameter_group(map(), create_db_parameter_group_input(), list()) ::
           {:ok, create_db_parameter_group_output(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_db_parameter_group_errors()}
   def create_db_parameter_group(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -951,6 +954,7 @@ defmodule AWS.TimestreamInfluxDB do
   @spec delete_db_cluster(map(), delete_db_cluster_input(), list()) ::
           {:ok, delete_db_cluster_output(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_db_cluster_errors()}
   def delete_db_cluster(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -964,6 +968,7 @@ defmodule AWS.TimestreamInfluxDB do
   @spec delete_db_instance(map(), delete_db_instance_input(), list()) ::
           {:ok, delete_db_instance_output(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_db_instance_errors()}
   def delete_db_instance(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -977,6 +982,7 @@ defmodule AWS.TimestreamInfluxDB do
   @spec get_db_cluster(map(), get_db_cluster_input(), list()) ::
           {:ok, get_db_cluster_output(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_db_cluster_errors()}
   def get_db_cluster(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -990,6 +996,7 @@ defmodule AWS.TimestreamInfluxDB do
   @spec get_db_instance(map(), get_db_instance_input(), list()) ::
           {:ok, get_db_instance_output(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_db_instance_errors()}
   def get_db_instance(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -1003,6 +1010,7 @@ defmodule AWS.TimestreamInfluxDB do
   @spec get_db_parameter_group(map(), get_db_parameter_group_input(), list()) ::
           {:ok, get_db_parameter_group_output(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_db_parameter_group_errors()}
   def get_db_parameter_group(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -1016,6 +1024,7 @@ defmodule AWS.TimestreamInfluxDB do
   @spec list_db_clusters(map(), list_db_clusters_input(), list()) ::
           {:ok, list_db_clusters_output(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_db_clusters_errors()}
   def list_db_clusters(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -1029,6 +1038,7 @@ defmodule AWS.TimestreamInfluxDB do
   @spec list_db_instances(map(), list_db_instances_input(), list()) ::
           {:ok, list_db_instances_output(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_db_instances_errors()}
   def list_db_instances(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -1042,6 +1052,7 @@ defmodule AWS.TimestreamInfluxDB do
   @spec list_db_instances_for_cluster(map(), list_db_instances_for_cluster_input(), list()) ::
           {:ok, list_db_instances_for_cluster_output(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_db_instances_for_cluster_errors()}
   def list_db_instances_for_cluster(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -1055,6 +1066,7 @@ defmodule AWS.TimestreamInfluxDB do
   @spec list_db_parameter_groups(map(), list_db_parameter_groups_input(), list()) ::
           {:ok, list_db_parameter_groups_output(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_db_parameter_groups_errors()}
   def list_db_parameter_groups(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -1068,6 +1080,7 @@ defmodule AWS.TimestreamInfluxDB do
   @spec list_tags_for_resource(map(), list_tags_for_resource_request(), list()) ::
           {:ok, list_tags_for_resource_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_tags_for_resource_errors()}
   def list_tags_for_resource(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -1083,6 +1096,7 @@ defmodule AWS.TimestreamInfluxDB do
   @spec tag_resource(map(), tag_resource_request(), list()) ::
           {:ok, nil, any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, tag_resource_errors()}
   def tag_resource(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -1096,6 +1110,7 @@ defmodule AWS.TimestreamInfluxDB do
   @spec untag_resource(map(), untag_resource_request(), list()) ::
           {:ok, nil, any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, untag_resource_errors()}
   def untag_resource(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -1109,6 +1124,7 @@ defmodule AWS.TimestreamInfluxDB do
   @spec update_db_cluster(map(), update_db_cluster_input(), list()) ::
           {:ok, update_db_cluster_output(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_db_cluster_errors()}
   def update_db_cluster(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -1122,6 +1138,7 @@ defmodule AWS.TimestreamInfluxDB do
   @spec update_db_instance(map(), update_db_instance_input(), list()) ::
           {:ok, update_db_instance_output(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_db_instance_errors()}
   def update_db_instance(%Client{} = client, input, options \\ []) do
     meta = metadata()

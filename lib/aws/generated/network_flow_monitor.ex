@@ -1080,6 +1080,7 @@ defmodule AWS.NetworkFlowMonitor do
   @spec create_monitor(map(), create_monitor_input(), list()) ::
           {:ok, create_monitor_output(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_monitor_errors()}
   def create_monitor(%Client{} = client, input, options \\ []) do
     url_path = "/monitors"
@@ -1117,6 +1118,7 @@ defmodule AWS.NetworkFlowMonitor do
   @spec create_scope(map(), create_scope_input(), list()) ::
           {:ok, create_scope_output(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_scope_errors()}
   def create_scope(%Client{} = client, input, options \\ []) do
     url_path = "/scopes"
@@ -1145,6 +1147,7 @@ defmodule AWS.NetworkFlowMonitor do
   @spec delete_monitor(map(), String.t(), delete_monitor_input(), list()) ::
           {:ok, delete_monitor_output(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_monitor_errors()}
   def delete_monitor(%Client{} = client, monitor_name, input, options \\ []) do
     url_path = "/monitors/#{AWS.Util.encode_uri(monitor_name)}"
@@ -1173,6 +1176,7 @@ defmodule AWS.NetworkFlowMonitor do
   @spec delete_scope(map(), String.t(), delete_scope_input(), list()) ::
           {:ok, delete_scope_output(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_scope_errors()}
   def delete_scope(%Client{} = client, scope_id, input, options \\ []) do
     url_path = "/scopes/#{AWS.Util.encode_uri(scope_id)}"
@@ -1206,6 +1210,7 @@ defmodule AWS.NetworkFlowMonitor do
   @spec get_monitor(map(), String.t(), list()) ::
           {:ok, get_monitor_output(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_monitor_errors()}
   def get_monitor(%Client{} = client, monitor_name, options \\ []) do
     url_path = "/monitors/#{AWS.Util.encode_uri(monitor_name)}"
@@ -1244,6 +1249,7 @@ defmodule AWS.NetworkFlowMonitor do
         ) ::
           {:ok, get_query_results_monitor_top_contributors_output(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_query_results_monitor_top_contributors_errors()}
   def get_query_results_monitor_top_contributors(
         %Client{} = client,
@@ -1305,6 +1311,7 @@ defmodule AWS.NetworkFlowMonitor do
         ) ::
           {:ok, get_query_results_workload_insights_top_contributors_output(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_query_results_workload_insights_top_contributors_errors()}
   def get_query_results_workload_insights_top_contributors(
         %Client{} = client,
@@ -1373,6 +1380,7 @@ defmodule AWS.NetworkFlowMonitor do
         ) ::
           {:ok, get_query_results_workload_insights_top_contributors_data_output(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_query_results_workload_insights_top_contributors_data_errors()}
   def get_query_results_workload_insights_top_contributors_data(
         %Client{} = client,
@@ -1427,6 +1435,7 @@ defmodule AWS.NetworkFlowMonitor do
   @spec get_query_status_monitor_top_contributors(map(), String.t(), String.t(), list()) ::
           {:ok, get_query_status_monitor_top_contributors_output(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_query_status_monitor_top_contributors_errors()}
   def get_query_status_monitor_top_contributors(
         %Client{} = client,
@@ -1466,6 +1475,7 @@ defmodule AWS.NetworkFlowMonitor do
   @spec get_query_status_workload_insights_top_contributors(map(), String.t(), String.t(), list()) ::
           {:ok, get_query_status_workload_insights_top_contributors_output(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_query_status_workload_insights_top_contributors_errors()}
   def get_query_status_workload_insights_top_contributors(
         %Client{} = client,
@@ -1514,6 +1524,7 @@ defmodule AWS.NetworkFlowMonitor do
         ) ::
           {:ok, get_query_status_workload_insights_top_contributors_data_output(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_query_status_workload_insights_top_contributors_data_errors()}
   def get_query_status_workload_insights_top_contributors_data(
         %Client{} = client,
@@ -1541,6 +1552,7 @@ defmodule AWS.NetworkFlowMonitor do
   @spec get_scope(map(), String.t(), list()) ::
           {:ok, get_scope_output(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_scope_errors()}
   def get_scope(%Client{} = client, scope_id, options \\ []) do
     url_path = "/scopes/#{AWS.Util.encode_uri(scope_id)}"
@@ -1561,6 +1573,7 @@ defmodule AWS.NetworkFlowMonitor do
   @spec list_monitors(map(), String.t() | nil, String.t() | nil, String.t() | nil, list()) ::
           {:ok, list_monitors_output(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_monitors_errors()}
   def list_monitors(
         %Client{} = client,
@@ -1605,6 +1618,7 @@ defmodule AWS.NetworkFlowMonitor do
   @spec list_scopes(map(), String.t() | nil, String.t() | nil, list()) ::
           {:ok, list_scopes_output(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_scopes_errors()}
   def list_scopes(%Client{} = client, max_results \\ nil, next_token \\ nil, options \\ []) do
     url_path = "/scopes"
@@ -1636,6 +1650,7 @@ defmodule AWS.NetworkFlowMonitor do
   @spec list_tags_for_resource(map(), String.t(), list()) ::
           {:ok, list_tags_for_resource_output(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_tags_for_resource_errors()}
   def list_tags_for_resource(%Client{} = client, resource_arn, options \\ []) do
     url_path = "/tags/#{AWS.Util.encode_uri(resource_arn)}"
@@ -1666,6 +1681,7 @@ defmodule AWS.NetworkFlowMonitor do
         ) ::
           {:ok, start_query_monitor_top_contributors_output(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, start_query_monitor_top_contributors_errors()}
   def start_query_monitor_top_contributors(%Client{} = client, monitor_name, input, options \\ []) do
     url_path = "/monitors/#{AWS.Util.encode_uri(monitor_name)}/topContributorsQueries"
@@ -1707,6 +1723,7 @@ defmodule AWS.NetworkFlowMonitor do
         ) ::
           {:ok, start_query_workload_insights_top_contributors_output(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, start_query_workload_insights_top_contributors_errors()}
   def start_query_workload_insights_top_contributors(
         %Client{} = client,
@@ -1763,6 +1780,7 @@ defmodule AWS.NetworkFlowMonitor do
         ) ::
           {:ok, start_query_workload_insights_top_contributors_data_output(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, start_query_workload_insights_top_contributors_data_errors()}
   def start_query_workload_insights_top_contributors_data(
         %Client{} = client,
@@ -1810,6 +1828,7 @@ defmodule AWS.NetworkFlowMonitor do
         ) ::
           {:ok, stop_query_monitor_top_contributors_output(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, stop_query_monitor_top_contributors_errors()}
   def stop_query_monitor_top_contributors(
         %Client{} = client,
@@ -1860,6 +1879,7 @@ defmodule AWS.NetworkFlowMonitor do
         ) ::
           {:ok, stop_query_workload_insights_top_contributors_output(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, stop_query_workload_insights_top_contributors_errors()}
   def stop_query_workload_insights_top_contributors(
         %Client{} = client,
@@ -1917,6 +1937,7 @@ defmodule AWS.NetworkFlowMonitor do
         ) ::
           {:ok, stop_query_workload_insights_top_contributors_data_output(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, stop_query_workload_insights_top_contributors_data_errors()}
   def stop_query_workload_insights_top_contributors_data(
         %Client{} = client,
@@ -1953,6 +1974,7 @@ defmodule AWS.NetworkFlowMonitor do
   @spec tag_resource(map(), String.t(), tag_resource_input(), list()) ::
           {:ok, tag_resource_output(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, tag_resource_errors()}
   def tag_resource(%Client{} = client, resource_arn, input, options \\ []) do
     url_path = "/tags/#{AWS.Util.encode_uri(resource_arn)}"
@@ -1981,6 +2003,7 @@ defmodule AWS.NetworkFlowMonitor do
   @spec untag_resource(map(), String.t(), untag_resource_input(), list()) ::
           {:ok, untag_resource_output(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, untag_resource_errors()}
   def untag_resource(%Client{} = client, resource_arn, input, options \\ []) do
     url_path = "/tags/#{AWS.Util.encode_uri(resource_arn)}"
@@ -2014,6 +2037,7 @@ defmodule AWS.NetworkFlowMonitor do
   @spec update_monitor(map(), String.t(), update_monitor_input(), list()) ::
           {:ok, update_monitor_output(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_monitor_errors()}
   def update_monitor(%Client{} = client, monitor_name, input, options \\ []) do
     url_path = "/monitors/#{AWS.Util.encode_uri(monitor_name)}"
@@ -2045,6 +2069,7 @@ defmodule AWS.NetworkFlowMonitor do
   @spec update_scope(map(), String.t(), update_scope_input(), list()) ::
           {:ok, update_scope_output(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_scope_errors()}
   def update_scope(%Client{} = client, scope_id, input, options \\ []) do
     url_path = "/scopes/#{AWS.Util.encode_uri(scope_id)}"

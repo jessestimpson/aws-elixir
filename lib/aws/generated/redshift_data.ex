@@ -688,6 +688,7 @@ defmodule AWS.RedshiftData do
   @spec batch_execute_statement(map(), batch_execute_statement_input(), list()) ::
           {:ok, batch_execute_statement_output(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, batch_execute_statement_errors()}
   def batch_execute_statement(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -708,6 +709,7 @@ defmodule AWS.RedshiftData do
   @spec cancel_statement(map(), cancel_statement_request(), list()) ::
           {:ok, cancel_statement_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, cancel_statement_errors()}
   def cancel_statement(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -732,6 +734,7 @@ defmodule AWS.RedshiftData do
   @spec describe_statement(map(), describe_statement_request(), list()) ::
           {:ok, describe_statement_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, describe_statement_errors()}
   def describe_statement(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -794,6 +797,7 @@ defmodule AWS.RedshiftData do
   @spec describe_table(map(), describe_table_request(), list()) ::
           {:ok, describe_table_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, describe_table_errors()}
   def describe_table(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -856,6 +860,7 @@ defmodule AWS.RedshiftData do
   @spec execute_statement(map(), execute_statement_input(), list()) ::
           {:ok, execute_statement_output(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, execute_statement_errors()}
   def execute_statement(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -879,6 +884,7 @@ defmodule AWS.RedshiftData do
   @spec get_statement_result(map(), get_statement_result_request(), list()) ::
           {:ok, get_statement_result_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_statement_result_errors()}
   def get_statement_result(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -901,6 +907,7 @@ defmodule AWS.RedshiftData do
   @spec get_statement_result_v2(map(), get_statement_result_v2_request(), list()) ::
           {:ok, get_statement_result_v2_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_statement_result_v2_errors()}
   def get_statement_result_v2(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -961,6 +968,7 @@ defmodule AWS.RedshiftData do
   @spec list_databases(map(), list_databases_request(), list()) ::
           {:ok, list_databases_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_databases_errors()}
   def list_databases(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -1021,6 +1029,7 @@ defmodule AWS.RedshiftData do
   @spec list_schemas(map(), list_schemas_request(), list()) ::
           {:ok, list_schemas_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_schemas_errors()}
   def list_schemas(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -1042,6 +1051,7 @@ defmodule AWS.RedshiftData do
   @spec list_statements(map(), list_statements_request(), list()) ::
           {:ok, list_statements_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_statements_errors()}
   def list_statements(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -1104,6 +1114,7 @@ defmodule AWS.RedshiftData do
   @spec list_tables(map(), list_tables_request(), list()) ::
           {:ok, list_tables_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_tables_errors()}
   def list_tables(%Client{} = client, input, options \\ []) do
     meta = metadata()

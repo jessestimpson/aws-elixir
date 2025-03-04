@@ -266,6 +266,7 @@ defmodule AWS.GeoMaps do
   @spec get_glyphs(map(), String.t(), String.t(), list()) ::
           {:ok, get_glyphs_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def get_glyphs(%Client{} = client, font_stack, font_unicode_range, options \\ []) do
     url_path =
       "/glyphs/#{AWS.Util.encode_uri(font_stack)}/#{AWS.Util.encode_uri(font_unicode_range)}"
@@ -295,6 +296,7 @@ defmodule AWS.GeoMaps do
   @spec get_sprites(map(), String.t(), String.t(), String.t(), String.t(), list()) ::
           {:ok, get_sprites_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def get_sprites(%Client{} = client, color_scheme, file_name, style, variant, options \\ []) do
     url_path =
       "/styles/#{AWS.Util.encode_uri(style)}/#{AWS.Util.encode_uri(color_scheme)}/#{AWS.Util.encode_uri(variant)}/sprites/#{AWS.Util.encode_uri(file_name)}"
@@ -344,6 +346,7 @@ defmodule AWS.GeoMaps do
         ) ::
           {:ok, get_static_map_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_static_map_errors()}
   def get_static_map(
         %Client{} = client,
@@ -488,6 +491,7 @@ defmodule AWS.GeoMaps do
         ) ::
           {:ok, get_style_descriptor_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def get_style_descriptor(
         %Client{} = client,
         style,
@@ -546,6 +550,7 @@ defmodule AWS.GeoMaps do
   @spec get_tile(map(), String.t(), String.t(), String.t(), String.t(), String.t() | nil, list()) ::
           {:ok, get_tile_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_tile_errors()}
   def get_tile(%Client{} = client, tileset, x, y, z, key \\ nil, options \\ []) do
     url_path =

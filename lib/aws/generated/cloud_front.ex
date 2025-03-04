@@ -7588,6 +7588,7 @@ defmodule AWS.CloudFront do
   @spec associate_alias(map(), String.t(), associate_alias_request(), list()) ::
           {:ok, nil, any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, associate_alias_errors()}
   def associate_alias(%Client{} = client, target_distribution_id, input, options \\ []) do
     url_path =
@@ -7646,6 +7647,7 @@ defmodule AWS.CloudFront do
   @spec copy_distribution(map(), String.t(), copy_distribution_request(), list()) ::
           {:ok, copy_distribution_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, copy_distribution_errors()}
   def copy_distribution(%Client{} = client, primary_distribution_id, input, options \\ []) do
     url_path = "/2020-05-31/distribution/#{AWS.Util.encode_uri(primary_distribution_id)}/copy"
@@ -7688,6 +7690,7 @@ defmodule AWS.CloudFront do
   @spec create_anycast_ip_list(map(), create_anycast_ip_list_request(), list()) ::
           {:ok, create_anycast_ip_list_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_anycast_ip_list_errors()}
   def create_anycast_ip_list(%Client{} = client, input, options \\ []) do
     url_path = "/2020-05-31/anycast-ip-list"
@@ -7752,6 +7755,7 @@ defmodule AWS.CloudFront do
   @spec create_cache_policy(map(), create_cache_policy_request(), list()) ::
           {:ok, create_cache_policy_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_cache_policy_errors()}
   def create_cache_policy(%Client{} = client, input, options \\ []) do
     url_path = "/2020-05-31/cache-policy"
@@ -7800,6 +7804,7 @@ defmodule AWS.CloudFront do
         ) ::
           {:ok, create_cloud_front_origin_access_identity_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_cloud_front_origin_access_identity_errors()}
   def create_cloud_front_origin_access_identity(%Client{} = client, input, options \\ []) do
     url_path = "/2020-05-31/origin-access-identity/cloudfront"
@@ -7852,6 +7857,7 @@ defmodule AWS.CloudFront do
         ) ::
           {:ok, create_continuous_deployment_policy_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_continuous_deployment_policy_errors()}
   def create_continuous_deployment_policy(%Client{} = client, input, options \\ []) do
     url_path = "/2020-05-31/continuous-deployment-policy"
@@ -7887,6 +7893,7 @@ defmodule AWS.CloudFront do
   @spec create_distribution(map(), create_distribution_request(), list()) ::
           {:ok, create_distribution_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_distribution_errors()}
   def create_distribution(%Client{} = client, input, options \\ []) do
     url_path = "/2020-05-31/distribution"
@@ -7933,6 +7940,7 @@ defmodule AWS.CloudFront do
   @spec create_distribution_with_tags(map(), create_distribution_with_tags_request(), list()) ::
           {:ok, create_distribution_with_tags_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_distribution_with_tags_errors()}
   def create_distribution_with_tags(%Client{} = client, input, options \\ []) do
     url_path = "/2020-05-31/distribution?WithTags"
@@ -7972,6 +7980,7 @@ defmodule AWS.CloudFront do
         ) ::
           {:ok, create_field_level_encryption_config_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_field_level_encryption_config_errors()}
   def create_field_level_encryption_config(%Client{} = client, input, options \\ []) do
     url_path = "/2020-05-31/field-level-encryption"
@@ -8011,6 +8020,7 @@ defmodule AWS.CloudFront do
         ) ::
           {:ok, create_field_level_encryption_profile_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_field_level_encryption_profile_errors()}
   def create_field_level_encryption_profile(%Client{} = client, input, options \\ []) do
     url_path = "/2020-05-31/field-level-encryption-profile"
@@ -8061,6 +8071,7 @@ defmodule AWS.CloudFront do
   @spec create_function(map(), create_function_request(), list()) ::
           {:ok, create_function_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_function_errors()}
   def create_function(%Client{} = client, input, options \\ []) do
     url_path = "/2020-05-31/function"
@@ -8099,6 +8110,7 @@ defmodule AWS.CloudFront do
   @spec create_invalidation(map(), String.t(), create_invalidation_request(), list()) ::
           {:ok, create_invalidation_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_invalidation_errors()}
   def create_invalidation(%Client{} = client, distribution_id, input, options \\ []) do
     url_path = "/2020-05-31/distribution/#{AWS.Util.encode_uri(distribution_id)}/invalidation"
@@ -8150,6 +8162,7 @@ defmodule AWS.CloudFront do
   @spec create_key_group(map(), create_key_group_request(), list()) ::
           {:ok, create_key_group_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_key_group_errors()}
   def create_key_group(%Client{} = client, input, options \\ []) do
     url_path = "/2020-05-31/key-group"
@@ -8189,6 +8202,7 @@ defmodule AWS.CloudFront do
   @spec create_key_value_store(map(), create_key_value_store_request(), list()) ::
           {:ok, create_key_value_store_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_key_value_store_errors()}
   def create_key_value_store(%Client{} = client, input, options \\ []) do
     url_path = "/2020-05-31/key-value-store"
@@ -8236,6 +8250,7 @@ defmodule AWS.CloudFront do
         ) ::
           {:ok, create_monitoring_subscription_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_monitoring_subscription_errors()}
   def create_monitoring_subscription(%Client{} = client, distribution_id, input, options \\ []) do
     url_path =
@@ -8280,6 +8295,7 @@ defmodule AWS.CloudFront do
   @spec create_origin_access_control(map(), create_origin_access_control_request(), list()) ::
           {:ok, create_origin_access_control_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_origin_access_control_errors()}
   def create_origin_access_control(%Client{} = client, input, options \\ []) do
     url_path = "/2020-05-31/origin-access-control"
@@ -8348,6 +8364,7 @@ defmodule AWS.CloudFront do
   @spec create_origin_request_policy(map(), create_origin_request_policy_request(), list()) ::
           {:ok, create_origin_request_policy_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_origin_request_policy_errors()}
   def create_origin_request_policy(%Client{} = client, input, options \\ []) do
     url_path = "/2020-05-31/origin-request-policy"
@@ -8384,6 +8401,7 @@ defmodule AWS.CloudFront do
   @spec create_public_key(map(), create_public_key_request(), list()) ::
           {:ok, create_public_key_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_public_key_errors()}
   def create_public_key(%Client{} = client, input, options \\ []) do
     url_path = "/2020-05-31/public-key"
@@ -8428,6 +8446,7 @@ defmodule AWS.CloudFront do
   @spec create_realtime_log_config(map(), create_realtime_log_config_request(), list()) ::
           {:ok, create_realtime_log_config_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_realtime_log_config_errors()}
   def create_realtime_log_config(%Client{} = client, input, options \\ []) do
     url_path = "/2020-05-31/realtime-log-config"
@@ -8475,6 +8494,7 @@ defmodule AWS.CloudFront do
   @spec create_response_headers_policy(map(), create_response_headers_policy_request(), list()) ::
           {:ok, create_response_headers_policy_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_response_headers_policy_errors()}
   def create_response_headers_policy(%Client{} = client, input, options \\ []) do
     url_path = "/2020-05-31/response-headers-policy"
@@ -8515,6 +8535,7 @@ defmodule AWS.CloudFront do
   @spec create_streaming_distribution(map(), create_streaming_distribution_request(), list()) ::
           {:ok, create_streaming_distribution_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_streaming_distribution_errors()}
   def create_streaming_distribution(%Client{} = client, input, options \\ []) do
     url_path = "/2020-05-31/streaming-distribution"
@@ -8559,6 +8580,7 @@ defmodule AWS.CloudFront do
         ) ::
           {:ok, create_streaming_distribution_with_tags_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_streaming_distribution_with_tags_errors()}
   def create_streaming_distribution_with_tags(%Client{} = client, input, options \\ []) do
     url_path = "/2020-05-31/streaming-distribution?WithTags"
@@ -8594,6 +8616,7 @@ defmodule AWS.CloudFront do
   @spec create_vpc_origin(map(), create_vpc_origin_request(), list()) ::
           {:ok, create_vpc_origin_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_vpc_origin_errors()}
   def create_vpc_origin(%Client{} = client, input, options \\ []) do
     url_path = "/2020-05-31/vpc-origin"
@@ -8629,6 +8652,7 @@ defmodule AWS.CloudFront do
   @spec delete_anycast_ip_list(map(), String.t(), delete_anycast_ip_list_request(), list()) ::
           {:ok, nil, any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_anycast_ip_list_errors()}
   def delete_anycast_ip_list(%Client{} = client, id, input, options \\ []) do
     url_path = "/2020-05-31/anycast-ip-list/#{AWS.Util.encode_uri(id)}"
@@ -8674,6 +8698,7 @@ defmodule AWS.CloudFront do
   @spec delete_cache_policy(map(), String.t(), delete_cache_policy_request(), list()) ::
           {:ok, nil, any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_cache_policy_errors()}
   def delete_cache_policy(%Client{} = client, id, input, options \\ []) do
     url_path = "/2020-05-31/cache-policy/#{AWS.Util.encode_uri(id)}"
@@ -8713,6 +8738,7 @@ defmodule AWS.CloudFront do
         ) ::
           {:ok, nil, any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_cloud_front_origin_access_identity_errors()}
   def delete_cloud_front_origin_access_identity(%Client{} = client, id, input, options \\ []) do
     url_path = "/2020-05-31/origin-access-identity/cloudfront/#{AWS.Util.encode_uri(id)}"
@@ -8757,6 +8783,7 @@ defmodule AWS.CloudFront do
         ) ::
           {:ok, nil, any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_continuous_deployment_policy_errors()}
   def delete_continuous_deployment_policy(%Client{} = client, id, input, options \\ []) do
     url_path = "/2020-05-31/continuous-deployment-policy/#{AWS.Util.encode_uri(id)}"
@@ -8791,6 +8818,7 @@ defmodule AWS.CloudFront do
   @spec delete_distribution(map(), String.t(), delete_distribution_request(), list()) ::
           {:ok, nil, any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_distribution_errors()}
   def delete_distribution(%Client{} = client, id, input, options \\ []) do
     url_path = "/2020-05-31/distribution/#{AWS.Util.encode_uri(id)}"
@@ -8830,6 +8858,7 @@ defmodule AWS.CloudFront do
         ) ::
           {:ok, nil, any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_field_level_encryption_config_errors()}
   def delete_field_level_encryption_config(%Client{} = client, id, input, options \\ []) do
     url_path = "/2020-05-31/field-level-encryption/#{AWS.Util.encode_uri(id)}"
@@ -8869,6 +8898,7 @@ defmodule AWS.CloudFront do
         ) ::
           {:ok, nil, any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_field_level_encryption_profile_errors()}
   def delete_field_level_encryption_profile(%Client{} = client, id, input, options \\ []) do
     url_path = "/2020-05-31/field-level-encryption-profile/#{AWS.Util.encode_uri(id)}"
@@ -8913,6 +8943,7 @@ defmodule AWS.CloudFront do
   @spec delete_function(map(), String.t(), delete_function_request(), list()) ::
           {:ok, nil, any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_function_errors()}
   def delete_function(%Client{} = client, name, input, options \\ []) do
     url_path = "/2020-05-31/function/#{AWS.Util.encode_uri(name)}"
@@ -8958,6 +8989,7 @@ defmodule AWS.CloudFront do
   @spec delete_key_group(map(), String.t(), delete_key_group_request(), list()) ::
           {:ok, nil, any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_key_group_errors()}
   def delete_key_group(%Client{} = client, id, input, options \\ []) do
     url_path = "/2020-05-31/key-group/#{AWS.Util.encode_uri(id)}"
@@ -8992,6 +9024,7 @@ defmodule AWS.CloudFront do
   @spec delete_key_value_store(map(), String.t(), delete_key_value_store_request(), list()) ::
           {:ok, nil, any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_key_value_store_errors()}
   def delete_key_value_store(%Client{} = client, name, input, options \\ []) do
     url_path = "/2020-05-31/key-value-store/#{AWS.Util.encode_uri(name)}"
@@ -9032,6 +9065,7 @@ defmodule AWS.CloudFront do
         ) ::
           {:ok, delete_monitoring_subscription_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_monitoring_subscription_errors()}
   def delete_monitoring_subscription(%Client{} = client, distribution_id, input, options \\ []) do
     url_path =
@@ -9072,6 +9106,7 @@ defmodule AWS.CloudFront do
         ) ::
           {:ok, nil, any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_origin_access_control_errors()}
   def delete_origin_access_control(%Client{} = client, id, input, options \\ []) do
     url_path = "/2020-05-31/origin-access-control/#{AWS.Util.encode_uri(id)}"
@@ -9121,6 +9156,7 @@ defmodule AWS.CloudFront do
         ) ::
           {:ok, nil, any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_origin_request_policy_errors()}
   def delete_origin_request_policy(%Client{} = client, id, input, options \\ []) do
     url_path = "/2020-05-31/origin-request-policy/#{AWS.Util.encode_uri(id)}"
@@ -9155,6 +9191,7 @@ defmodule AWS.CloudFront do
   @spec delete_public_key(map(), String.t(), delete_public_key_request(), list()) ::
           {:ok, nil, any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_public_key_errors()}
   def delete_public_key(%Client{} = client, id, input, options \\ []) do
     url_path = "/2020-05-31/public-key/#{AWS.Util.encode_uri(id)}"
@@ -9201,6 +9238,7 @@ defmodule AWS.CloudFront do
   @spec delete_realtime_log_config(map(), delete_realtime_log_config_request(), list()) ::
           {:ok, nil, any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_realtime_log_config_errors()}
   def delete_realtime_log_config(%Client{} = client, input, options \\ []) do
     url_path = "/2020-05-31/delete-realtime-log-config"
@@ -9245,6 +9283,7 @@ defmodule AWS.CloudFront do
         ) ::
           {:ok, nil, any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_response_headers_policy_errors()}
   def delete_response_headers_policy(%Client{} = client, id, input, options \\ []) do
     url_path = "/2020-05-31/response-headers-policy/#{AWS.Util.encode_uri(id)}"
@@ -9351,6 +9390,7 @@ defmodule AWS.CloudFront do
         ) ::
           {:ok, nil, any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_streaming_distribution_errors()}
   def delete_streaming_distribution(%Client{} = client, id, input, options \\ []) do
     url_path = "/2020-05-31/streaming-distribution/#{AWS.Util.encode_uri(id)}"
@@ -9385,6 +9425,7 @@ defmodule AWS.CloudFront do
   @spec delete_vpc_origin(map(), String.t(), delete_vpc_origin_request(), list()) ::
           {:ok, delete_vpc_origin_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_vpc_origin_errors()}
   def delete_vpc_origin(%Client{} = client, id, input, options \\ []) do
     url_path = "/2020-05-31/vpc-origin/#{AWS.Util.encode_uri(id)}"
@@ -9435,6 +9476,7 @@ defmodule AWS.CloudFront do
   @spec describe_function(map(), String.t(), String.t() | nil, list()) ::
           {:ok, describe_function_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, describe_function_errors()}
   def describe_function(%Client{} = client, name, stage \\ nil, options \\ []) do
     url_path = "/2020-05-31/function/#{AWS.Util.encode_uri(name)}/describe"
@@ -9466,6 +9508,7 @@ defmodule AWS.CloudFront do
   @spec describe_key_value_store(map(), String.t(), list()) ::
           {:ok, describe_key_value_store_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, describe_key_value_store_errors()}
   def describe_key_value_store(%Client{} = client, name, options \\ []) do
     url_path = "/2020-05-31/key-value-store/#{AWS.Util.encode_uri(name)}"
@@ -9490,6 +9533,7 @@ defmodule AWS.CloudFront do
   @spec get_anycast_ip_list(map(), String.t(), list()) ::
           {:ok, get_anycast_ip_list_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_anycast_ip_list_errors()}
   def get_anycast_ip_list(%Client{} = client, id, options \\ []) do
     url_path = "/2020-05-31/anycast-ip-list/#{AWS.Util.encode_uri(id)}"
@@ -9528,6 +9572,7 @@ defmodule AWS.CloudFront do
   @spec get_cache_policy(map(), String.t(), list()) ::
           {:ok, get_cache_policy_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_cache_policy_errors()}
   def get_cache_policy(%Client{} = client, id, options \\ []) do
     url_path = "/2020-05-31/cache-policy/#{AWS.Util.encode_uri(id)}"
@@ -9561,6 +9606,7 @@ defmodule AWS.CloudFront do
   @spec get_cache_policy_config(map(), String.t(), list()) ::
           {:ok, get_cache_policy_config_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_cache_policy_config_errors()}
   def get_cache_policy_config(%Client{} = client, id, options \\ []) do
     url_path = "/2020-05-31/cache-policy/#{AWS.Util.encode_uri(id)}/config"
@@ -9585,6 +9631,7 @@ defmodule AWS.CloudFront do
   @spec get_cloud_front_origin_access_identity(map(), String.t(), list()) ::
           {:ok, get_cloud_front_origin_access_identity_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_cloud_front_origin_access_identity_errors()}
   def get_cloud_front_origin_access_identity(%Client{} = client, id, options \\ []) do
     url_path = "/2020-05-31/origin-access-identity/cloudfront/#{AWS.Util.encode_uri(id)}"
@@ -9609,6 +9656,7 @@ defmodule AWS.CloudFront do
   @spec get_cloud_front_origin_access_identity_config(map(), String.t(), list()) ::
           {:ok, get_cloud_front_origin_access_identity_config_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_cloud_front_origin_access_identity_config_errors()}
   def get_cloud_front_origin_access_identity_config(%Client{} = client, id, options \\ []) do
     url_path = "/2020-05-31/origin-access-identity/cloudfront/#{AWS.Util.encode_uri(id)}/config"
@@ -9635,6 +9683,7 @@ defmodule AWS.CloudFront do
   @spec get_continuous_deployment_policy(map(), String.t(), list()) ::
           {:ok, get_continuous_deployment_policy_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_continuous_deployment_policy_errors()}
   def get_continuous_deployment_policy(%Client{} = client, id, options \\ []) do
     url_path = "/2020-05-31/continuous-deployment-policy/#{AWS.Util.encode_uri(id)}"
@@ -9659,6 +9708,7 @@ defmodule AWS.CloudFront do
   @spec get_continuous_deployment_policy_config(map(), String.t(), list()) ::
           {:ok, get_continuous_deployment_policy_config_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_continuous_deployment_policy_config_errors()}
   def get_continuous_deployment_policy_config(%Client{} = client, id, options \\ []) do
     url_path = "/2020-05-31/continuous-deployment-policy/#{AWS.Util.encode_uri(id)}/config"
@@ -9683,6 +9733,7 @@ defmodule AWS.CloudFront do
   @spec get_distribution(map(), String.t(), list()) ::
           {:ok, get_distribution_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_distribution_errors()}
   def get_distribution(%Client{} = client, id, options \\ []) do
     url_path = "/2020-05-31/distribution/#{AWS.Util.encode_uri(id)}"
@@ -9707,6 +9758,7 @@ defmodule AWS.CloudFront do
   @spec get_distribution_config(map(), String.t(), list()) ::
           {:ok, get_distribution_config_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_distribution_config_errors()}
   def get_distribution_config(%Client{} = client, id, options \\ []) do
     url_path = "/2020-05-31/distribution/#{AWS.Util.encode_uri(id)}/config"
@@ -9731,6 +9783,7 @@ defmodule AWS.CloudFront do
   @spec get_field_level_encryption(map(), String.t(), list()) ::
           {:ok, get_field_level_encryption_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_field_level_encryption_errors()}
   def get_field_level_encryption(%Client{} = client, id, options \\ []) do
     url_path = "/2020-05-31/field-level-encryption/#{AWS.Util.encode_uri(id)}"
@@ -9755,6 +9808,7 @@ defmodule AWS.CloudFront do
   @spec get_field_level_encryption_config(map(), String.t(), list()) ::
           {:ok, get_field_level_encryption_config_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_field_level_encryption_config_errors()}
   def get_field_level_encryption_config(%Client{} = client, id, options \\ []) do
     url_path = "/2020-05-31/field-level-encryption/#{AWS.Util.encode_uri(id)}/config"
@@ -9779,6 +9833,7 @@ defmodule AWS.CloudFront do
   @spec get_field_level_encryption_profile(map(), String.t(), list()) ::
           {:ok, get_field_level_encryption_profile_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_field_level_encryption_profile_errors()}
   def get_field_level_encryption_profile(%Client{} = client, id, options \\ []) do
     url_path = "/2020-05-31/field-level-encryption-profile/#{AWS.Util.encode_uri(id)}"
@@ -9803,6 +9858,7 @@ defmodule AWS.CloudFront do
   @spec get_field_level_encryption_profile_config(map(), String.t(), list()) ::
           {:ok, get_field_level_encryption_profile_config_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_field_level_encryption_profile_config_errors()}
   def get_field_level_encryption_profile_config(%Client{} = client, id, options \\ []) do
     url_path = "/2020-05-31/field-level-encryption-profile/#{AWS.Util.encode_uri(id)}/config"
@@ -9834,6 +9890,7 @@ defmodule AWS.CloudFront do
   @spec get_function(map(), String.t(), String.t() | nil, list()) ::
           {:ok, get_function_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_function_errors()}
   def get_function(%Client{} = client, name, stage \\ nil, options \\ []) do
     url_path = "/2020-05-31/function/#{AWS.Util.encode_uri(name)}"
@@ -9865,6 +9922,7 @@ defmodule AWS.CloudFront do
   @spec get_invalidation(map(), String.t(), String.t(), list()) ::
           {:ok, get_invalidation_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_invalidation_errors()}
   def get_invalidation(%Client{} = client, distribution_id, id, options \\ []) do
     url_path =
@@ -9893,6 +9951,7 @@ defmodule AWS.CloudFront do
   @spec get_key_group(map(), String.t(), list()) ::
           {:ok, get_key_group_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_key_group_errors()}
   def get_key_group(%Client{} = client, id, options \\ []) do
     url_path = "/2020-05-31/key-group/#{AWS.Util.encode_uri(id)}"
@@ -9926,6 +9985,7 @@ defmodule AWS.CloudFront do
   @spec get_key_group_config(map(), String.t(), list()) ::
           {:ok, get_key_group_config_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_key_group_config_errors()}
   def get_key_group_config(%Client{} = client, id, options \\ []) do
     url_path = "/2020-05-31/key-group/#{AWS.Util.encode_uri(id)}/config"
@@ -9951,6 +10011,7 @@ defmodule AWS.CloudFront do
   @spec get_monitoring_subscription(map(), String.t(), list()) ::
           {:ok, get_monitoring_subscription_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_monitoring_subscription_errors()}
   def get_monitoring_subscription(%Client{} = client, distribution_id, options \\ []) do
     url_path =
@@ -9970,6 +10031,7 @@ defmodule AWS.CloudFront do
   @spec get_origin_access_control(map(), String.t(), list()) ::
           {:ok, get_origin_access_control_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_origin_access_control_errors()}
   def get_origin_access_control(%Client{} = client, id, options \\ []) do
     url_path = "/2020-05-31/origin-access-control/#{AWS.Util.encode_uri(id)}"
@@ -9994,6 +10056,7 @@ defmodule AWS.CloudFront do
   @spec get_origin_access_control_config(map(), String.t(), list()) ::
           {:ok, get_origin_access_control_config_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_origin_access_control_config_errors()}
   def get_origin_access_control_config(%Client{} = client, id, options \\ []) do
     url_path = "/2020-05-31/origin-access-control/#{AWS.Util.encode_uri(id)}/config"
@@ -10033,6 +10096,7 @@ defmodule AWS.CloudFront do
   @spec get_origin_request_policy(map(), String.t(), list()) ::
           {:ok, get_origin_request_policy_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_origin_request_policy_errors()}
   def get_origin_request_policy(%Client{} = client, id, options \\ []) do
     url_path = "/2020-05-31/origin-request-policy/#{AWS.Util.encode_uri(id)}"
@@ -10065,6 +10129,7 @@ defmodule AWS.CloudFront do
   @spec get_origin_request_policy_config(map(), String.t(), list()) ::
           {:ok, get_origin_request_policy_config_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_origin_request_policy_config_errors()}
   def get_origin_request_policy_config(%Client{} = client, id, options \\ []) do
     url_path = "/2020-05-31/origin-request-policy/#{AWS.Util.encode_uri(id)}/config"
@@ -10089,6 +10154,7 @@ defmodule AWS.CloudFront do
   @spec get_public_key(map(), String.t(), list()) ::
           {:ok, get_public_key_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_public_key_errors()}
   def get_public_key(%Client{} = client, id, options \\ []) do
     url_path = "/2020-05-31/public-key/#{AWS.Util.encode_uri(id)}"
@@ -10113,6 +10179,7 @@ defmodule AWS.CloudFront do
   @spec get_public_key_config(map(), String.t(), list()) ::
           {:ok, get_public_key_config_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_public_key_config_errors()}
   def get_public_key_config(%Client{} = client, id, options \\ []) do
     url_path = "/2020-05-31/public-key/#{AWS.Util.encode_uri(id)}/config"
@@ -10143,6 +10210,7 @@ defmodule AWS.CloudFront do
   @spec get_realtime_log_config(map(), get_realtime_log_config_request(), list()) ::
           {:ok, get_realtime_log_config_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_realtime_log_config_errors()}
   def get_realtime_log_config(%Client{} = client, input, options \\ []) do
     url_path = "/2020-05-31/get-realtime-log-config"
@@ -10182,6 +10250,7 @@ defmodule AWS.CloudFront do
   @spec get_response_headers_policy(map(), String.t(), list()) ::
           {:ok, get_response_headers_policy_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_response_headers_policy_errors()}
   def get_response_headers_policy(%Client{} = client, id, options \\ []) do
     url_path = "/2020-05-31/response-headers-policy/#{AWS.Util.encode_uri(id)}"
@@ -10213,6 +10282,7 @@ defmodule AWS.CloudFront do
   @spec get_response_headers_policy_config(map(), String.t(), list()) ::
           {:ok, get_response_headers_policy_config_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_response_headers_policy_config_errors()}
   def get_response_headers_policy_config(%Client{} = client, id, options \\ []) do
     url_path = "/2020-05-31/response-headers-policy/#{AWS.Util.encode_uri(id)}/config"
@@ -10238,6 +10308,7 @@ defmodule AWS.CloudFront do
   @spec get_streaming_distribution(map(), String.t(), list()) ::
           {:ok, get_streaming_distribution_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_streaming_distribution_errors()}
   def get_streaming_distribution(%Client{} = client, id, options \\ []) do
     url_path = "/2020-05-31/streaming-distribution/#{AWS.Util.encode_uri(id)}"
@@ -10262,6 +10333,7 @@ defmodule AWS.CloudFront do
   @spec get_streaming_distribution_config(map(), String.t(), list()) ::
           {:ok, get_streaming_distribution_config_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_streaming_distribution_config_errors()}
   def get_streaming_distribution_config(%Client{} = client, id, options \\ []) do
     url_path = "/2020-05-31/streaming-distribution/#{AWS.Util.encode_uri(id)}/config"
@@ -10286,6 +10358,7 @@ defmodule AWS.CloudFront do
   @spec get_vpc_origin(map(), String.t(), list()) ::
           {:ok, get_vpc_origin_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_vpc_origin_errors()}
   def get_vpc_origin(%Client{} = client, id, options \\ []) do
     url_path = "/2020-05-31/vpc-origin/#{AWS.Util.encode_uri(id)}"
@@ -10310,6 +10383,7 @@ defmodule AWS.CloudFront do
   @spec list_anycast_ip_lists(map(), String.t() | nil, String.t() | nil, list()) ::
           {:ok, list_anycast_ip_lists_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_anycast_ip_lists_errors()}
   def list_anycast_ip_lists(%Client{} = client, marker \\ nil, max_items \\ nil, options \\ []) do
     url_path = "/2020-05-31/anycast-ip-list"
@@ -10354,6 +10428,7 @@ defmodule AWS.CloudFront do
   @spec list_cache_policies(map(), String.t() | nil, String.t() | nil, String.t() | nil, list()) ::
           {:ok, list_cache_policies_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_cache_policies_errors()}
   def list_cache_policies(
         %Client{} = client,
@@ -10403,6 +10478,7 @@ defmodule AWS.CloudFront do
         ) ::
           {:ok, list_cloud_front_origin_access_identities_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_cloud_front_origin_access_identities_errors()}
   def list_cloud_front_origin_access_identities(
         %Client{} = client,
@@ -10482,6 +10558,7 @@ defmodule AWS.CloudFront do
         ) ::
           {:ok, list_conflicting_aliases_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_conflicting_aliases_errors()}
   def list_conflicting_aliases(
         %Client{} = client,
@@ -10544,6 +10621,7 @@ defmodule AWS.CloudFront do
   @spec list_continuous_deployment_policies(map(), String.t() | nil, String.t() | nil, list()) ::
           {:ok, list_continuous_deployment_policies_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_continuous_deployment_policies_errors()}
   def list_continuous_deployment_policies(
         %Client{} = client,
@@ -10580,6 +10658,7 @@ defmodule AWS.CloudFront do
   @spec list_distributions(map(), String.t() | nil, String.t() | nil, list()) ::
           {:ok, list_distributions_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_distributions_errors()}
   def list_distributions(%Client{} = client, marker \\ nil, max_items \\ nil, options \\ []) do
     url_path = "/2020-05-31/distribution"
@@ -10618,6 +10697,7 @@ defmodule AWS.CloudFront do
         ) ::
           {:ok, list_distributions_by_anycast_ip_list_id_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_distributions_by_anycast_ip_list_id_errors()}
   def list_distributions_by_anycast_ip_list_id(
         %Client{} = client,
@@ -10674,6 +10754,7 @@ defmodule AWS.CloudFront do
         ) ::
           {:ok, list_distributions_by_cache_policy_id_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_distributions_by_cache_policy_id_errors()}
   def list_distributions_by_cache_policy_id(
         %Client{} = client,
@@ -10728,6 +10809,7 @@ defmodule AWS.CloudFront do
         ) ::
           {:ok, list_distributions_by_key_group_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_distributions_by_key_group_errors()}
   def list_distributions_by_key_group(
         %Client{} = client,
@@ -10782,6 +10864,7 @@ defmodule AWS.CloudFront do
         ) ::
           {:ok, list_distributions_by_origin_request_policy_id_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_distributions_by_origin_request_policy_id_errors()}
   def list_distributions_by_origin_request_policy_id(
         %Client{} = client,
@@ -10842,6 +10925,7 @@ defmodule AWS.CloudFront do
         ) ::
           {:ok, list_distributions_by_realtime_log_config_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_distributions_by_realtime_log_config_errors()}
   def list_distributions_by_realtime_log_config(%Client{} = client, input, options \\ []) do
     url_path = "/2020-05-31/distributionsByRealtimeLogConfig"
@@ -10887,6 +10971,7 @@ defmodule AWS.CloudFront do
         ) ::
           {:ok, list_distributions_by_response_headers_policy_id_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_distributions_by_response_headers_policy_id_errors()}
   def list_distributions_by_response_headers_policy_id(
         %Client{} = client,
@@ -10932,6 +11017,7 @@ defmodule AWS.CloudFront do
         ) ::
           {:ok, list_distributions_by_vpc_origin_id_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_distributions_by_vpc_origin_id_errors()}
   def list_distributions_by_vpc_origin_id(
         %Client{} = client,
@@ -10975,6 +11061,7 @@ defmodule AWS.CloudFront do
         ) ::
           {:ok, list_distributions_by_web_acl_id_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_distributions_by_web_acl_id_errors()}
   def list_distributions_by_web_acl_id(
         %Client{} = client,
@@ -11014,6 +11101,7 @@ defmodule AWS.CloudFront do
   @spec list_field_level_encryption_configs(map(), String.t() | nil, String.t() | nil, list()) ::
           {:ok, list_field_level_encryption_configs_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_field_level_encryption_configs_errors()}
   def list_field_level_encryption_configs(
         %Client{} = client,
@@ -11052,6 +11140,7 @@ defmodule AWS.CloudFront do
   @spec list_field_level_encryption_profiles(map(), String.t() | nil, String.t() | nil, list()) ::
           {:ok, list_field_level_encryption_profiles_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_field_level_encryption_profiles_errors()}
   def list_field_level_encryption_profiles(
         %Client{} = client,
@@ -11100,6 +11189,7 @@ defmodule AWS.CloudFront do
   @spec list_functions(map(), String.t() | nil, String.t() | nil, String.t() | nil, list()) ::
           {:ok, list_functions_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_functions_errors()}
   def list_functions(
         %Client{} = client,
@@ -11144,6 +11234,7 @@ defmodule AWS.CloudFront do
   @spec list_invalidations(map(), String.t(), String.t() | nil, String.t() | nil, list()) ::
           {:ok, list_invalidations_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_invalidations_errors()}
   def list_invalidations(
         %Client{} = client,
@@ -11190,6 +11281,7 @@ defmodule AWS.CloudFront do
   @spec list_key_groups(map(), String.t() | nil, String.t() | nil, list()) ::
           {:ok, list_key_groups_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_key_groups_errors()}
   def list_key_groups(%Client{} = client, marker \\ nil, max_items \\ nil, options \\ []) do
     url_path = "/2020-05-31/key-group"
@@ -11221,6 +11313,7 @@ defmodule AWS.CloudFront do
   @spec list_key_value_stores(map(), String.t() | nil, String.t() | nil, String.t() | nil, list()) ::
           {:ok, list_key_value_stores_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_key_value_stores_errors()}
   def list_key_value_stores(
         %Client{} = client,
@@ -11280,6 +11373,7 @@ defmodule AWS.CloudFront do
   @spec list_origin_access_controls(map(), String.t() | nil, String.t() | nil, list()) ::
           {:ok, list_origin_access_controls_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_origin_access_controls_errors()}
   def list_origin_access_controls(
         %Client{} = client,
@@ -11335,6 +11429,7 @@ defmodule AWS.CloudFront do
         ) ::
           {:ok, list_origin_request_policies_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_origin_request_policies_errors()}
   def list_origin_request_policies(
         %Client{} = client,
@@ -11379,6 +11474,7 @@ defmodule AWS.CloudFront do
   @spec list_public_keys(map(), String.t() | nil, String.t() | nil, list()) ::
           {:ok, list_public_keys_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_public_keys_errors()}
   def list_public_keys(%Client{} = client, marker \\ nil, max_items \\ nil, options \\ []) do
     url_path = "/2020-05-31/public-key"
@@ -11419,6 +11515,7 @@ defmodule AWS.CloudFront do
   @spec list_realtime_log_configs(map(), String.t() | nil, String.t() | nil, list()) ::
           {:ok, list_realtime_log_configs_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_realtime_log_configs_errors()}
   def list_realtime_log_configs(
         %Client{} = client,
@@ -11474,6 +11571,7 @@ defmodule AWS.CloudFront do
         ) ::
           {:ok, list_response_headers_policies_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_response_headers_policies_errors()}
   def list_response_headers_policies(
         %Client{} = client,
@@ -11518,6 +11616,7 @@ defmodule AWS.CloudFront do
   @spec list_streaming_distributions(map(), String.t() | nil, String.t() | nil, list()) ::
           {:ok, list_streaming_distributions_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_streaming_distributions_errors()}
   def list_streaming_distributions(
         %Client{} = client,
@@ -11557,6 +11656,7 @@ defmodule AWS.CloudFront do
   @spec list_tags_for_resource(map(), String.t(), list()) ::
           {:ok, list_tags_for_resource_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_tags_for_resource_errors()}
   def list_tags_for_resource(%Client{} = client, resource, options \\ []) do
     url_path = "/2020-05-31/tagging"
@@ -11581,6 +11681,7 @@ defmodule AWS.CloudFront do
   @spec list_vpc_origins(map(), String.t() | nil, String.t() | nil, list()) ::
           {:ok, list_vpc_origins_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_vpc_origins_errors()}
   def list_vpc_origins(%Client{} = client, marker \\ nil, max_items \\ nil, options \\ []) do
     url_path = "/2020-05-31/vpc-origin"
@@ -11627,6 +11728,7 @@ defmodule AWS.CloudFront do
   @spec publish_function(map(), String.t(), publish_function_request(), list()) ::
           {:ok, publish_function_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, publish_function_errors()}
   def publish_function(%Client{} = client, name, input, options \\ []) do
     url_path = "/2020-05-31/function/#{AWS.Util.encode_uri(name)}/publish"
@@ -11664,6 +11766,7 @@ defmodule AWS.CloudFront do
   @spec tag_resource(map(), tag_resource_request(), list()) ::
           {:ok, nil, any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, tag_resource_errors()}
   def tag_resource(%Client{} = client, input, options \\ []) do
     url_path = "/2020-05-31/tagging?Operation=Tag"
@@ -11713,6 +11816,7 @@ defmodule AWS.CloudFront do
   @spec test_function(map(), String.t(), test_function_request(), list()) ::
           {:ok, test_function_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, test_function_errors()}
   def test_function(%Client{} = client, name, input, options \\ []) do
     url_path = "/2020-05-31/function/#{AWS.Util.encode_uri(name)}/test"
@@ -11750,6 +11854,7 @@ defmodule AWS.CloudFront do
   @spec untag_resource(map(), untag_resource_request(), list()) ::
           {:ok, nil, any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, untag_resource_errors()}
   def untag_resource(%Client{} = client, input, options \\ []) do
     url_path = "/2020-05-31/tagging?Operation=Untag"
@@ -11801,6 +11906,7 @@ defmodule AWS.CloudFront do
   @spec update_cache_policy(map(), String.t(), update_cache_policy_request(), list()) ::
           {:ok, update_cache_policy_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_cache_policy_errors()}
   def update_cache_policy(%Client{} = client, id, input, options \\ []) do
     url_path = "/2020-05-31/cache-policy/#{AWS.Util.encode_uri(id)}"
@@ -11847,6 +11953,7 @@ defmodule AWS.CloudFront do
         ) ::
           {:ok, update_cloud_front_origin_access_identity_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_cloud_front_origin_access_identity_errors()}
   def update_cloud_front_origin_access_identity(%Client{} = client, id, input, options \\ []) do
     url_path = "/2020-05-31/origin-access-identity/cloudfront/#{AWS.Util.encode_uri(id)}/config"
@@ -11918,6 +12025,7 @@ defmodule AWS.CloudFront do
         ) ::
           {:ok, update_continuous_deployment_policy_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_continuous_deployment_policy_errors()}
   def update_continuous_deployment_policy(%Client{} = client, id, input, options \\ []) do
     url_path = "/2020-05-31/continuous-deployment-policy/#{AWS.Util.encode_uri(id)}"
@@ -11990,6 +12098,7 @@ defmodule AWS.CloudFront do
   @spec update_distribution(map(), String.t(), update_distribution_request(), list()) ::
           {:ok, update_distribution_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_distribution_errors()}
   def update_distribution(%Client{} = client, id, input, options \\ []) do
     url_path = "/2020-05-31/distribution/#{AWS.Util.encode_uri(id)}/config"
@@ -12065,6 +12174,7 @@ defmodule AWS.CloudFront do
         ) ::
           {:ok, update_distribution_with_staging_config_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_distribution_with_staging_config_errors()}
   def update_distribution_with_staging_config(%Client{} = client, id, input, options \\ []) do
     url_path = "/2020-05-31/distribution/#{AWS.Util.encode_uri(id)}/promote-staging-config"
@@ -12116,6 +12226,7 @@ defmodule AWS.CloudFront do
         ) ::
           {:ok, update_field_level_encryption_config_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_field_level_encryption_config_errors()}
   def update_field_level_encryption_config(%Client{} = client, id, input, options \\ []) do
     url_path = "/2020-05-31/field-level-encryption/#{AWS.Util.encode_uri(id)}/config"
@@ -12162,6 +12273,7 @@ defmodule AWS.CloudFront do
         ) ::
           {:ok, update_field_level_encryption_profile_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_field_level_encryption_profile_errors()}
   def update_field_level_encryption_profile(%Client{} = client, id, input, options \\ []) do
     url_path = "/2020-05-31/field-level-encryption-profile/#{AWS.Util.encode_uri(id)}/config"
@@ -12211,6 +12323,7 @@ defmodule AWS.CloudFront do
   @spec update_function(map(), String.t(), update_function_request(), list()) ::
           {:ok, update_function_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_function_errors()}
   def update_function(%Client{} = client, name, input, options \\ []) do
     url_path = "/2020-05-31/function/#{AWS.Util.encode_uri(name)}"
@@ -12270,6 +12383,7 @@ defmodule AWS.CloudFront do
   @spec update_key_group(map(), String.t(), update_key_group_request(), list()) ::
           {:ok, update_key_group_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_key_group_errors()}
   def update_key_group(%Client{} = client, id, input, options \\ []) do
     url_path = "/2020-05-31/key-group/#{AWS.Util.encode_uri(id)}"
@@ -12311,6 +12425,7 @@ defmodule AWS.CloudFront do
   @spec update_key_value_store(map(), String.t(), update_key_value_store_request(), list()) ::
           {:ok, update_key_value_store_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_key_value_store_errors()}
   def update_key_value_store(%Client{} = client, name, input, options \\ []) do
     url_path = "/2020-05-31/key-value-store/#{AWS.Util.encode_uri(name)}"
@@ -12357,6 +12472,7 @@ defmodule AWS.CloudFront do
         ) ::
           {:ok, update_origin_access_control_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_origin_access_control_errors()}
   def update_origin_access_control(%Client{} = client, id, input, options \\ []) do
     url_path = "/2020-05-31/origin-access-control/#{AWS.Util.encode_uri(id)}/config"
@@ -12422,6 +12538,7 @@ defmodule AWS.CloudFront do
         ) ::
           {:ok, update_origin_request_policy_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_origin_request_policy_errors()}
   def update_origin_request_policy(%Client{} = client, id, input, options \\ []) do
     url_path = "/2020-05-31/origin-request-policy/#{AWS.Util.encode_uri(id)}"
@@ -12466,6 +12583,7 @@ defmodule AWS.CloudFront do
   @spec update_public_key(map(), String.t(), update_public_key_request(), list()) ::
           {:ok, update_public_key_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_public_key_errors()}
   def update_public_key(%Client{} = client, id, input, options \\ []) do
     url_path = "/2020-05-31/public-key/#{AWS.Util.encode_uri(id)}/config"
@@ -12529,6 +12647,7 @@ defmodule AWS.CloudFront do
   @spec update_realtime_log_config(map(), update_realtime_log_config_request(), list()) ::
           {:ok, update_realtime_log_config_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_realtime_log_config_errors()}
   def update_realtime_log_config(%Client{} = client, input, options \\ []) do
     url_path = "/2020-05-31/realtime-log-config"
@@ -12581,6 +12700,7 @@ defmodule AWS.CloudFront do
         ) ::
           {:ok, update_response_headers_policy_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_response_headers_policy_errors()}
   def update_response_headers_policy(%Client{} = client, id, input, options \\ []) do
     url_path = "/2020-05-31/response-headers-policy/#{AWS.Util.encode_uri(id)}"
@@ -12627,6 +12747,7 @@ defmodule AWS.CloudFront do
         ) ::
           {:ok, update_streaming_distribution_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_streaming_distribution_errors()}
   def update_streaming_distribution(%Client{} = client, id, input, options \\ []) do
     url_path = "/2020-05-31/streaming-distribution/#{AWS.Util.encode_uri(id)}/config"
@@ -12668,6 +12789,7 @@ defmodule AWS.CloudFront do
   @spec update_vpc_origin(map(), String.t(), update_vpc_origin_request(), list()) ::
           {:ok, update_vpc_origin_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_vpc_origin_errors()}
   def update_vpc_origin(%Client{} = client, id, input, options \\ []) do
     url_path = "/2020-05-31/vpc-origin/#{AWS.Util.encode_uri(id)}"

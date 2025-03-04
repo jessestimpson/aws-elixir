@@ -3772,6 +3772,7 @@ defmodule AWS.S3Control do
         ) ::
           {:ok, nil, any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def associate_access_grants_identity_center(%Client{} = client, input, options \\ []) do
     url_path = "/v20180820/accessgrantsinstance/identitycenter"
 
@@ -3827,6 +3828,7 @@ defmodule AWS.S3Control do
   @spec create_access_grant(map(), create_access_grant_request(), list()) ::
           {:ok, create_access_grant_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def create_access_grant(%Client{} = client, input, options \\ []) do
     url_path = "/v20180820/accessgrantsinstance/grant"
 
@@ -3877,6 +3879,7 @@ defmodule AWS.S3Control do
   @spec create_access_grants_instance(map(), create_access_grants_instance_request(), list()) ::
           {:ok, create_access_grants_instance_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def create_access_grants_instance(%Client{} = client, input, options \\ []) do
     url_path = "/v20180820/accessgrantsinstance"
 
@@ -3941,6 +3944,7 @@ defmodule AWS.S3Control do
   @spec create_access_grants_location(map(), create_access_grants_location_request(), list()) ::
           {:ok, create_access_grants_location_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def create_access_grants_location(%Client{} = client, input, options \\ []) do
     url_path = "/v20180820/accessgrantsinstance/location"
 
@@ -4011,6 +4015,7 @@ defmodule AWS.S3Control do
   @spec create_access_point(map(), String.t(), create_access_point_request(), list()) ::
           {:ok, create_access_point_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def create_access_point(%Client{} = client, name, input, options \\ []) do
     url_path = "/v20180820/accesspoint/#{AWS.Util.encode_uri(name)}"
 
@@ -4070,6 +4075,7 @@ defmodule AWS.S3Control do
         ) ::
           {:ok, create_access_point_for_object_lambda_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def create_access_point_for_object_lambda(%Client{} = client, name, input, options \\ []) do
     url_path = "/v20180820/accesspointforobjectlambda/#{AWS.Util.encode_uri(name)}"
 
@@ -4160,6 +4166,7 @@ defmodule AWS.S3Control do
   @spec create_bucket(map(), String.t(), create_bucket_request(), list()) ::
           {:ok, create_bucket_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_bucket_errors()}
   def create_bucket(%Client{} = client, bucket, input, options \\ []) do
     url_path = "/v20180820/bucket/#{AWS.Util.encode_uri(bucket)}"
@@ -4246,6 +4253,7 @@ defmodule AWS.S3Control do
   @spec create_job(map(), create_job_request(), list()) ::
           {:ok, create_job_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_job_errors()}
   def create_job(%Client{} = client, input, options \\ []) do
     url_path = "/v20180820/jobs"
@@ -4322,6 +4330,7 @@ defmodule AWS.S3Control do
         ) ::
           {:ok, create_multi_region_access_point_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def create_multi_region_access_point(%Client{} = client, input, options \\ []) do
     url_path = "/v20180820/async-requests/mrap/create"
 
@@ -4375,6 +4384,7 @@ defmodule AWS.S3Control do
   @spec create_storage_lens_group(map(), create_storage_lens_group_request(), list()) ::
           {:ok, nil, any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def create_storage_lens_group(%Client{} = client, input, options \\ []) do
     url_path = "/v20180820/storagelensgroup"
 
@@ -4417,6 +4427,7 @@ defmodule AWS.S3Control do
   @spec delete_access_grant(map(), String.t(), delete_access_grant_request(), list()) ::
           {:ok, nil, any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def delete_access_grant(%Client{} = client, access_grant_id, input, options \\ []) do
     url_path = "/v20180820/accessgrantsinstance/grant/#{AWS.Util.encode_uri(access_grant_id)}"
 
@@ -4468,6 +4479,7 @@ defmodule AWS.S3Control do
   @spec delete_access_grants_instance(map(), delete_access_grants_instance_request(), list()) ::
           {:ok, nil, any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def delete_access_grants_instance(%Client{} = client, input, options \\ []) do
     url_path = "/v20180820/accessgrantsinstance"
 
@@ -4516,6 +4528,7 @@ defmodule AWS.S3Control do
         ) ::
           {:ok, nil, any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def delete_access_grants_instance_resource_policy(%Client{} = client, input, options \\ []) do
     url_path = "/v20180820/accessgrantsinstance/resourcepolicy"
 
@@ -4567,6 +4580,7 @@ defmodule AWS.S3Control do
         ) ::
           {:ok, nil, any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def delete_access_grants_location(
         %Client{} = client,
         access_grants_location_id,
@@ -4631,6 +4645,7 @@ defmodule AWS.S3Control do
   @spec delete_access_point(map(), String.t(), delete_access_point_request(), list()) ::
           {:ok, nil, any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def delete_access_point(%Client{} = client, name, input, options \\ []) do
     url_path = "/v20180820/accesspoint/#{AWS.Util.encode_uri(name)}"
 
@@ -4687,6 +4702,7 @@ defmodule AWS.S3Control do
         ) ::
           {:ok, nil, any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def delete_access_point_for_object_lambda(%Client{} = client, name, input, options \\ []) do
     url_path = "/v20180820/accesspointforobjectlambda/#{AWS.Util.encode_uri(name)}"
 
@@ -4746,6 +4762,7 @@ defmodule AWS.S3Control do
         ) ::
           {:ok, nil, any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def delete_access_point_policy(%Client{} = client, name, input, options \\ []) do
     url_path = "/v20180820/accesspoint/#{AWS.Util.encode_uri(name)}/policy"
 
@@ -4798,6 +4815,7 @@ defmodule AWS.S3Control do
         ) ::
           {:ok, nil, any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def delete_access_point_policy_for_object_lambda(%Client{} = client, name, input, options \\ []) do
     url_path = "/v20180820/accesspointforobjectlambda/#{AWS.Util.encode_uri(name)}/policy"
 
@@ -4866,6 +4884,7 @@ defmodule AWS.S3Control do
   @spec delete_bucket(map(), String.t(), delete_bucket_request(), list()) ::
           {:ok, nil, any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def delete_bucket(%Client{} = client, bucket, input, options \\ []) do
     url_path = "/v20180820/bucket/#{AWS.Util.encode_uri(bucket)}"
 
@@ -4948,6 +4967,7 @@ defmodule AWS.S3Control do
         ) ::
           {:ok, nil, any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def delete_bucket_lifecycle_configuration(%Client{} = client, bucket, input, options \\ []) do
     url_path = "/v20180820/bucket/#{AWS.Util.encode_uri(bucket)}/lifecycleconfiguration"
 
@@ -5043,6 +5063,7 @@ defmodule AWS.S3Control do
   @spec delete_bucket_policy(map(), String.t(), delete_bucket_policy_request(), list()) ::
           {:ok, nil, any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def delete_bucket_policy(%Client{} = client, bucket, input, options \\ []) do
     url_path = "/v20180820/bucket/#{AWS.Util.encode_uri(bucket)}/policy"
 
@@ -5127,6 +5148,7 @@ defmodule AWS.S3Control do
   @spec delete_bucket_replication(map(), String.t(), delete_bucket_replication_request(), list()) ::
           {:ok, nil, any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def delete_bucket_replication(%Client{} = client, bucket, input, options \\ []) do
     url_path = "/v20180820/bucket/#{AWS.Util.encode_uri(bucket)}/replication"
 
@@ -5192,6 +5214,7 @@ defmodule AWS.S3Control do
   @spec delete_bucket_tagging(map(), String.t(), delete_bucket_tagging_request(), list()) ::
           {:ok, nil, any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def delete_bucket_tagging(%Client{} = client, bucket, input, options \\ []) do
     url_path = "/v20180820/bucket/#{AWS.Util.encode_uri(bucket)}/tagging"
 
@@ -5250,6 +5273,7 @@ defmodule AWS.S3Control do
   @spec delete_job_tagging(map(), String.t(), delete_job_tagging_request(), list()) ::
           {:ok, delete_job_tagging_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_job_tagging_errors()}
   def delete_job_tagging(%Client{} = client, job_id, input, options \\ []) do
     url_path = "/v20180820/jobs/#{AWS.Util.encode_uri(job_id)}/tagging"
@@ -5325,6 +5349,7 @@ defmodule AWS.S3Control do
         ) ::
           {:ok, delete_multi_region_access_point_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def delete_multi_region_access_point(%Client{} = client, input, options \\ []) do
     url_path = "/v20180820/async-requests/mrap/delete"
 
@@ -5374,6 +5399,7 @@ defmodule AWS.S3Control do
   @spec delete_public_access_block(map(), delete_public_access_block_request(), list()) ::
           {:ok, nil, any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def delete_public_access_block(%Client{} = client, input, options \\ []) do
     url_path = "/v20180820/configuration/publicAccessBlock"
 
@@ -5424,6 +5450,7 @@ defmodule AWS.S3Control do
         ) ::
           {:ok, nil, any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def delete_storage_lens_configuration(%Client{} = client, config_id, input, options \\ []) do
     url_path = "/v20180820/storagelens/#{AWS.Util.encode_uri(config_id)}"
 
@@ -5475,6 +5502,7 @@ defmodule AWS.S3Control do
         ) ::
           {:ok, delete_storage_lens_configuration_tagging_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def delete_storage_lens_configuration_tagging(
         %Client{} = client,
         config_id,
@@ -5522,6 +5550,7 @@ defmodule AWS.S3Control do
   @spec delete_storage_lens_group(map(), String.t(), delete_storage_lens_group_request(), list()) ::
           {:ok, nil, any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def delete_storage_lens_group(%Client{} = client, name, input, options \\ []) do
     url_path = "/v20180820/storagelensgroup/#{AWS.Util.encode_uri(name)}"
 
@@ -5584,6 +5613,7 @@ defmodule AWS.S3Control do
   @spec describe_job(map(), String.t(), String.t(), list()) ::
           {:ok, describe_job_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, describe_job_errors()}
   def describe_job(%Client{} = client, job_id, account_id, options \\ []) do
     url_path = "/v20180820/jobs/#{AWS.Util.encode_uri(job_id)}"
@@ -5634,6 +5664,7 @@ defmodule AWS.S3Control do
   @spec describe_multi_region_access_point_operation(map(), String.t(), String.t(), list()) ::
           {:ok, describe_multi_region_access_point_operation_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def describe_multi_region_access_point_operation(
         %Client{} = client,
         request_token_arn,
@@ -5681,6 +5712,7 @@ defmodule AWS.S3Control do
         ) ::
           {:ok, nil, any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def dissociate_access_grants_identity_center(%Client{} = client, input, options \\ []) do
     url_path = "/v20180820/accessgrantsinstance/identitycenter"
 
@@ -5720,6 +5752,7 @@ defmodule AWS.S3Control do
   @spec get_access_grant(map(), String.t(), String.t(), list()) ::
           {:ok, get_access_grant_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def get_access_grant(%Client{} = client, access_grant_id, account_id, options \\ []) do
     url_path = "/v20180820/accessgrantsinstance/grant/#{AWS.Util.encode_uri(access_grant_id)}"
     headers = []
@@ -5753,6 +5786,7 @@ defmodule AWS.S3Control do
   @spec get_access_grants_instance(map(), String.t(), list()) ::
           {:ok, get_access_grants_instance_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def get_access_grants_instance(%Client{} = client, account_id, options \\ []) do
     url_path = "/v20180820/accessgrantsinstance"
     headers = []
@@ -5789,6 +5823,7 @@ defmodule AWS.S3Control do
   @spec get_access_grants_instance_for_prefix(map(), String.t(), String.t(), list()) ::
           {:ok, get_access_grants_instance_for_prefix_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def get_access_grants_instance_for_prefix(
         %Client{} = client,
         s3_prefix,
@@ -5832,6 +5867,7 @@ defmodule AWS.S3Control do
   @spec get_access_grants_instance_resource_policy(map(), String.t(), list()) ::
           {:ok, get_access_grants_instance_resource_policy_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def get_access_grants_instance_resource_policy(%Client{} = client, account_id, options \\ []) do
     url_path = "/v20180820/accessgrantsinstance/resourcepolicy"
     headers = []
@@ -5863,6 +5899,7 @@ defmodule AWS.S3Control do
   @spec get_access_grants_location(map(), String.t(), String.t(), list()) ::
           {:ok, get_access_grants_location_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def get_access_grants_location(
         %Client{} = client,
         access_grants_location_id,
@@ -5919,6 +5956,7 @@ defmodule AWS.S3Control do
   @spec get_access_point(map(), String.t(), String.t(), list()) ::
           {:ok, get_access_point_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def get_access_point(%Client{} = client, name, account_id, options \\ []) do
     url_path = "/v20180820/accesspoint/#{AWS.Util.encode_uri(name)}"
     headers = []
@@ -5953,6 +5991,7 @@ defmodule AWS.S3Control do
   @spec get_access_point_configuration_for_object_lambda(map(), String.t(), String.t(), list()) ::
           {:ok, get_access_point_configuration_for_object_lambda_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def get_access_point_configuration_for_object_lambda(
         %Client{} = client,
         name,
@@ -5999,6 +6038,7 @@ defmodule AWS.S3Control do
   @spec get_access_point_for_object_lambda(map(), String.t(), String.t(), list()) ::
           {:ok, get_access_point_for_object_lambda_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def get_access_point_for_object_lambda(%Client{} = client, name, account_id, options \\ []) do
     url_path = "/v20180820/accesspointforobjectlambda/#{AWS.Util.encode_uri(name)}"
     headers = []
@@ -6036,6 +6076,7 @@ defmodule AWS.S3Control do
   @spec get_access_point_policy(map(), String.t(), String.t(), list()) ::
           {:ok, get_access_point_policy_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def get_access_point_policy(%Client{} = client, name, account_id, options \\ []) do
     url_path = "/v20180820/accesspoint/#{AWS.Util.encode_uri(name)}/policy"
     headers = []
@@ -6074,6 +6115,7 @@ defmodule AWS.S3Control do
   @spec get_access_point_policy_for_object_lambda(map(), String.t(), String.t(), list()) ::
           {:ok, get_access_point_policy_for_object_lambda_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def get_access_point_policy_for_object_lambda(
         %Client{} = client,
         name,
@@ -6111,6 +6153,7 @@ defmodule AWS.S3Control do
   @spec get_access_point_policy_status(map(), String.t(), String.t(), list()) ::
           {:ok, get_access_point_policy_status_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def get_access_point_policy_status(%Client{} = client, name, account_id, options \\ []) do
     url_path = "/v20180820/accesspoint/#{AWS.Util.encode_uri(name)}/policyStatus"
     headers = []
@@ -6139,6 +6182,7 @@ defmodule AWS.S3Control do
   @spec get_access_point_policy_status_for_object_lambda(map(), String.t(), String.t(), list()) ::
           {:ok, get_access_point_policy_status_for_object_lambda_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def get_access_point_policy_status_for_object_lambda(
         %Client{} = client,
         name,
@@ -6213,6 +6257,7 @@ defmodule AWS.S3Control do
   @spec get_bucket(map(), String.t(), String.t(), list()) ::
           {:ok, get_bucket_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def get_bucket(%Client{} = client, bucket, account_id, options \\ []) do
     url_path = "/v20180820/bucket/#{AWS.Util.encode_uri(bucket)}"
     headers = []
@@ -6292,6 +6337,7 @@ defmodule AWS.S3Control do
   @spec get_bucket_lifecycle_configuration(map(), String.t(), String.t(), list()) ::
           {:ok, get_bucket_lifecycle_configuration_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def get_bucket_lifecycle_configuration(%Client{} = client, bucket, account_id, options \\ []) do
     url_path = "/v20180820/bucket/#{AWS.Util.encode_uri(bucket)}/lifecycleconfiguration"
     headers = []
@@ -6371,6 +6417,7 @@ defmodule AWS.S3Control do
   @spec get_bucket_policy(map(), String.t(), String.t(), list()) ::
           {:ok, get_bucket_policy_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def get_bucket_policy(%Client{} = client, bucket, account_id, options \\ []) do
     url_path = "/v20180820/bucket/#{AWS.Util.encode_uri(bucket)}/policy"
     headers = []
@@ -6455,6 +6502,7 @@ defmodule AWS.S3Control do
   @spec get_bucket_replication(map(), String.t(), String.t(), list()) ::
           {:ok, get_bucket_replication_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def get_bucket_replication(%Client{} = client, bucket, account_id, options \\ []) do
     url_path = "/v20180820/bucket/#{AWS.Util.encode_uri(bucket)}/replication"
     headers = []
@@ -6520,6 +6568,7 @@ defmodule AWS.S3Control do
   @spec get_bucket_tagging(map(), String.t(), String.t(), list()) ::
           {:ok, get_bucket_tagging_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def get_bucket_tagging(%Client{} = client, bucket, account_id, options \\ []) do
     url_path = "/v20180820/bucket/#{AWS.Util.encode_uri(bucket)}/tagging"
     headers = []
@@ -6592,6 +6641,7 @@ defmodule AWS.S3Control do
   @spec get_bucket_versioning(map(), String.t(), String.t(), list()) ::
           {:ok, get_bucket_versioning_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def get_bucket_versioning(%Client{} = client, bucket, account_id, options \\ []) do
     url_path = "/v20180820/bucket/#{AWS.Util.encode_uri(bucket)}/versioning"
     headers = []
@@ -6642,6 +6692,7 @@ defmodule AWS.S3Control do
         ) ::
           {:ok, get_data_access_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def get_data_access(
         %Client{} = client,
         duration_seconds \\ nil,
@@ -6735,6 +6786,7 @@ defmodule AWS.S3Control do
   @spec get_job_tagging(map(), String.t(), String.t(), list()) ::
           {:ok, get_job_tagging_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_job_tagging_errors()}
   def get_job_tagging(%Client{} = client, job_id, account_id, options \\ []) do
     url_path = "/v20180820/jobs/#{AWS.Util.encode_uri(job_id)}/tagging"
@@ -6788,6 +6840,7 @@ defmodule AWS.S3Control do
   @spec get_multi_region_access_point(map(), String.t(), String.t(), list()) ::
           {:ok, get_multi_region_access_point_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def get_multi_region_access_point(%Client{} = client, name, account_id, options \\ []) do
     url_path = "/v20180820/mrap/instances/#{AWS.Util.encode_multi_segment_uri(name)}"
     headers = []
@@ -6833,6 +6886,7 @@ defmodule AWS.S3Control do
   @spec get_multi_region_access_point_policy(map(), String.t(), String.t(), list()) ::
           {:ok, get_multi_region_access_point_policy_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def get_multi_region_access_point_policy(%Client{} = client, name, account_id, options \\ []) do
     url_path = "/v20180820/mrap/instances/#{AWS.Util.encode_multi_segment_uri(name)}/policy"
     headers = []
@@ -6880,6 +6934,7 @@ defmodule AWS.S3Control do
   @spec get_multi_region_access_point_policy_status(map(), String.t(), String.t(), list()) ::
           {:ok, get_multi_region_access_point_policy_status_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def get_multi_region_access_point_policy_status(
         %Client{} = client,
         name,
@@ -6938,6 +6993,7 @@ defmodule AWS.S3Control do
   @spec get_multi_region_access_point_routes(map(), String.t(), String.t(), list()) ::
           {:ok, get_multi_region_access_point_routes_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def get_multi_region_access_point_routes(%Client{} = client, mrap, account_id, options \\ []) do
     url_path = "/v20180820/mrap/instances/#{AWS.Util.encode_multi_segment_uri(mrap)}/routes"
     headers = []
@@ -6978,6 +7034,7 @@ defmodule AWS.S3Control do
   @spec get_public_access_block(map(), String.t(), list()) ::
           {:ok, get_public_access_block_output(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_public_access_block_errors()}
   def get_public_access_block(%Client{} = client, account_id, options \\ []) do
     url_path = "/v20180820/configuration/publicAccessBlock"
@@ -7017,6 +7074,7 @@ defmodule AWS.S3Control do
   @spec get_storage_lens_configuration(map(), String.t(), String.t(), list()) ::
           {:ok, get_storage_lens_configuration_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def get_storage_lens_configuration(%Client{} = client, config_id, account_id, options \\ []) do
     url_path = "/v20180820/storagelens/#{AWS.Util.encode_uri(config_id)}"
     headers = []
@@ -7054,6 +7112,7 @@ defmodule AWS.S3Control do
   @spec get_storage_lens_configuration_tagging(map(), String.t(), String.t(), list()) ::
           {:ok, get_storage_lens_configuration_tagging_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def get_storage_lens_configuration_tagging(
         %Client{} = client,
         config_id,
@@ -7092,6 +7151,7 @@ defmodule AWS.S3Control do
   @spec get_storage_lens_group(map(), String.t(), String.t(), list()) ::
           {:ok, get_storage_lens_group_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def get_storage_lens_group(%Client{} = client, name, account_id, options \\ []) do
     url_path = "/v20180820/storagelensgroup/#{AWS.Util.encode_uri(name)}"
     headers = []
@@ -7133,6 +7193,7 @@ defmodule AWS.S3Control do
         ) ::
           {:ok, list_access_grants_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def list_access_grants(
         %Client{} = client,
         application_arn \\ nil,
@@ -7234,6 +7295,7 @@ defmodule AWS.S3Control do
         ) ::
           {:ok, list_access_grants_instances_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def list_access_grants_instances(
         %Client{} = client,
         max_results \\ nil,
@@ -7292,6 +7354,7 @@ defmodule AWS.S3Control do
         ) ::
           {:ok, list_access_grants_locations_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def list_access_grants_locations(
         %Client{} = client,
         location_scope \\ nil,
@@ -7384,6 +7447,7 @@ defmodule AWS.S3Control do
         ) ::
           {:ok, list_access_points_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def list_access_points(
         %Client{} = client,
         bucket \\ nil,
@@ -7464,6 +7528,7 @@ defmodule AWS.S3Control do
         ) ::
           {:ok, list_access_points_for_object_lambda_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def list_access_points_for_object_lambda(
         %Client{} = client,
         max_results \\ nil,
@@ -7535,6 +7600,7 @@ defmodule AWS.S3Control do
         ) ::
           {:ok, list_caller_access_grants_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def list_caller_access_grants(
         %Client{} = client,
         allowed_by_application \\ nil,
@@ -7626,6 +7692,7 @@ defmodule AWS.S3Control do
   @spec list_jobs(map(), String.t() | nil, String.t() | nil, String.t() | nil, String.t(), list()) ::
           {:ok, list_jobs_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_jobs_errors()}
   def list_jobs(
         %Client{} = client,
@@ -7717,6 +7784,7 @@ defmodule AWS.S3Control do
         ) ::
           {:ok, list_multi_region_access_points_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def list_multi_region_access_points(
         %Client{} = client,
         max_results \\ nil,
@@ -7781,6 +7849,7 @@ defmodule AWS.S3Control do
         ) ::
           {:ok, list_regional_buckets_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def list_regional_buckets(
         %Client{} = client,
         max_results \\ nil,
@@ -7846,6 +7915,7 @@ defmodule AWS.S3Control do
   @spec list_storage_lens_configurations(map(), String.t() | nil, String.t(), list()) ::
           {:ok, list_storage_lens_configurations_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def list_storage_lens_configurations(
         %Client{} = client,
         next_token \\ nil,
@@ -7891,6 +7961,7 @@ defmodule AWS.S3Control do
   @spec list_storage_lens_groups(map(), String.t() | nil, String.t(), list()) ::
           {:ok, list_storage_lens_groups_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def list_storage_lens_groups(%Client{} = client, next_token \\ nil, account_id, options \\ []) do
     url_path = "/v20180820/storagelensgroup"
     headers = []
@@ -7942,6 +8013,7 @@ defmodule AWS.S3Control do
   @spec list_tags_for_resource(map(), String.t(), String.t(), list()) ::
           {:ok, list_tags_for_resource_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def list_tags_for_resource(%Client{} = client, resource_arn, account_id, options \\ []) do
     url_path = "/v20180820/tags/#{AWS.Util.encode_multi_segment_uri(resource_arn)}"
     headers = []
@@ -7977,6 +8049,7 @@ defmodule AWS.S3Control do
         ) ::
           {:ok, put_access_grants_instance_resource_policy_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def put_access_grants_instance_resource_policy(%Client{} = client, input, options \\ []) do
     url_path = "/v20180820/accessgrantsinstance/resourcepolicy"
 
@@ -8025,6 +8098,7 @@ defmodule AWS.S3Control do
         ) ::
           {:ok, nil, any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def put_access_point_configuration_for_object_lambda(
         %Client{} = client,
         name,
@@ -8088,6 +8162,7 @@ defmodule AWS.S3Control do
   @spec put_access_point_policy(map(), String.t(), put_access_point_policy_request(), list()) ::
           {:ok, nil, any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def put_access_point_policy(%Client{} = client, name, input, options \\ []) do
     url_path = "/v20180820/accesspoint/#{AWS.Util.encode_uri(name)}/policy"
 
@@ -8142,6 +8217,7 @@ defmodule AWS.S3Control do
         ) ::
           {:ok, nil, any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def put_access_point_policy_for_object_lambda(%Client{} = client, name, input, options \\ []) do
     url_path = "/v20180820/accesspointforobjectlambda/#{AWS.Util.encode_uri(name)}/policy"
 
@@ -8213,6 +8289,7 @@ defmodule AWS.S3Control do
         ) ::
           {:ok, nil, any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def put_bucket_lifecycle_configuration(%Client{} = client, bucket, input, options \\ []) do
     url_path = "/v20180820/bucket/#{AWS.Util.encode_uri(bucket)}/lifecycleconfiguration"
 
@@ -8308,6 +8385,7 @@ defmodule AWS.S3Control do
   @spec put_bucket_policy(map(), String.t(), put_bucket_policy_request(), list()) ::
           {:ok, nil, any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def put_bucket_policy(%Client{} = client, bucket, input, options \\ []) do
     url_path = "/v20180820/bucket/#{AWS.Util.encode_uri(bucket)}/policy"
 
@@ -8448,6 +8526,7 @@ defmodule AWS.S3Control do
   @spec put_bucket_replication(map(), String.t(), put_bucket_replication_request(), list()) ::
           {:ok, nil, any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def put_bucket_replication(%Client{} = client, bucket, input, options \\ []) do
     url_path = "/v20180820/bucket/#{AWS.Util.encode_uri(bucket)}/replication"
 
@@ -8569,6 +8648,7 @@ defmodule AWS.S3Control do
   @spec put_bucket_tagging(map(), String.t(), put_bucket_tagging_request(), list()) ::
           {:ok, nil, any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def put_bucket_tagging(%Client{} = client, bucket, input, options \\ []) do
     url_path = "/v20180820/bucket/#{AWS.Util.encode_uri(bucket)}/tagging"
 
@@ -8690,6 +8770,7 @@ defmodule AWS.S3Control do
   @spec put_bucket_versioning(map(), String.t(), put_bucket_versioning_request(), list()) ::
           {:ok, nil, any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def put_bucket_versioning(%Client{} = client, bucket, input, options \\ []) do
     url_path = "/v20180820/bucket/#{AWS.Util.encode_uri(bucket)}/versioning"
 
@@ -8793,6 +8874,7 @@ defmodule AWS.S3Control do
   @spec put_job_tagging(map(), String.t(), put_job_tagging_request(), list()) ::
           {:ok, put_job_tagging_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, put_job_tagging_errors()}
   def put_job_tagging(%Client{} = client, job_id, input, options \\ []) do
     url_path = "/v20180820/jobs/#{AWS.Util.encode_uri(job_id)}/tagging"
@@ -8856,6 +8938,7 @@ defmodule AWS.S3Control do
         ) ::
           {:ok, put_multi_region_access_point_policy_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def put_multi_region_access_point_policy(%Client{} = client, input, options \\ []) do
     url_path = "/v20180820/async-requests/mrap/put-policy"
 
@@ -8906,6 +8989,7 @@ defmodule AWS.S3Control do
   @spec put_public_access_block(map(), put_public_access_block_request(), list()) ::
           {:ok, nil, any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def put_public_access_block(%Client{} = client, input, options \\ []) do
     url_path = "/v20180820/configuration/publicAccessBlock"
 
@@ -8958,6 +9042,7 @@ defmodule AWS.S3Control do
         ) ::
           {:ok, nil, any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def put_storage_lens_configuration(%Client{} = client, config_id, input, options \\ []) do
     url_path = "/v20180820/storagelens/#{AWS.Util.encode_uri(config_id)}"
 
@@ -9009,6 +9094,7 @@ defmodule AWS.S3Control do
         ) ::
           {:ok, put_storage_lens_configuration_tagging_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def put_storage_lens_configuration_tagging(%Client{} = client, config_id, input, options \\ []) do
     url_path = "/v20180820/storagelens/#{AWS.Util.encode_uri(config_id)}/tagging"
 
@@ -9094,6 +9180,7 @@ defmodule AWS.S3Control do
         ) ::
           {:ok, submit_multi_region_access_point_routes_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def submit_multi_region_access_point_routes(%Client{} = client, mrap, input, options \\ []) do
     url_path = "/v20180820/mrap/instances/#{AWS.Util.encode_multi_segment_uri(mrap)}/routes"
 
@@ -9148,6 +9235,7 @@ defmodule AWS.S3Control do
   @spec tag_resource(map(), String.t(), tag_resource_request(), list()) ::
           {:ok, tag_resource_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def tag_resource(%Client{} = client, resource_arn, input, options \\ []) do
     url_path = "/v20180820/tags/#{AWS.Util.encode_multi_segment_uri(resource_arn)}"
 
@@ -9202,6 +9290,7 @@ defmodule AWS.S3Control do
   @spec untag_resource(map(), String.t(), untag_resource_request(), list()) ::
           {:ok, untag_resource_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def untag_resource(%Client{} = client, resource_arn, input, options \\ []) do
     url_path = "/v20180820/tags/#{AWS.Util.encode_multi_segment_uri(resource_arn)}"
 
@@ -9256,6 +9345,7 @@ defmodule AWS.S3Control do
         ) ::
           {:ok, update_access_grants_location_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def update_access_grants_location(
         %Client{} = client,
         access_grants_location_id,
@@ -9324,6 +9414,7 @@ defmodule AWS.S3Control do
   @spec update_job_priority(map(), String.t(), update_job_priority_request(), list()) ::
           {:ok, update_job_priority_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_job_priority_errors()}
   def update_job_priority(%Client{} = client, job_id, input, options \\ []) do
     url_path = "/v20180820/jobs/#{AWS.Util.encode_uri(job_id)}/priority"
@@ -9393,6 +9484,7 @@ defmodule AWS.S3Control do
   @spec update_job_status(map(), String.t(), update_job_status_request(), list()) ::
           {:ok, update_job_status_result(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_job_status_errors()}
   def update_job_status(%Client{} = client, job_id, input, options \\ []) do
     url_path = "/v20180820/jobs/#{AWS.Util.encode_uri(job_id)}/status"
@@ -9442,6 +9534,7 @@ defmodule AWS.S3Control do
   @spec update_storage_lens_group(map(), String.t(), update_storage_lens_group_request(), list()) ::
           {:ok, nil, any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
   def update_storage_lens_group(%Client{} = client, name, input, options \\ []) do
     url_path = "/v20180820/storagelensgroup/#{AWS.Util.encode_uri(name)}"
 

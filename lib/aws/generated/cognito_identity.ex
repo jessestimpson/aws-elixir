@@ -963,6 +963,7 @@ defmodule AWS.CognitoIdentity do
   @spec create_identity_pool(map(), create_identity_pool_input(), list()) ::
           {:ok, identity_pool(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_identity_pool_errors()}
   def create_identity_pool(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -981,6 +982,7 @@ defmodule AWS.CognitoIdentity do
   @spec delete_identities(map(), delete_identities_input(), list()) ::
           {:ok, delete_identities_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_identities_errors()}
   def delete_identities(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -999,6 +1001,7 @@ defmodule AWS.CognitoIdentity do
   @spec delete_identity_pool(map(), delete_identity_pool_input(), list()) ::
           {:ok, nil, any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_identity_pool_errors()}
   def delete_identity_pool(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -1015,6 +1018,7 @@ defmodule AWS.CognitoIdentity do
   @spec describe_identity(map(), describe_identity_input(), list()) ::
           {:ok, identity_description(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, describe_identity_errors()}
   def describe_identity(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -1031,6 +1035,7 @@ defmodule AWS.CognitoIdentity do
   @spec describe_identity_pool(map(), describe_identity_pool_input(), list()) ::
           {:ok, identity_pool(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, describe_identity_pool_errors()}
   def describe_identity_pool(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -1052,6 +1057,7 @@ defmodule AWS.CognitoIdentity do
   @spec get_credentials_for_identity(map(), get_credentials_for_identity_input(), list()) ::
           {:ok, get_credentials_for_identity_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_credentials_for_identity_errors()}
   def get_credentials_for_identity(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -1070,6 +1076,7 @@ defmodule AWS.CognitoIdentity do
   @spec get_id(map(), get_id_input(), list()) ::
           {:ok, get_id_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_id_errors()}
   def get_id(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -1085,6 +1092,7 @@ defmodule AWS.CognitoIdentity do
   @spec get_identity_pool_roles(map(), get_identity_pool_roles_input(), list()) ::
           {:ok, get_identity_pool_roles_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_identity_pool_roles_errors()}
   def get_identity_pool_roles(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -1106,6 +1114,7 @@ defmodule AWS.CognitoIdentity do
   @spec get_open_id_token(map(), get_open_id_token_input(), list()) ::
           {:ok, get_open_id_token_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_open_id_token_errors()}
   def get_open_id_token(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -1142,6 +1151,7 @@ defmodule AWS.CognitoIdentity do
         ) ::
           {:ok, get_open_id_token_for_developer_identity_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_open_id_token_for_developer_identity_errors()}
   def get_open_id_token_for_developer_identity(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -1156,6 +1166,7 @@ defmodule AWS.CognitoIdentity do
   @spec get_principal_tag_attribute_map(map(), get_principal_tag_attribute_map_input(), list()) ::
           {:ok, get_principal_tag_attribute_map_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_principal_tag_attribute_map_errors()}
   def get_principal_tag_attribute_map(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -1171,6 +1182,7 @@ defmodule AWS.CognitoIdentity do
   @spec list_identities(map(), list_identities_input(), list()) ::
           {:ok, list_identities_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_identities_errors()}
   def list_identities(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -1186,6 +1198,7 @@ defmodule AWS.CognitoIdentity do
   @spec list_identity_pools(map(), list_identity_pools_input(), list()) ::
           {:ok, list_identity_pools_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_identity_pools_errors()}
   def list_identity_pools(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -1205,6 +1218,7 @@ defmodule AWS.CognitoIdentity do
   @spec list_tags_for_resource(map(), list_tags_for_resource_input(), list()) ::
           {:ok, list_tags_for_resource_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_tags_for_resource_errors()}
   def list_tags_for_resource(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -1241,6 +1255,7 @@ defmodule AWS.CognitoIdentity do
   @spec lookup_developer_identity(map(), lookup_developer_identity_input(), list()) ::
           {:ok, lookup_developer_identity_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, lookup_developer_identity_errors()}
   def lookup_developer_identity(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -1273,6 +1288,7 @@ defmodule AWS.CognitoIdentity do
   @spec merge_developer_identities(map(), merge_developer_identities_input(), list()) ::
           {:ok, merge_developer_identities_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, merge_developer_identities_errors()}
   def merge_developer_identities(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -1290,6 +1306,7 @@ defmodule AWS.CognitoIdentity do
   @spec set_identity_pool_roles(map(), set_identity_pool_roles_input(), list()) ::
           {:ok, nil, any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, set_identity_pool_roles_errors()}
   def set_identity_pool_roles(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -1304,6 +1321,7 @@ defmodule AWS.CognitoIdentity do
   @spec set_principal_tag_attribute_map(map(), set_principal_tag_attribute_map_input(), list()) ::
           {:ok, set_principal_tag_attribute_map_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, set_principal_tag_attribute_map_errors()}
   def set_principal_tag_attribute_map(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -1343,6 +1361,7 @@ defmodule AWS.CognitoIdentity do
   @spec tag_resource(map(), tag_resource_input(), list()) ::
           {:ok, tag_resource_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, tag_resource_errors()}
   def tag_resource(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -1365,6 +1384,7 @@ defmodule AWS.CognitoIdentity do
   @spec unlink_developer_identity(map(), unlink_developer_identity_input(), list()) ::
           {:ok, nil, any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, unlink_developer_identity_errors()}
   def unlink_developer_identity(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -1385,6 +1405,7 @@ defmodule AWS.CognitoIdentity do
   @spec unlink_identity(map(), unlink_identity_input(), list()) ::
           {:ok, nil, any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, unlink_identity_errors()}
   def unlink_identity(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -1401,6 +1422,7 @@ defmodule AWS.CognitoIdentity do
   @spec untag_resource(map(), untag_resource_input(), list()) ::
           {:ok, untag_resource_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, untag_resource_errors()}
   def untag_resource(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -1416,6 +1438,7 @@ defmodule AWS.CognitoIdentity do
   @spec update_identity_pool(map(), identity_pool(), list()) ::
           {:ok, identity_pool(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_identity_pool_errors()}
   def update_identity_pool(%Client{} = client, input, options \\ []) do
     meta = metadata()

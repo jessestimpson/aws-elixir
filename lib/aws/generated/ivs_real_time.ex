@@ -1737,6 +1737,7 @@ defmodule AWS.IVSRealTime do
   @spec create_encoder_configuration(map(), create_encoder_configuration_request(), list()) ::
           {:ok, create_encoder_configuration_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_encoder_configuration_errors()}
   def create_encoder_configuration(%Client{} = client, input, options \\ []) do
     url_path = "/CreateEncoderConfiguration"
@@ -1766,6 +1767,7 @@ defmodule AWS.IVSRealTime do
   @spec create_ingest_configuration(map(), create_ingest_configuration_request(), list()) ::
           {:ok, create_ingest_configuration_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_ingest_configuration_errors()}
   def create_ingest_configuration(%Client{} = client, input, options \\ []) do
     url_path = "/CreateIngestConfiguration"
@@ -1801,6 +1803,7 @@ defmodule AWS.IVSRealTime do
   @spec create_participant_token(map(), create_participant_token_request(), list()) ::
           {:ok, create_participant_token_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_participant_token_errors()}
   def create_participant_token(%Client{} = client, input, options \\ []) do
     url_path = "/CreateParticipantToken"
@@ -1829,6 +1832,7 @@ defmodule AWS.IVSRealTime do
   @spec create_stage(map(), create_stage_request(), list()) ::
           {:ok, create_stage_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_stage_errors()}
   def create_stage(%Client{} = client, input, options \\ []) do
     url_path = "/CreateStage"
@@ -1862,6 +1866,7 @@ defmodule AWS.IVSRealTime do
   @spec create_storage_configuration(map(), create_storage_configuration_request(), list()) ::
           {:ok, create_storage_configuration_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_storage_configuration_errors()}
   def create_storage_configuration(%Client{} = client, input, options \\ []) do
     url_path = "/CreateStorageConfiguration"
@@ -1893,6 +1898,7 @@ defmodule AWS.IVSRealTime do
   @spec delete_encoder_configuration(map(), delete_encoder_configuration_request(), list()) ::
           {:ok, delete_encoder_configuration_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_encoder_configuration_errors()}
   def delete_encoder_configuration(%Client{} = client, input, options \\ []) do
     url_path = "/DeleteEncoderConfiguration"
@@ -1925,6 +1931,7 @@ defmodule AWS.IVSRealTime do
   @spec delete_ingest_configuration(map(), delete_ingest_configuration_request(), list()) ::
           {:ok, delete_ingest_configuration_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_ingest_configuration_errors()}
   def delete_ingest_configuration(%Client{} = client, input, options \\ []) do
     url_path = "/DeleteIngestConfiguration"
@@ -1956,6 +1963,7 @@ defmodule AWS.IVSRealTime do
   @spec delete_public_key(map(), delete_public_key_request(), list()) ::
           {:ok, delete_public_key_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_public_key_errors()}
   def delete_public_key(%Client{} = client, input, options \\ []) do
     url_path = "/DeletePublicKey"
@@ -1989,6 +1997,7 @@ defmodule AWS.IVSRealTime do
   @spec delete_stage(map(), delete_stage_request(), list()) ::
           {:ok, delete_stage_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_stage_errors()}
   def delete_stage(%Client{} = client, input, options \\ []) do
     url_path = "/DeleteStage"
@@ -2023,6 +2032,7 @@ defmodule AWS.IVSRealTime do
   @spec delete_storage_configuration(map(), delete_storage_configuration_request(), list()) ::
           {:ok, delete_storage_configuration_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_storage_configuration_errors()}
   def delete_storage_configuration(%Client{} = client, input, options \\ []) do
     url_path = "/DeleteStorageConfiguration"
@@ -2055,6 +2065,7 @@ defmodule AWS.IVSRealTime do
   @spec disconnect_participant(map(), disconnect_participant_request(), list()) ::
           {:ok, disconnect_participant_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, disconnect_participant_errors()}
   def disconnect_participant(%Client{} = client, input, options \\ []) do
     url_path = "/DisconnectParticipant"
@@ -2083,6 +2094,7 @@ defmodule AWS.IVSRealTime do
   @spec get_composition(map(), get_composition_request(), list()) ::
           {:ok, get_composition_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_composition_errors()}
   def get_composition(%Client{} = client, input, options \\ []) do
     url_path = "/GetComposition"
@@ -2111,6 +2123,7 @@ defmodule AWS.IVSRealTime do
   @spec get_encoder_configuration(map(), get_encoder_configuration_request(), list()) ::
           {:ok, get_encoder_configuration_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_encoder_configuration_errors()}
   def get_encoder_configuration(%Client{} = client, input, options \\ []) do
     url_path = "/GetEncoderConfiguration"
@@ -2139,6 +2152,7 @@ defmodule AWS.IVSRealTime do
   @spec get_ingest_configuration(map(), get_ingest_configuration_request(), list()) ::
           {:ok, get_ingest_configuration_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_ingest_configuration_errors()}
   def get_ingest_configuration(%Client{} = client, input, options \\ []) do
     url_path = "/GetIngestConfiguration"
@@ -2167,6 +2181,7 @@ defmodule AWS.IVSRealTime do
   @spec get_participant(map(), get_participant_request(), list()) ::
           {:ok, get_participant_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_participant_errors()}
   def get_participant(%Client{} = client, input, options \\ []) do
     url_path = "/GetParticipant"
@@ -2195,6 +2210,7 @@ defmodule AWS.IVSRealTime do
   @spec get_public_key(map(), get_public_key_request(), list()) ::
           {:ok, get_public_key_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_public_key_errors()}
   def get_public_key(%Client{} = client, input, options \\ []) do
     url_path = "/GetPublicKey"
@@ -2223,6 +2239,7 @@ defmodule AWS.IVSRealTime do
   @spec get_stage(map(), get_stage_request(), list()) ::
           {:ok, get_stage_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_stage_errors()}
   def get_stage(%Client{} = client, input, options \\ []) do
     url_path = "/GetStage"
@@ -2251,6 +2268,7 @@ defmodule AWS.IVSRealTime do
   @spec get_stage_session(map(), get_stage_session_request(), list()) ::
           {:ok, get_stage_session_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_stage_session_errors()}
   def get_stage_session(%Client{} = client, input, options \\ []) do
     url_path = "/GetStageSession"
@@ -2279,6 +2297,7 @@ defmodule AWS.IVSRealTime do
   @spec get_storage_configuration(map(), get_storage_configuration_request(), list()) ::
           {:ok, get_storage_configuration_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_storage_configuration_errors()}
   def get_storage_configuration(%Client{} = client, input, options \\ []) do
     url_path = "/GetStorageConfiguration"
@@ -2307,6 +2326,7 @@ defmodule AWS.IVSRealTime do
   @spec import_public_key(map(), import_public_key_request(), list()) ::
           {:ok, import_public_key_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, import_public_key_errors()}
   def import_public_key(%Client{} = client, input, options \\ []) do
     url_path = "/ImportPublicKey"
@@ -2337,6 +2357,7 @@ defmodule AWS.IVSRealTime do
   @spec list_compositions(map(), list_compositions_request(), list()) ::
           {:ok, list_compositions_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_compositions_errors()}
   def list_compositions(%Client{} = client, input, options \\ []) do
     url_path = "/ListCompositions"
@@ -2367,6 +2388,7 @@ defmodule AWS.IVSRealTime do
   @spec list_encoder_configurations(map(), list_encoder_configurations_request(), list()) ::
           {:ok, list_encoder_configurations_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_encoder_configurations_errors()}
   def list_encoder_configurations(%Client{} = client, input, options \\ []) do
     url_path = "/ListEncoderConfigurations"
@@ -2396,6 +2418,7 @@ defmodule AWS.IVSRealTime do
   @spec list_ingest_configurations(map(), list_ingest_configurations_request(), list()) ::
           {:ok, list_ingest_configurations_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_ingest_configurations_errors()}
   def list_ingest_configurations(%Client{} = client, input, options \\ []) do
     url_path = "/ListIngestConfigurations"
@@ -2425,6 +2448,7 @@ defmodule AWS.IVSRealTime do
   @spec list_participant_events(map(), list_participant_events_request(), list()) ::
           {:ok, list_participant_events_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_participant_events_errors()}
   def list_participant_events(%Client{} = client, input, options \\ []) do
     url_path = "/ListParticipantEvents"
@@ -2453,6 +2477,7 @@ defmodule AWS.IVSRealTime do
   @spec list_participants(map(), list_participants_request(), list()) ::
           {:ok, list_participants_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_participants_errors()}
   def list_participants(%Client{} = client, input, options \\ []) do
     url_path = "/ListParticipants"
@@ -2482,6 +2507,7 @@ defmodule AWS.IVSRealTime do
   @spec list_public_keys(map(), list_public_keys_request(), list()) ::
           {:ok, list_public_keys_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_public_keys_errors()}
   def list_public_keys(%Client{} = client, input, options \\ []) do
     url_path = "/ListPublicKeys"
@@ -2510,6 +2536,7 @@ defmodule AWS.IVSRealTime do
   @spec list_stage_sessions(map(), list_stage_sessions_request(), list()) ::
           {:ok, list_stage_sessions_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_stage_sessions_errors()}
   def list_stage_sessions(%Client{} = client, input, options \\ []) do
     url_path = "/ListStageSessions"
@@ -2540,6 +2567,7 @@ defmodule AWS.IVSRealTime do
   @spec list_stages(map(), list_stages_request(), list()) ::
           {:ok, list_stages_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_stages_errors()}
   def list_stages(%Client{} = client, input, options \\ []) do
     url_path = "/ListStages"
@@ -2569,6 +2597,7 @@ defmodule AWS.IVSRealTime do
   @spec list_storage_configurations(map(), list_storage_configurations_request(), list()) ::
           {:ok, list_storage_configurations_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_storage_configurations_errors()}
   def list_storage_configurations(%Client{} = client, input, options \\ []) do
     url_path = "/ListStorageConfigurations"
@@ -2597,6 +2626,7 @@ defmodule AWS.IVSRealTime do
   @spec list_tags_for_resource(map(), String.t(), list()) ::
           {:ok, list_tags_for_resource_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_tags_for_resource_errors()}
   def list_tags_for_resource(%Client{} = client, resource_arn, options \\ []) do
     url_path = "/tags/#{AWS.Util.encode_uri(resource_arn)}"
@@ -2636,6 +2666,7 @@ defmodule AWS.IVSRealTime do
   @spec start_composition(map(), start_composition_request(), list()) ::
           {:ok, start_composition_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, start_composition_errors()}
   def start_composition(%Client{} = client, input, options \\ []) do
     url_path = "/StartComposition"
@@ -2667,6 +2698,7 @@ defmodule AWS.IVSRealTime do
   @spec stop_composition(map(), stop_composition_request(), list()) ::
           {:ok, stop_composition_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, stop_composition_errors()}
   def stop_composition(%Client{} = client, input, options \\ []) do
     url_path = "/StopComposition"
@@ -2695,6 +2727,7 @@ defmodule AWS.IVSRealTime do
   @spec tag_resource(map(), String.t(), tag_resource_request(), list()) ::
           {:ok, tag_resource_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, tag_resource_errors()}
   def tag_resource(%Client{} = client, resource_arn, input, options \\ []) do
     url_path = "/tags/#{AWS.Util.encode_uri(resource_arn)}"
@@ -2723,6 +2756,7 @@ defmodule AWS.IVSRealTime do
   @spec untag_resource(map(), String.t(), untag_resource_request(), list()) ::
           {:ok, untag_resource_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, untag_resource_errors()}
   def untag_resource(%Client{} = client, resource_arn, input, options \\ []) do
     url_path = "/tags/#{AWS.Util.encode_uri(resource_arn)}"
@@ -2759,6 +2793,7 @@ defmodule AWS.IVSRealTime do
   @spec update_ingest_configuration(map(), update_ingest_configuration_request(), list()) ::
           {:ok, update_ingest_configuration_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_ingest_configuration_errors()}
   def update_ingest_configuration(%Client{} = client, input, options \\ []) do
     url_path = "/UpdateIngestConfiguration"
@@ -2787,6 +2822,7 @@ defmodule AWS.IVSRealTime do
   @spec update_stage(map(), update_stage_request(), list()) ::
           {:ok, update_stage_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_stage_errors()}
   def update_stage(%Client{} = client, input, options \\ []) do
     url_path = "/UpdateStage"

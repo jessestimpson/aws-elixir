@@ -14238,6 +14238,7 @@ defmodule AWS.Glue do
   @spec batch_create_partition(map(), batch_create_partition_request(), list()) ::
           {:ok, batch_create_partition_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, batch_create_partition_errors()}
   def batch_create_partition(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -14251,6 +14252,7 @@ defmodule AWS.Glue do
   @spec batch_delete_connection(map(), batch_delete_connection_request(), list()) ::
           {:ok, batch_delete_connection_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, batch_delete_connection_errors()}
   def batch_delete_connection(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -14264,6 +14266,7 @@ defmodule AWS.Glue do
   @spec batch_delete_partition(map(), batch_delete_partition_request(), list()) ::
           {:ok, batch_delete_partition_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, batch_delete_partition_errors()}
   def batch_delete_partition(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -14289,6 +14292,7 @@ defmodule AWS.Glue do
   @spec batch_delete_table(map(), batch_delete_table_request(), list()) ::
           {:ok, batch_delete_table_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, batch_delete_table_errors()}
   def batch_delete_table(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -14302,6 +14306,7 @@ defmodule AWS.Glue do
   @spec batch_delete_table_version(map(), batch_delete_table_version_request(), list()) ::
           {:ok, batch_delete_table_version_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, batch_delete_table_version_errors()}
   def batch_delete_table_version(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -14315,6 +14320,7 @@ defmodule AWS.Glue do
   @spec batch_get_blueprints(map(), batch_get_blueprints_request(), list()) ::
           {:ok, batch_get_blueprints_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, batch_get_blueprints_errors()}
   def batch_get_blueprints(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -14332,6 +14338,7 @@ defmodule AWS.Glue do
   @spec batch_get_crawlers(map(), batch_get_crawlers_request(), list()) ::
           {:ok, batch_get_crawlers_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, batch_get_crawlers_errors()}
   def batch_get_crawlers(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -14345,6 +14352,7 @@ defmodule AWS.Glue do
   @spec batch_get_custom_entity_types(map(), batch_get_custom_entity_types_request(), list()) ::
           {:ok, batch_get_custom_entity_types_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, batch_get_custom_entity_types_errors()}
   def batch_get_custom_entity_types(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -14358,6 +14366,7 @@ defmodule AWS.Glue do
   @spec batch_get_data_quality_result(map(), batch_get_data_quality_result_request(), list()) ::
           {:ok, batch_get_data_quality_result_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, batch_get_data_quality_result_errors()}
   def batch_get_data_quality_result(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -14379,6 +14388,7 @@ defmodule AWS.Glue do
   @spec batch_get_dev_endpoints(map(), batch_get_dev_endpoints_request(), list()) ::
           {:ok, batch_get_dev_endpoints_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, batch_get_dev_endpoints_errors()}
   def batch_get_dev_endpoints(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -14396,6 +14406,7 @@ defmodule AWS.Glue do
   @spec batch_get_jobs(map(), batch_get_jobs_request(), list()) ::
           {:ok, batch_get_jobs_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, batch_get_jobs_errors()}
   def batch_get_jobs(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -14409,6 +14420,7 @@ defmodule AWS.Glue do
   @spec batch_get_partition(map(), batch_get_partition_request(), list()) ::
           {:ok, batch_get_partition_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, batch_get_partition_errors()}
   def batch_get_partition(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -14422,6 +14434,7 @@ defmodule AWS.Glue do
   @spec batch_get_table_optimizer(map(), batch_get_table_optimizer_request(), list()) ::
           {:ok, batch_get_table_optimizer_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, batch_get_table_optimizer_errors()}
   def batch_get_table_optimizer(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -14439,6 +14452,7 @@ defmodule AWS.Glue do
   @spec batch_get_triggers(map(), batch_get_triggers_request(), list()) ::
           {:ok, batch_get_triggers_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, batch_get_triggers_errors()}
   def batch_get_triggers(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -14456,6 +14470,7 @@ defmodule AWS.Glue do
   @spec batch_get_workflows(map(), batch_get_workflows_request(), list()) ::
           {:ok, batch_get_workflows_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, batch_get_workflows_errors()}
   def batch_get_workflows(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -14473,6 +14488,7 @@ defmodule AWS.Glue do
         ) ::
           {:ok, batch_put_data_quality_statistic_annotation_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, batch_put_data_quality_statistic_annotation_errors()}
   def batch_put_data_quality_statistic_annotation(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -14486,6 +14502,7 @@ defmodule AWS.Glue do
   @spec batch_stop_job_run(map(), batch_stop_job_run_request(), list()) ::
           {:ok, batch_stop_job_run_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, batch_stop_job_run_errors()}
   def batch_stop_job_run(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -14499,6 +14516,7 @@ defmodule AWS.Glue do
   @spec batch_update_partition(map(), batch_update_partition_request(), list()) ::
           {:ok, batch_update_partition_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, batch_update_partition_errors()}
   def batch_update_partition(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -14516,6 +14534,7 @@ defmodule AWS.Glue do
         ) ::
           {:ok, cancel_data_quality_rule_recommendation_run_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, cancel_data_quality_rule_recommendation_run_errors()}
   def cancel_data_quality_rule_recommendation_run(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -14533,6 +14552,7 @@ defmodule AWS.Glue do
         ) ::
           {:ok, cancel_data_quality_ruleset_evaluation_run_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, cancel_data_quality_ruleset_evaluation_run_errors()}
   def cancel_data_quality_ruleset_evaluation_run(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -14551,6 +14571,7 @@ defmodule AWS.Glue do
   @spec cancel_ml_task_run(map(), cancel_ml_task_run_request(), list()) ::
           {:ok, cancel_ml_task_run_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, cancel_ml_task_run_errors()}
   def cancel_ml_task_run(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -14564,6 +14585,7 @@ defmodule AWS.Glue do
   @spec cancel_statement(map(), cancel_statement_request(), list()) ::
           {:ok, cancel_statement_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, cancel_statement_errors()}
   def cancel_statement(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -14581,6 +14603,7 @@ defmodule AWS.Glue do
   @spec check_schema_version_validity(map(), check_schema_version_validity_input(), list()) ::
           {:ok, check_schema_version_validity_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, check_schema_version_validity_errors()}
   def check_schema_version_validity(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -14594,6 +14617,7 @@ defmodule AWS.Glue do
   @spec create_blueprint(map(), create_blueprint_request(), list()) ::
           {:ok, create_blueprint_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_blueprint_errors()}
   def create_blueprint(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -14607,6 +14631,7 @@ defmodule AWS.Glue do
   @spec create_catalog(map(), create_catalog_request(), list()) ::
           {:ok, create_catalog_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_catalog_errors()}
   def create_catalog(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -14624,6 +14649,7 @@ defmodule AWS.Glue do
   @spec create_classifier(map(), create_classifier_request(), list()) ::
           {:ok, create_classifier_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_classifier_errors()}
   def create_classifier(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -14641,6 +14667,7 @@ defmodule AWS.Glue do
         ) ::
           {:ok, create_column_statistics_task_settings_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_column_statistics_task_settings_errors()}
   def create_column_statistics_task_settings(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -14657,6 +14684,7 @@ defmodule AWS.Glue do
   @spec create_connection(map(), create_connection_request(), list()) ::
           {:ok, create_connection_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_connection_errors()}
   def create_connection(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -14674,6 +14702,7 @@ defmodule AWS.Glue do
   @spec create_crawler(map(), create_crawler_request(), list()) ::
           {:ok, create_crawler_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_crawler_errors()}
   def create_crawler(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -14692,6 +14721,7 @@ defmodule AWS.Glue do
   @spec create_custom_entity_type(map(), create_custom_entity_type_request(), list()) ::
           {:ok, create_custom_entity_type_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_custom_entity_type_errors()}
   def create_custom_entity_type(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -14709,6 +14739,7 @@ defmodule AWS.Glue do
   @spec create_data_quality_ruleset(map(), create_data_quality_ruleset_request(), list()) ::
           {:ok, create_data_quality_ruleset_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_data_quality_ruleset_errors()}
   def create_data_quality_ruleset(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -14722,6 +14753,7 @@ defmodule AWS.Glue do
   @spec create_database(map(), create_database_request(), list()) ::
           {:ok, create_database_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_database_errors()}
   def create_database(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -14735,6 +14767,7 @@ defmodule AWS.Glue do
   @spec create_dev_endpoint(map(), create_dev_endpoint_request(), list()) ::
           {:ok, create_dev_endpoint_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_dev_endpoint_errors()}
   def create_dev_endpoint(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -14749,6 +14782,7 @@ defmodule AWS.Glue do
   @spec create_integration(map(), create_integration_request(), list()) ::
           {:ok, create_integration_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_integration_errors()}
   def create_integration(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -14773,6 +14807,7 @@ defmodule AWS.Glue do
         ) ::
           {:ok, create_integration_resource_property_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_integration_resource_property_errors()}
   def create_integration_resource_property(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -14797,6 +14832,7 @@ defmodule AWS.Glue do
         ) ::
           {:ok, create_integration_table_properties_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_integration_table_properties_errors()}
   def create_integration_table_properties(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -14810,6 +14846,7 @@ defmodule AWS.Glue do
   @spec create_job(map(), create_job_request(), list()) ::
           {:ok, create_job_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_job_errors()}
   def create_job(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -14841,6 +14878,7 @@ defmodule AWS.Glue do
   @spec create_ml_transform(map(), create_ml_transform_request(), list()) ::
           {:ok, create_ml_transform_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_ml_transform_errors()}
   def create_ml_transform(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -14854,6 +14892,7 @@ defmodule AWS.Glue do
   @spec create_partition(map(), create_partition_request(), list()) ::
           {:ok, create_partition_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_partition_errors()}
   def create_partition(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -14867,6 +14906,7 @@ defmodule AWS.Glue do
   @spec create_partition_index(map(), create_partition_index_request(), list()) ::
           {:ok, create_partition_index_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_partition_index_errors()}
   def create_partition_index(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -14880,6 +14920,7 @@ defmodule AWS.Glue do
   @spec create_registry(map(), create_registry_input(), list()) ::
           {:ok, create_registry_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_registry_errors()}
   def create_registry(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -14906,6 +14947,7 @@ defmodule AWS.Glue do
   @spec create_schema(map(), create_schema_input(), list()) ::
           {:ok, create_schema_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_schema_errors()}
   def create_schema(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -14919,6 +14961,7 @@ defmodule AWS.Glue do
   @spec create_script(map(), create_script_request(), list()) ::
           {:ok, create_script_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_script_errors()}
   def create_script(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -14937,6 +14980,7 @@ defmodule AWS.Glue do
   @spec create_security_configuration(map(), create_security_configuration_request(), list()) ::
           {:ok, create_security_configuration_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_security_configuration_errors()}
   def create_security_configuration(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -14950,6 +14994,7 @@ defmodule AWS.Glue do
   @spec create_session(map(), create_session_request(), list()) ::
           {:ok, create_session_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_session_errors()}
   def create_session(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -14963,6 +15008,7 @@ defmodule AWS.Glue do
   @spec create_table(map(), create_table_request(), list()) ::
           {:ok, create_table_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_table_errors()}
   def create_table(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -14976,6 +15022,7 @@ defmodule AWS.Glue do
   @spec create_table_optimizer(map(), create_table_optimizer_request(), list()) ::
           {:ok, create_table_optimizer_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_table_optimizer_errors()}
   def create_table_optimizer(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -14993,6 +15040,7 @@ defmodule AWS.Glue do
   @spec create_trigger(map(), create_trigger_request(), list()) ::
           {:ok, create_trigger_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_trigger_errors()}
   def create_trigger(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -15006,6 +15054,7 @@ defmodule AWS.Glue do
   @spec create_usage_profile(map(), create_usage_profile_request(), list()) ::
           {:ok, create_usage_profile_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_usage_profile_errors()}
   def create_usage_profile(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -15019,6 +15068,7 @@ defmodule AWS.Glue do
   @spec create_user_defined_function(map(), create_user_defined_function_request(), list()) ::
           {:ok, create_user_defined_function_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_user_defined_function_errors()}
   def create_user_defined_function(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -15032,6 +15082,7 @@ defmodule AWS.Glue do
   @spec create_workflow(map(), create_workflow_request(), list()) ::
           {:ok, create_workflow_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_workflow_errors()}
   def create_workflow(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -15045,6 +15096,7 @@ defmodule AWS.Glue do
   @spec delete_blueprint(map(), delete_blueprint_request(), list()) ::
           {:ok, delete_blueprint_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_blueprint_errors()}
   def delete_blueprint(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -15070,6 +15122,7 @@ defmodule AWS.Glue do
   @spec delete_catalog(map(), delete_catalog_request(), list()) ::
           {:ok, delete_catalog_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_catalog_errors()}
   def delete_catalog(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -15083,6 +15136,7 @@ defmodule AWS.Glue do
   @spec delete_classifier(map(), delete_classifier_request(), list()) ::
           {:ok, delete_classifier_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_classifier_errors()}
   def delete_classifier(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -15103,6 +15157,7 @@ defmodule AWS.Glue do
         ) ::
           {:ok, delete_column_statistics_for_partition_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_column_statistics_for_partition_errors()}
   def delete_column_statistics_for_partition(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -15123,6 +15178,7 @@ defmodule AWS.Glue do
         ) ::
           {:ok, delete_column_statistics_for_table_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_column_statistics_for_table_errors()}
   def delete_column_statistics_for_table(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -15140,6 +15196,7 @@ defmodule AWS.Glue do
         ) ::
           {:ok, delete_column_statistics_task_settings_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_column_statistics_task_settings_errors()}
   def delete_column_statistics_task_settings(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -15153,6 +15210,7 @@ defmodule AWS.Glue do
   @spec delete_connection(map(), delete_connection_request(), list()) ::
           {:ok, delete_connection_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_connection_errors()}
   def delete_connection(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -15168,6 +15226,7 @@ defmodule AWS.Glue do
   @spec delete_crawler(map(), delete_crawler_request(), list()) ::
           {:ok, delete_crawler_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_crawler_errors()}
   def delete_crawler(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -15181,6 +15240,7 @@ defmodule AWS.Glue do
   @spec delete_custom_entity_type(map(), delete_custom_entity_type_request(), list()) ::
           {:ok, delete_custom_entity_type_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_custom_entity_type_errors()}
   def delete_custom_entity_type(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -15194,6 +15254,7 @@ defmodule AWS.Glue do
   @spec delete_data_quality_ruleset(map(), delete_data_quality_ruleset_request(), list()) ::
           {:ok, delete_data_quality_ruleset_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_data_quality_ruleset_errors()}
   def delete_data_quality_ruleset(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -15222,6 +15283,7 @@ defmodule AWS.Glue do
   @spec delete_database(map(), delete_database_request(), list()) ::
           {:ok, delete_database_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_database_errors()}
   def delete_database(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -15235,6 +15297,7 @@ defmodule AWS.Glue do
   @spec delete_dev_endpoint(map(), delete_dev_endpoint_request(), list()) ::
           {:ok, delete_dev_endpoint_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_dev_endpoint_errors()}
   def delete_dev_endpoint(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -15248,6 +15311,7 @@ defmodule AWS.Glue do
   @spec delete_integration(map(), delete_integration_request(), list()) ::
           {:ok, delete_integration_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_integration_errors()}
   def delete_integration(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -15266,6 +15330,7 @@ defmodule AWS.Glue do
         ) ::
           {:ok, delete_integration_table_properties_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_integration_table_properties_errors()}
   def delete_integration_table_properties(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -15282,6 +15347,7 @@ defmodule AWS.Glue do
   @spec delete_job(map(), delete_job_request(), list()) ::
           {:ok, delete_job_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_job_errors()}
   def delete_job(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -15304,6 +15370,7 @@ defmodule AWS.Glue do
   @spec delete_ml_transform(map(), delete_ml_transform_request(), list()) ::
           {:ok, delete_ml_transform_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_ml_transform_errors()}
   def delete_ml_transform(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -15317,6 +15384,7 @@ defmodule AWS.Glue do
   @spec delete_partition(map(), delete_partition_request(), list()) ::
           {:ok, delete_partition_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_partition_errors()}
   def delete_partition(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -15330,6 +15398,7 @@ defmodule AWS.Glue do
   @spec delete_partition_index(map(), delete_partition_index_request(), list()) ::
           {:ok, delete_partition_index_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_partition_index_errors()}
   def delete_partition_index(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -15348,6 +15417,7 @@ defmodule AWS.Glue do
   @spec delete_registry(map(), delete_registry_input(), list()) ::
           {:ok, delete_registry_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_registry_errors()}
   def delete_registry(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -15361,6 +15431,7 @@ defmodule AWS.Glue do
   @spec delete_resource_policy(map(), delete_resource_policy_request(), list()) ::
           {:ok, delete_resource_policy_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_resource_policy_errors()}
   def delete_resource_policy(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -15379,6 +15450,7 @@ defmodule AWS.Glue do
   @spec delete_schema(map(), delete_schema_input(), list()) ::
           {:ok, delete_schema_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_schema_errors()}
   def delete_schema(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -15411,6 +15483,7 @@ defmodule AWS.Glue do
   @spec delete_schema_versions(map(), delete_schema_versions_input(), list()) ::
           {:ok, delete_schema_versions_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_schema_versions_errors()}
   def delete_schema_versions(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -15424,6 +15497,7 @@ defmodule AWS.Glue do
   @spec delete_security_configuration(map(), delete_security_configuration_request(), list()) ::
           {:ok, delete_security_configuration_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_security_configuration_errors()}
   def delete_security_configuration(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -15437,6 +15511,7 @@ defmodule AWS.Glue do
   @spec delete_session(map(), delete_session_request(), list()) ::
           {:ok, delete_session_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_session_errors()}
   def delete_session(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -15462,6 +15537,7 @@ defmodule AWS.Glue do
   @spec delete_table(map(), delete_table_request(), list()) ::
           {:ok, delete_table_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_table_errors()}
   def delete_table(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -15477,6 +15553,7 @@ defmodule AWS.Glue do
   @spec delete_table_optimizer(map(), delete_table_optimizer_request(), list()) ::
           {:ok, delete_table_optimizer_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_table_optimizer_errors()}
   def delete_table_optimizer(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -15490,6 +15567,7 @@ defmodule AWS.Glue do
   @spec delete_table_version(map(), delete_table_version_request(), list()) ::
           {:ok, delete_table_version_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_table_version_errors()}
   def delete_table_version(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -15506,6 +15584,7 @@ defmodule AWS.Glue do
   @spec delete_trigger(map(), delete_trigger_request(), list()) ::
           {:ok, delete_trigger_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_trigger_errors()}
   def delete_trigger(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -15519,6 +15598,7 @@ defmodule AWS.Glue do
   @spec delete_usage_profile(map(), delete_usage_profile_request(), list()) ::
           {:ok, delete_usage_profile_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_usage_profile_errors()}
   def delete_usage_profile(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -15532,6 +15612,7 @@ defmodule AWS.Glue do
   @spec delete_user_defined_function(map(), delete_user_defined_function_request(), list()) ::
           {:ok, delete_user_defined_function_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_user_defined_function_errors()}
   def delete_user_defined_function(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -15545,6 +15626,7 @@ defmodule AWS.Glue do
   @spec delete_workflow(map(), delete_workflow_request(), list()) ::
           {:ok, delete_workflow_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_workflow_errors()}
   def delete_workflow(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -15559,6 +15641,7 @@ defmodule AWS.Glue do
   @spec describe_connection_type(map(), describe_connection_type_request(), list()) ::
           {:ok, describe_connection_type_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, describe_connection_type_errors()}
   def describe_connection_type(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -15575,6 +15658,7 @@ defmodule AWS.Glue do
   @spec describe_entity(map(), describe_entity_request(), list()) ::
           {:ok, describe_entity_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, describe_entity_errors()}
   def describe_entity(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -15588,6 +15672,7 @@ defmodule AWS.Glue do
   @spec describe_inbound_integrations(map(), describe_inbound_integrations_request(), list()) ::
           {:ok, describe_inbound_integrations_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, describe_inbound_integrations_errors()}
   def describe_inbound_integrations(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -15601,6 +15686,7 @@ defmodule AWS.Glue do
   @spec describe_integrations(map(), describe_integrations_request(), list()) ::
           {:ok, describe_integrations_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, describe_integrations_errors()}
   def describe_integrations(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -15614,6 +15700,7 @@ defmodule AWS.Glue do
   @spec get_blueprint(map(), get_blueprint_request(), list()) ::
           {:ok, get_blueprint_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_blueprint_errors()}
   def get_blueprint(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -15627,6 +15714,7 @@ defmodule AWS.Glue do
   @spec get_blueprint_run(map(), get_blueprint_run_request(), list()) ::
           {:ok, get_blueprint_run_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_blueprint_run_errors()}
   def get_blueprint_run(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -15640,6 +15728,7 @@ defmodule AWS.Glue do
   @spec get_blueprint_runs(map(), get_blueprint_runs_request(), list()) ::
           {:ok, get_blueprint_runs_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_blueprint_runs_errors()}
   def get_blueprint_runs(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -15655,6 +15744,7 @@ defmodule AWS.Glue do
   @spec get_catalog(map(), get_catalog_request(), list()) ::
           {:ok, get_catalog_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_catalog_errors()}
   def get_catalog(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -15668,6 +15758,7 @@ defmodule AWS.Glue do
   @spec get_catalog_import_status(map(), get_catalog_import_status_request(), list()) ::
           {:ok, get_catalog_import_status_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_catalog_import_status_errors()}
   def get_catalog_import_status(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -15684,6 +15775,7 @@ defmodule AWS.Glue do
   @spec get_catalogs(map(), get_catalogs_request(), list()) ::
           {:ok, get_catalogs_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_catalogs_errors()}
   def get_catalogs(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -15697,6 +15789,7 @@ defmodule AWS.Glue do
   @spec get_classifier(map(), get_classifier_request(), list()) ::
           {:ok, get_classifier_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_classifier_errors()}
   def get_classifier(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -15710,6 +15803,7 @@ defmodule AWS.Glue do
   @spec get_classifiers(map(), get_classifiers_request(), list()) ::
           {:ok, get_classifiers_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_classifiers_errors()}
   def get_classifiers(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -15730,6 +15824,7 @@ defmodule AWS.Glue do
         ) ::
           {:ok, get_column_statistics_for_partition_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_column_statistics_for_partition_errors()}
   def get_column_statistics_for_partition(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -15746,6 +15841,7 @@ defmodule AWS.Glue do
   @spec get_column_statistics_for_table(map(), get_column_statistics_for_table_request(), list()) ::
           {:ok, get_column_statistics_for_table_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_column_statistics_for_table_errors()}
   def get_column_statistics_for_table(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -15759,6 +15855,7 @@ defmodule AWS.Glue do
   @spec get_column_statistics_task_run(map(), get_column_statistics_task_run_request(), list()) ::
           {:ok, get_column_statistics_task_run_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_column_statistics_task_run_errors()}
   def get_column_statistics_task_run(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -15772,6 +15869,7 @@ defmodule AWS.Glue do
   @spec get_column_statistics_task_runs(map(), get_column_statistics_task_runs_request(), list()) ::
           {:ok, get_column_statistics_task_runs_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_column_statistics_task_runs_errors()}
   def get_column_statistics_task_runs(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -15789,6 +15887,7 @@ defmodule AWS.Glue do
         ) ::
           {:ok, get_column_statistics_task_settings_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_column_statistics_task_settings_errors()}
   def get_column_statistics_task_settings(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -15802,6 +15901,7 @@ defmodule AWS.Glue do
   @spec get_connection(map(), get_connection_request(), list()) ::
           {:ok, get_connection_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_connection_errors()}
   def get_connection(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -15815,6 +15915,7 @@ defmodule AWS.Glue do
   @spec get_connections(map(), get_connections_request(), list()) ::
           {:ok, get_connections_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_connections_errors()}
   def get_connections(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -15828,6 +15929,7 @@ defmodule AWS.Glue do
   @spec get_crawler(map(), get_crawler_request(), list()) ::
           {:ok, get_crawler_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_crawler_errors()}
   def get_crawler(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -15841,6 +15943,7 @@ defmodule AWS.Glue do
   @spec get_crawler_metrics(map(), get_crawler_metrics_request(), list()) ::
           {:ok, get_crawler_metrics_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_crawler_metrics_errors()}
   def get_crawler_metrics(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -15855,6 +15958,7 @@ defmodule AWS.Glue do
   @spec get_crawlers(map(), get_crawlers_request(), list()) ::
           {:ok, get_crawlers_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_crawlers_errors()}
   def get_crawlers(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -15868,6 +15972,7 @@ defmodule AWS.Glue do
   @spec get_custom_entity_type(map(), get_custom_entity_type_request(), list()) ::
           {:ok, get_custom_entity_type_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_custom_entity_type_errors()}
   def get_custom_entity_type(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -15885,6 +15990,7 @@ defmodule AWS.Glue do
         ) ::
           {:ok, get_data_catalog_encryption_settings_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_data_catalog_encryption_settings_errors()}
   def get_data_catalog_encryption_settings(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -15899,6 +16005,7 @@ defmodule AWS.Glue do
   @spec get_data_quality_model(map(), get_data_quality_model_request(), list()) ::
           {:ok, get_data_quality_model_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_data_quality_model_errors()}
   def get_data_quality_model(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -15912,6 +16019,7 @@ defmodule AWS.Glue do
   @spec get_data_quality_model_result(map(), get_data_quality_model_result_request(), list()) ::
           {:ok, get_data_quality_model_result_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_data_quality_model_result_errors()}
   def get_data_quality_model_result(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -15925,6 +16033,7 @@ defmodule AWS.Glue do
   @spec get_data_quality_result(map(), get_data_quality_result_request(), list()) ::
           {:ok, get_data_quality_result_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_data_quality_result_errors()}
   def get_data_quality_result(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -15942,6 +16051,7 @@ defmodule AWS.Glue do
         ) ::
           {:ok, get_data_quality_rule_recommendation_run_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_data_quality_rule_recommendation_run_errors()}
   def get_data_quality_rule_recommendation_run(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -15955,6 +16065,7 @@ defmodule AWS.Glue do
   @spec get_data_quality_ruleset(map(), get_data_quality_ruleset_request(), list()) ::
           {:ok, get_data_quality_ruleset_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_data_quality_ruleset_errors()}
   def get_data_quality_ruleset(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -15972,6 +16083,7 @@ defmodule AWS.Glue do
         ) ::
           {:ok, get_data_quality_ruleset_evaluation_run_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_data_quality_ruleset_evaluation_run_errors()}
   def get_data_quality_ruleset_evaluation_run(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -15985,6 +16097,7 @@ defmodule AWS.Glue do
   @spec get_database(map(), get_database_request(), list()) ::
           {:ok, get_database_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_database_errors()}
   def get_database(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -15998,6 +16111,7 @@ defmodule AWS.Glue do
   @spec get_databases(map(), get_databases_request(), list()) ::
           {:ok, get_databases_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_databases_errors()}
   def get_databases(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -16011,6 +16125,7 @@ defmodule AWS.Glue do
   @spec get_dataflow_graph(map(), get_dataflow_graph_request(), list()) ::
           {:ok, get_dataflow_graph_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_dataflow_graph_errors()}
   def get_dataflow_graph(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -16030,6 +16145,7 @@ defmodule AWS.Glue do
   @spec get_dev_endpoint(map(), get_dev_endpoint_request(), list()) ::
           {:ok, get_dev_endpoint_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_dev_endpoint_errors()}
   def get_dev_endpoint(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -16049,6 +16165,7 @@ defmodule AWS.Glue do
   @spec get_dev_endpoints(map(), get_dev_endpoints_request(), list()) ::
           {:ok, get_dev_endpoints_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_dev_endpoints_errors()}
   def get_dev_endpoints(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -16070,6 +16187,7 @@ defmodule AWS.Glue do
   @spec get_entity_records(map(), get_entity_records_request(), list()) ::
           {:ok, get_entity_records_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_entity_records_errors()}
   def get_entity_records(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -16088,6 +16206,7 @@ defmodule AWS.Glue do
         ) ::
           {:ok, get_integration_resource_property_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_integration_resource_property_errors()}
   def get_integration_resource_property(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -16109,6 +16228,7 @@ defmodule AWS.Glue do
         ) ::
           {:ok, get_integration_table_properties_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_integration_table_properties_errors()}
   def get_integration_table_properties(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -16122,6 +16242,7 @@ defmodule AWS.Glue do
   @spec get_job(map(), get_job_request(), list()) ::
           {:ok, get_job_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_job_errors()}
   def get_job(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -16149,6 +16270,7 @@ defmodule AWS.Glue do
   @spec get_job_bookmark(map(), get_job_bookmark_request(), list()) ::
           {:ok, get_job_bookmark_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_job_bookmark_errors()}
   def get_job_bookmark(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -16164,6 +16286,7 @@ defmodule AWS.Glue do
   @spec get_job_run(map(), get_job_run_request(), list()) ::
           {:ok, get_job_run_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_job_run_errors()}
   def get_job_run(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -16180,6 +16303,7 @@ defmodule AWS.Glue do
   @spec get_job_runs(map(), get_job_runs_request(), list()) ::
           {:ok, get_job_runs_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_job_runs_errors()}
   def get_job_runs(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -16193,6 +16317,7 @@ defmodule AWS.Glue do
   @spec get_jobs(map(), get_jobs_request(), list()) ::
           {:ok, get_jobs_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_jobs_errors()}
   def get_jobs(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -16206,6 +16331,7 @@ defmodule AWS.Glue do
   @spec get_mapping(map(), get_mapping_request(), list()) ::
           {:ok, get_mapping_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_mapping_errors()}
   def get_mapping(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -16226,6 +16352,7 @@ defmodule AWS.Glue do
   @spec get_ml_task_run(map(), get_ml_task_run_request(), list()) ::
           {:ok, get_ml_task_run_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_ml_task_run_errors()}
   def get_ml_task_run(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -16249,6 +16376,7 @@ defmodule AWS.Glue do
   @spec get_ml_task_runs(map(), get_ml_task_runs_request(), list()) ::
           {:ok, get_ml_task_runs_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_ml_task_runs_errors()}
   def get_ml_task_runs(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -16271,6 +16399,7 @@ defmodule AWS.Glue do
   @spec get_ml_transform(map(), get_ml_transform_request(), list()) ::
           {:ok, get_ml_transform_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_ml_transform_errors()}
   def get_ml_transform(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -16293,6 +16422,7 @@ defmodule AWS.Glue do
   @spec get_ml_transforms(map(), get_ml_transforms_request(), list()) ::
           {:ok, get_ml_transforms_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_ml_transforms_errors()}
   def get_ml_transforms(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -16306,6 +16436,7 @@ defmodule AWS.Glue do
   @spec get_partition(map(), get_partition_request(), list()) ::
           {:ok, get_partition_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_partition_errors()}
   def get_partition(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -16319,6 +16450,7 @@ defmodule AWS.Glue do
   @spec get_partition_indexes(map(), get_partition_indexes_request(), list()) ::
           {:ok, get_partition_indexes_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_partition_indexes_errors()}
   def get_partition_indexes(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -16332,6 +16464,7 @@ defmodule AWS.Glue do
   @spec get_partitions(map(), get_partitions_request(), list()) ::
           {:ok, get_partitions_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_partitions_errors()}
   def get_partitions(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -16345,6 +16478,7 @@ defmodule AWS.Glue do
   @spec get_plan(map(), get_plan_request(), list()) ::
           {:ok, get_plan_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_plan_errors()}
   def get_plan(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -16358,6 +16492,7 @@ defmodule AWS.Glue do
   @spec get_registry(map(), get_registry_input(), list()) ::
           {:ok, get_registry_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_registry_errors()}
   def get_registry(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -16380,6 +16515,7 @@ defmodule AWS.Glue do
   @spec get_resource_policies(map(), get_resource_policies_request(), list()) ::
           {:ok, get_resource_policies_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_resource_policies_errors()}
   def get_resource_policies(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -16393,6 +16529,7 @@ defmodule AWS.Glue do
   @spec get_resource_policy(map(), get_resource_policy_request(), list()) ::
           {:ok, get_resource_policy_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_resource_policy_errors()}
   def get_resource_policy(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -16406,6 +16543,7 @@ defmodule AWS.Glue do
   @spec get_schema(map(), get_schema_input(), list()) ::
           {:ok, get_schema_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_schema_errors()}
   def get_schema(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -16425,6 +16563,7 @@ defmodule AWS.Glue do
   @spec get_schema_by_definition(map(), get_schema_by_definition_input(), list()) ::
           {:ok, get_schema_by_definition_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_schema_by_definition_errors()}
   def get_schema_by_definition(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -16441,6 +16580,7 @@ defmodule AWS.Glue do
   @spec get_schema_version(map(), get_schema_version_input(), list()) ::
           {:ok, get_schema_version_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_schema_version_errors()}
   def get_schema_version(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -16458,6 +16598,7 @@ defmodule AWS.Glue do
   @spec get_schema_versions_diff(map(), get_schema_versions_diff_input(), list()) ::
           {:ok, get_schema_versions_diff_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_schema_versions_diff_errors()}
   def get_schema_versions_diff(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -16471,6 +16612,7 @@ defmodule AWS.Glue do
   @spec get_security_configuration(map(), get_security_configuration_request(), list()) ::
           {:ok, get_security_configuration_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_security_configuration_errors()}
   def get_security_configuration(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -16484,6 +16626,7 @@ defmodule AWS.Glue do
   @spec get_security_configurations(map(), get_security_configurations_request(), list()) ::
           {:ok, get_security_configurations_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_security_configurations_errors()}
   def get_security_configurations(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -16497,6 +16640,7 @@ defmodule AWS.Glue do
   @spec get_session(map(), get_session_request(), list()) ::
           {:ok, get_session_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_session_errors()}
   def get_session(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -16510,6 +16654,7 @@ defmodule AWS.Glue do
   @spec get_statement(map(), get_statement_request(), list()) ::
           {:ok, get_statement_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_statement_errors()}
   def get_statement(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -16524,6 +16669,7 @@ defmodule AWS.Glue do
   @spec get_table(map(), get_table_request(), list()) ::
           {:ok, get_table_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_table_errors()}
   def get_table(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -16537,6 +16683,7 @@ defmodule AWS.Glue do
   @spec get_table_optimizer(map(), get_table_optimizer_request(), list()) ::
           {:ok, get_table_optimizer_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_table_optimizer_errors()}
   def get_table_optimizer(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -16550,6 +16697,7 @@ defmodule AWS.Glue do
   @spec get_table_version(map(), get_table_version_request(), list()) ::
           {:ok, get_table_version_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_table_version_errors()}
   def get_table_version(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -16564,6 +16712,7 @@ defmodule AWS.Glue do
   @spec get_table_versions(map(), get_table_versions_request(), list()) ::
           {:ok, get_table_versions_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_table_versions_errors()}
   def get_table_versions(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -16578,6 +16727,7 @@ defmodule AWS.Glue do
   @spec get_tables(map(), get_tables_request(), list()) ::
           {:ok, get_tables_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_tables_errors()}
   def get_tables(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -16591,6 +16741,7 @@ defmodule AWS.Glue do
   @spec get_tags(map(), get_tags_request(), list()) ::
           {:ok, get_tags_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_tags_errors()}
   def get_tags(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -16604,6 +16755,7 @@ defmodule AWS.Glue do
   @spec get_trigger(map(), get_trigger_request(), list()) ::
           {:ok, get_trigger_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_trigger_errors()}
   def get_trigger(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -16617,6 +16769,7 @@ defmodule AWS.Glue do
   @spec get_triggers(map(), get_triggers_request(), list()) ::
           {:ok, get_triggers_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_triggers_errors()}
   def get_triggers(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -16638,6 +16791,7 @@ defmodule AWS.Glue do
         ) ::
           {:ok, get_unfiltered_partition_metadata_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_unfiltered_partition_metadata_errors()}
   def get_unfiltered_partition_metadata(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -16659,6 +16813,7 @@ defmodule AWS.Glue do
         ) ::
           {:ok, get_unfiltered_partitions_metadata_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_unfiltered_partitions_metadata_errors()}
   def get_unfiltered_partitions_metadata(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -16676,6 +16831,7 @@ defmodule AWS.Glue do
   @spec get_unfiltered_table_metadata(map(), get_unfiltered_table_metadata_request(), list()) ::
           {:ok, get_unfiltered_table_metadata_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_unfiltered_table_metadata_errors()}
   def get_unfiltered_table_metadata(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -16689,6 +16845,7 @@ defmodule AWS.Glue do
   @spec get_usage_profile(map(), get_usage_profile_request(), list()) ::
           {:ok, get_usage_profile_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_usage_profile_errors()}
   def get_usage_profile(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -16702,6 +16859,7 @@ defmodule AWS.Glue do
   @spec get_user_defined_function(map(), get_user_defined_function_request(), list()) ::
           {:ok, get_user_defined_function_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_user_defined_function_errors()}
   def get_user_defined_function(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -16715,6 +16873,7 @@ defmodule AWS.Glue do
   @spec get_user_defined_functions(map(), get_user_defined_functions_request(), list()) ::
           {:ok, get_user_defined_functions_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_user_defined_functions_errors()}
   def get_user_defined_functions(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -16728,6 +16887,7 @@ defmodule AWS.Glue do
   @spec get_workflow(map(), get_workflow_request(), list()) ::
           {:ok, get_workflow_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_workflow_errors()}
   def get_workflow(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -16743,6 +16903,7 @@ defmodule AWS.Glue do
   @spec get_workflow_run(map(), get_workflow_run_request(), list()) ::
           {:ok, get_workflow_run_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_workflow_run_errors()}
   def get_workflow_run(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -16756,6 +16917,7 @@ defmodule AWS.Glue do
   @spec get_workflow_run_properties(map(), get_workflow_run_properties_request(), list()) ::
           {:ok, get_workflow_run_properties_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_workflow_run_properties_errors()}
   def get_workflow_run_properties(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -16769,6 +16931,7 @@ defmodule AWS.Glue do
   @spec get_workflow_runs(map(), get_workflow_runs_request(), list()) ::
           {:ok, get_workflow_runs_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_workflow_runs_errors()}
   def get_workflow_runs(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -16782,6 +16945,7 @@ defmodule AWS.Glue do
   @spec import_catalog_to_glue(map(), import_catalog_to_glue_request(), list()) ::
           {:ok, import_catalog_to_glue_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, import_catalog_to_glue_errors()}
   def import_catalog_to_glue(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -16795,6 +16959,7 @@ defmodule AWS.Glue do
   @spec list_blueprints(map(), list_blueprints_request(), list()) ::
           {:ok, list_blueprints_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_blueprints_errors()}
   def list_blueprints(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -16812,6 +16977,7 @@ defmodule AWS.Glue do
         ) ::
           {:ok, list_column_statistics_task_runs_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_column_statistics_task_runs_errors()}
   def list_column_statistics_task_runs(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -16831,6 +16997,7 @@ defmodule AWS.Glue do
   @spec list_connection_types(map(), list_connection_types_request(), list()) ::
           {:ok, list_connection_types_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_connection_types_errors()}
   def list_connection_types(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -16854,6 +17021,7 @@ defmodule AWS.Glue do
   @spec list_crawlers(map(), list_crawlers_request(), list()) ::
           {:ok, list_crawlers_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_crawlers_errors()}
   def list_crawlers(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -16886,6 +17054,7 @@ defmodule AWS.Glue do
   @spec list_crawls(map(), list_crawls_request(), list()) ::
           {:ok, list_crawls_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_crawls_errors()}
   def list_crawls(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -16899,6 +17068,7 @@ defmodule AWS.Glue do
   @spec list_custom_entity_types(map(), list_custom_entity_types_request(), list()) ::
           {:ok, list_custom_entity_types_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_custom_entity_types_errors()}
   def list_custom_entity_types(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -16912,6 +17082,7 @@ defmodule AWS.Glue do
   @spec list_data_quality_results(map(), list_data_quality_results_request(), list()) ::
           {:ok, list_data_quality_results_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_data_quality_results_errors()}
   def list_data_quality_results(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -16929,6 +17100,7 @@ defmodule AWS.Glue do
         ) ::
           {:ok, list_data_quality_rule_recommendation_runs_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_data_quality_rule_recommendation_runs_errors()}
   def list_data_quality_rule_recommendation_runs(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -16947,6 +17119,7 @@ defmodule AWS.Glue do
         ) ::
           {:ok, list_data_quality_ruleset_evaluation_runs_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_data_quality_ruleset_evaluation_runs_errors()}
   def list_data_quality_ruleset_evaluation_runs(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -16960,6 +17133,7 @@ defmodule AWS.Glue do
   @spec list_data_quality_rulesets(map(), list_data_quality_rulesets_request(), list()) ::
           {:ok, list_data_quality_rulesets_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_data_quality_rulesets_errors()}
   def list_data_quality_rulesets(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -16977,6 +17151,7 @@ defmodule AWS.Glue do
         ) ::
           {:ok, list_data_quality_statistic_annotations_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_data_quality_statistic_annotations_errors()}
   def list_data_quality_statistic_annotations(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -16990,6 +17165,7 @@ defmodule AWS.Glue do
   @spec list_data_quality_statistics(map(), list_data_quality_statistics_request(), list()) ::
           {:ok, list_data_quality_statistics_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_data_quality_statistics_errors()}
   def list_data_quality_statistics(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -17013,6 +17189,7 @@ defmodule AWS.Glue do
   @spec list_dev_endpoints(map(), list_dev_endpoints_request(), list()) ::
           {:ok, list_dev_endpoints_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_dev_endpoints_errors()}
   def list_dev_endpoints(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -17026,6 +17203,7 @@ defmodule AWS.Glue do
   @spec list_entities(map(), list_entities_request(), list()) ::
           {:ok, list_entities_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_entities_errors()}
   def list_entities(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -17048,6 +17226,7 @@ defmodule AWS.Glue do
   @spec list_jobs(map(), list_jobs_request(), list()) ::
           {:ok, list_jobs_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_jobs_errors()}
   def list_jobs(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -17068,6 +17247,7 @@ defmodule AWS.Glue do
   @spec list_ml_transforms(map(), list_ml_transforms_request(), list()) ::
           {:ok, list_ml_transforms_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_ml_transforms_errors()}
   def list_ml_transforms(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -17085,6 +17265,7 @@ defmodule AWS.Glue do
   @spec list_registries(map(), list_registries_input(), list()) ::
           {:ok, list_registries_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_registries_errors()}
   def list_registries(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -17102,6 +17283,7 @@ defmodule AWS.Glue do
   @spec list_schema_versions(map(), list_schema_versions_input(), list()) ::
           {:ok, list_schema_versions_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_schema_versions_errors()}
   def list_schema_versions(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -17121,6 +17303,7 @@ defmodule AWS.Glue do
   @spec list_schemas(map(), list_schemas_input(), list()) ::
           {:ok, list_schemas_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_schemas_errors()}
   def list_schemas(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -17134,6 +17317,7 @@ defmodule AWS.Glue do
   @spec list_sessions(map(), list_sessions_request(), list()) ::
           {:ok, list_sessions_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_sessions_errors()}
   def list_sessions(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -17147,6 +17331,7 @@ defmodule AWS.Glue do
   @spec list_statements(map(), list_statements_request(), list()) ::
           {:ok, list_statements_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_statements_errors()}
   def list_statements(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -17160,6 +17345,7 @@ defmodule AWS.Glue do
   @spec list_table_optimizer_runs(map(), list_table_optimizer_runs_request(), list()) ::
           {:ok, list_table_optimizer_runs_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_table_optimizer_runs_errors()}
   def list_table_optimizer_runs(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -17182,6 +17368,7 @@ defmodule AWS.Glue do
   @spec list_triggers(map(), list_triggers_request(), list()) ::
           {:ok, list_triggers_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_triggers_errors()}
   def list_triggers(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -17195,6 +17382,7 @@ defmodule AWS.Glue do
   @spec list_usage_profiles(map(), list_usage_profiles_request(), list()) ::
           {:ok, list_usage_profiles_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_usage_profiles_errors()}
   def list_usage_profiles(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -17208,6 +17396,7 @@ defmodule AWS.Glue do
   @spec list_workflows(map(), list_workflows_request(), list()) ::
           {:ok, list_workflows_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_workflows_errors()}
   def list_workflows(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -17221,6 +17410,7 @@ defmodule AWS.Glue do
   @spec modify_integration(map(), modify_integration_request(), list()) ::
           {:ok, modify_integration_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, modify_integration_errors()}
   def modify_integration(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -17241,6 +17431,7 @@ defmodule AWS.Glue do
         ) ::
           {:ok, put_data_catalog_encryption_settings_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, put_data_catalog_encryption_settings_errors()}
   def put_data_catalog_encryption_settings(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -17258,6 +17449,7 @@ defmodule AWS.Glue do
         ) ::
           {:ok, put_data_quality_profile_annotation_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, put_data_quality_profile_annotation_errors()}
   def put_data_quality_profile_annotation(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -17271,6 +17463,7 @@ defmodule AWS.Glue do
   @spec put_resource_policy(map(), put_resource_policy_request(), list()) ::
           {:ok, put_resource_policy_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, put_resource_policy_errors()}
   def put_resource_policy(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -17287,6 +17480,7 @@ defmodule AWS.Glue do
   @spec put_schema_version_metadata(map(), put_schema_version_metadata_input(), list()) ::
           {:ok, put_schema_version_metadata_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, put_schema_version_metadata_errors()}
   def put_schema_version_metadata(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -17303,6 +17497,7 @@ defmodule AWS.Glue do
   @spec put_workflow_run_properties(map(), put_workflow_run_properties_request(), list()) ::
           {:ok, put_workflow_run_properties_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, put_workflow_run_properties_errors()}
   def put_workflow_run_properties(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -17316,6 +17511,7 @@ defmodule AWS.Glue do
   @spec query_schema_version_metadata(map(), query_schema_version_metadata_input(), list()) ::
           {:ok, query_schema_version_metadata_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, query_schema_version_metadata_errors()}
   def query_schema_version_metadata(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -17343,6 +17539,7 @@ defmodule AWS.Glue do
   @spec register_schema_version(map(), register_schema_version_input(), list()) ::
           {:ok, register_schema_version_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, register_schema_version_errors()}
   def register_schema_version(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -17357,6 +17554,7 @@ defmodule AWS.Glue do
   @spec remove_schema_version_metadata(map(), remove_schema_version_metadata_input(), list()) ::
           {:ok, remove_schema_version_metadata_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, remove_schema_version_metadata_errors()}
   def remove_schema_version_metadata(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -17384,6 +17582,7 @@ defmodule AWS.Glue do
   @spec reset_job_bookmark(map(), reset_job_bookmark_request(), list()) ::
           {:ok, reset_job_bookmark_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, reset_job_bookmark_errors()}
   def reset_job_bookmark(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -17401,6 +17600,7 @@ defmodule AWS.Glue do
   @spec resume_workflow_run(map(), resume_workflow_run_request(), list()) ::
           {:ok, resume_workflow_run_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, resume_workflow_run_errors()}
   def resume_workflow_run(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -17414,6 +17614,7 @@ defmodule AWS.Glue do
   @spec run_statement(map(), run_statement_request(), list()) ::
           {:ok, run_statement_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, run_statement_errors()}
   def run_statement(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -17438,6 +17639,7 @@ defmodule AWS.Glue do
   @spec search_tables(map(), search_tables_request(), list()) ::
           {:ok, search_tables_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, search_tables_errors()}
   def search_tables(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -17451,6 +17653,7 @@ defmodule AWS.Glue do
   @spec start_blueprint_run(map(), start_blueprint_run_request(), list()) ::
           {:ok, start_blueprint_run_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, start_blueprint_run_errors()}
   def start_blueprint_run(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -17468,6 +17671,7 @@ defmodule AWS.Glue do
         ) ::
           {:ok, start_column_statistics_task_run_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, start_column_statistics_task_run_errors()}
   def start_column_statistics_task_run(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -17485,6 +17689,7 @@ defmodule AWS.Glue do
         ) ::
           {:ok, start_column_statistics_task_run_schedule_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, start_column_statistics_task_run_schedule_errors()}
   def start_column_statistics_task_run_schedule(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -17502,6 +17707,7 @@ defmodule AWS.Glue do
   @spec start_crawler(map(), start_crawler_request(), list()) ::
           {:ok, start_crawler_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, start_crawler_errors()}
   def start_crawler(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -17517,6 +17723,7 @@ defmodule AWS.Glue do
   @spec start_crawler_schedule(map(), start_crawler_schedule_request(), list()) ::
           {:ok, start_crawler_schedule_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, start_crawler_schedule_errors()}
   def start_crawler_schedule(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -17541,6 +17748,7 @@ defmodule AWS.Glue do
         ) ::
           {:ok, start_data_quality_rule_recommendation_run_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, start_data_quality_rule_recommendation_run_errors()}
   def start_data_quality_rule_recommendation_run(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -17562,6 +17770,7 @@ defmodule AWS.Glue do
         ) ::
           {:ok, start_data_quality_ruleset_evaluation_run_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, start_data_quality_ruleset_evaluation_run_errors()}
   def start_data_quality_ruleset_evaluation_run(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -17589,6 +17798,7 @@ defmodule AWS.Glue do
   @spec start_export_labels_task_run(map(), start_export_labels_task_run_request(), list()) ::
           {:ok, start_export_labels_task_run_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, start_export_labels_task_run_errors()}
   def start_export_labels_task_run(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -17634,6 +17844,7 @@ defmodule AWS.Glue do
   @spec start_import_labels_task_run(map(), start_import_labels_task_run_request(), list()) ::
           {:ok, start_import_labels_task_run_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, start_import_labels_task_run_errors()}
   def start_import_labels_task_run(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -17647,6 +17858,7 @@ defmodule AWS.Glue do
   @spec start_job_run(map(), start_job_run_request(), list()) ::
           {:ok, start_job_run_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, start_job_run_errors()}
   def start_job_run(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -17669,6 +17881,7 @@ defmodule AWS.Glue do
   @spec start_ml_evaluation_task_run(map(), start_ml_evaluation_task_run_request(), list()) ::
           {:ok, start_ml_evaluation_task_run_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, start_ml_evaluation_task_run_errors()}
   def start_ml_evaluation_task_run(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -17703,6 +17916,7 @@ defmodule AWS.Glue do
         ) ::
           {:ok, start_ml_labeling_set_generation_task_run_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, start_ml_labeling_set_generation_task_run_errors()}
   def start_ml_labeling_set_generation_task_run(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -17720,6 +17934,7 @@ defmodule AWS.Glue do
   @spec start_trigger(map(), start_trigger_request(), list()) ::
           {:ok, start_trigger_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, start_trigger_errors()}
   def start_trigger(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -17733,6 +17948,7 @@ defmodule AWS.Glue do
   @spec start_workflow_run(map(), start_workflow_run_request(), list()) ::
           {:ok, start_workflow_run_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, start_workflow_run_errors()}
   def start_workflow_run(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -17746,6 +17962,7 @@ defmodule AWS.Glue do
   @spec stop_column_statistics_task_run(map(), stop_column_statistics_task_run_request(), list()) ::
           {:ok, stop_column_statistics_task_run_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, stop_column_statistics_task_run_errors()}
   def stop_column_statistics_task_run(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -17763,6 +17980,7 @@ defmodule AWS.Glue do
         ) ::
           {:ok, stop_column_statistics_task_run_schedule_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, stop_column_statistics_task_run_schedule_errors()}
   def stop_column_statistics_task_run_schedule(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -17776,6 +17994,7 @@ defmodule AWS.Glue do
   @spec stop_crawler(map(), stop_crawler_request(), list()) ::
           {:ok, stop_crawler_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, stop_crawler_errors()}
   def stop_crawler(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -17791,6 +18010,7 @@ defmodule AWS.Glue do
   @spec stop_crawler_schedule(map(), stop_crawler_schedule_request(), list()) ::
           {:ok, stop_crawler_schedule_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, stop_crawler_schedule_errors()}
   def stop_crawler_schedule(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -17804,6 +18024,7 @@ defmodule AWS.Glue do
   @spec stop_session(map(), stop_session_request(), list()) ::
           {:ok, stop_session_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, stop_session_errors()}
   def stop_session(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -17817,6 +18038,7 @@ defmodule AWS.Glue do
   @spec stop_trigger(map(), stop_trigger_request(), list()) ::
           {:ok, stop_trigger_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, stop_trigger_errors()}
   def stop_trigger(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -17830,6 +18052,7 @@ defmodule AWS.Glue do
   @spec stop_workflow_run(map(), stop_workflow_run_request(), list()) ::
           {:ok, stop_workflow_run_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, stop_workflow_run_errors()}
   def stop_workflow_run(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -17847,6 +18070,7 @@ defmodule AWS.Glue do
   @spec tag_resource(map(), tag_resource_request(), list()) ::
           {:ok, tag_resource_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, tag_resource_errors()}
   def tag_resource(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -17867,6 +18091,7 @@ defmodule AWS.Glue do
   @spec test_connection(map(), test_connection_request(), list()) ::
           {:ok, test_connection_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, test_connection_errors()}
   def test_connection(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -17880,6 +18105,7 @@ defmodule AWS.Glue do
   @spec untag_resource(map(), untag_resource_request(), list()) ::
           {:ok, untag_resource_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, untag_resource_errors()}
   def untag_resource(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -17893,6 +18119,7 @@ defmodule AWS.Glue do
   @spec update_blueprint(map(), update_blueprint_request(), list()) ::
           {:ok, update_blueprint_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_blueprint_errors()}
   def update_blueprint(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -17906,6 +18133,7 @@ defmodule AWS.Glue do
   @spec update_catalog(map(), update_catalog_request(), list()) ::
           {:ok, update_catalog_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_catalog_errors()}
   def update_catalog(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -17921,6 +18149,7 @@ defmodule AWS.Glue do
   @spec update_classifier(map(), update_classifier_request(), list()) ::
           {:ok, update_classifier_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_classifier_errors()}
   def update_classifier(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -17941,6 +18170,7 @@ defmodule AWS.Glue do
         ) ::
           {:ok, update_column_statistics_for_partition_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_column_statistics_for_partition_errors()}
   def update_column_statistics_for_partition(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -17961,6 +18191,7 @@ defmodule AWS.Glue do
         ) ::
           {:ok, update_column_statistics_for_table_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_column_statistics_for_table_errors()}
   def update_column_statistics_for_table(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -17978,6 +18209,7 @@ defmodule AWS.Glue do
         ) ::
           {:ok, update_column_statistics_task_settings_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_column_statistics_task_settings_errors()}
   def update_column_statistics_task_settings(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -17991,6 +18223,7 @@ defmodule AWS.Glue do
   @spec update_connection(map(), update_connection_request(), list()) ::
           {:ok, update_connection_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_connection_errors()}
   def update_connection(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -18008,6 +18241,7 @@ defmodule AWS.Glue do
   @spec update_crawler(map(), update_crawler_request(), list()) ::
           {:ok, update_crawler_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_crawler_errors()}
   def update_crawler(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -18021,6 +18255,7 @@ defmodule AWS.Glue do
   @spec update_crawler_schedule(map(), update_crawler_schedule_request(), list()) ::
           {:ok, update_crawler_schedule_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_crawler_schedule_errors()}
   def update_crawler_schedule(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -18034,6 +18269,7 @@ defmodule AWS.Glue do
   @spec update_data_quality_ruleset(map(), update_data_quality_ruleset_request(), list()) ::
           {:ok, update_data_quality_ruleset_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_data_quality_ruleset_errors()}
   def update_data_quality_ruleset(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -18047,6 +18283,7 @@ defmodule AWS.Glue do
   @spec update_database(map(), update_database_request(), list()) ::
           {:ok, update_database_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_database_errors()}
   def update_database(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -18060,6 +18297,7 @@ defmodule AWS.Glue do
   @spec update_dev_endpoint(map(), update_dev_endpoint_request(), list()) ::
           {:ok, update_dev_endpoint_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_dev_endpoint_errors()}
   def update_dev_endpoint(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -18082,6 +18320,7 @@ defmodule AWS.Glue do
         ) ::
           {:ok, update_integration_resource_property_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_integration_resource_property_errors()}
   def update_integration_resource_property(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -18109,6 +18348,7 @@ defmodule AWS.Glue do
         ) ::
           {:ok, update_integration_table_properties_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_integration_table_properties_errors()}
   def update_integration_table_properties(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -18124,6 +18364,7 @@ defmodule AWS.Glue do
   @spec update_job(map(), update_job_request(), list()) ::
           {:ok, update_job_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_job_errors()}
   def update_job(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -18142,6 +18383,7 @@ defmodule AWS.Glue do
   @spec update_job_from_source_control(map(), update_job_from_source_control_request(), list()) ::
           {:ok, update_job_from_source_control_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_job_from_source_control_errors()}
   def update_job_from_source_control(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -18162,6 +18404,7 @@ defmodule AWS.Glue do
   @spec update_ml_transform(map(), update_ml_transform_request(), list()) ::
           {:ok, update_ml_transform_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_ml_transform_errors()}
   def update_ml_transform(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -18175,6 +18418,7 @@ defmodule AWS.Glue do
   @spec update_partition(map(), update_partition_request(), list()) ::
           {:ok, update_partition_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_partition_errors()}
   def update_partition(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -18191,6 +18435,7 @@ defmodule AWS.Glue do
   @spec update_registry(map(), update_registry_input(), list()) ::
           {:ok, update_registry_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_registry_errors()}
   def update_registry(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -18216,6 +18461,7 @@ defmodule AWS.Glue do
   @spec update_schema(map(), update_schema_input(), list()) ::
           {:ok, update_schema_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_schema_errors()}
   def update_schema(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -18234,6 +18480,7 @@ defmodule AWS.Glue do
   @spec update_source_control_from_job(map(), update_source_control_from_job_request(), list()) ::
           {:ok, update_source_control_from_job_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_source_control_from_job_errors()}
   def update_source_control_from_job(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -18247,6 +18494,7 @@ defmodule AWS.Glue do
   @spec update_table(map(), update_table_request(), list()) ::
           {:ok, update_table_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_table_errors()}
   def update_table(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -18260,6 +18508,7 @@ defmodule AWS.Glue do
   @spec update_table_optimizer(map(), update_table_optimizer_request(), list()) ::
           {:ok, update_table_optimizer_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_table_optimizer_errors()}
   def update_table_optimizer(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -18277,6 +18526,7 @@ defmodule AWS.Glue do
   @spec update_trigger(map(), update_trigger_request(), list()) ::
           {:ok, update_trigger_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_trigger_errors()}
   def update_trigger(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -18290,6 +18540,7 @@ defmodule AWS.Glue do
   @spec update_usage_profile(map(), update_usage_profile_request(), list()) ::
           {:ok, update_usage_profile_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_usage_profile_errors()}
   def update_usage_profile(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -18303,6 +18554,7 @@ defmodule AWS.Glue do
   @spec update_user_defined_function(map(), update_user_defined_function_request(), list()) ::
           {:ok, update_user_defined_function_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_user_defined_function_errors()}
   def update_user_defined_function(%Client{} = client, input, options \\ []) do
     meta = metadata()
@@ -18316,6 +18568,7 @@ defmodule AWS.Glue do
   @spec update_workflow(map(), update_workflow_request(), list()) ::
           {:ok, update_workflow_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_workflow_errors()}
   def update_workflow(%Client{} = client, input, options \\ []) do
     meta = metadata()

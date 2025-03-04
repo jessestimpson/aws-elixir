@@ -1570,6 +1570,7 @@ defmodule AWS.MediaPackageV2 do
         ) ::
           {:ok, cancel_harvest_job_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, cancel_harvest_job_errors()}
   def cancel_harvest_job(
         %Client{} = client,
@@ -1621,6 +1622,7 @@ defmodule AWS.MediaPackageV2 do
   @spec create_channel(map(), String.t(), create_channel_request(), list()) ::
           {:ok, create_channel_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_channel_errors()}
   def create_channel(%Client{} = client, channel_group_name, input, options \\ []) do
     url_path = "/channelGroup/#{AWS.Util.encode_uri(channel_group_name)}/channel"
@@ -1661,6 +1663,7 @@ defmodule AWS.MediaPackageV2 do
   @spec create_channel_group(map(), create_channel_group_request(), list()) ::
           {:ok, create_channel_group_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_channel_group_errors()}
   def create_channel_group(%Client{} = client, input, options \\ []) do
     url_path = "/channelGroup"
@@ -1703,6 +1706,7 @@ defmodule AWS.MediaPackageV2 do
         ) ::
           {:ok, create_harvest_job_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_harvest_job_errors()}
   def create_harvest_job(
         %Client{} = client,
@@ -1757,6 +1761,7 @@ defmodule AWS.MediaPackageV2 do
         ) ::
           {:ok, create_origin_endpoint_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_origin_endpoint_errors()}
   def create_origin_endpoint(
         %Client{} = client,
@@ -1802,6 +1807,7 @@ defmodule AWS.MediaPackageV2 do
   @spec delete_channel(map(), String.t(), String.t(), delete_channel_request(), list()) ::
           {:ok, delete_channel_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_channel_errors()}
   def delete_channel(%Client{} = client, channel_group_name, channel_name, input, options \\ []) do
     url_path =
@@ -1836,6 +1842,7 @@ defmodule AWS.MediaPackageV2 do
   @spec delete_channel_group(map(), String.t(), delete_channel_group_request(), list()) ::
           {:ok, delete_channel_group_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_channel_group_errors()}
   def delete_channel_group(%Client{} = client, channel_group_name, input, options \\ []) do
     url_path = "/channelGroup/#{AWS.Util.encode_uri(channel_group_name)}"
@@ -1870,6 +1877,7 @@ defmodule AWS.MediaPackageV2 do
         ) ::
           {:ok, delete_channel_policy_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_channel_policy_errors()}
   def delete_channel_policy(
         %Client{} = client,
@@ -1916,6 +1924,7 @@ defmodule AWS.MediaPackageV2 do
         ) ::
           {:ok, delete_origin_endpoint_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_origin_endpoint_errors()}
   def delete_origin_endpoint(
         %Client{} = client,
@@ -1960,6 +1969,7 @@ defmodule AWS.MediaPackageV2 do
         ) ::
           {:ok, delete_origin_endpoint_policy_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_origin_endpoint_policy_errors()}
   def delete_origin_endpoint_policy(
         %Client{} = client,
@@ -1998,6 +2008,7 @@ defmodule AWS.MediaPackageV2 do
   @spec get_channel(map(), String.t(), String.t(), list()) ::
           {:ok, get_channel_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_channel_errors()}
   def get_channel(%Client{} = client, channel_group_name, channel_name, options \\ []) do
     url_path =
@@ -2019,6 +2030,7 @@ defmodule AWS.MediaPackageV2 do
   @spec get_channel_group(map(), String.t(), list()) ::
           {:ok, get_channel_group_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_channel_group_errors()}
   def get_channel_group(%Client{} = client, channel_group_name, options \\ []) do
     url_path = "/channelGroup/#{AWS.Util.encode_uri(channel_group_name)}"
@@ -2040,6 +2052,7 @@ defmodule AWS.MediaPackageV2 do
   @spec get_channel_policy(map(), String.t(), String.t(), list()) ::
           {:ok, get_channel_policy_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_channel_policy_errors()}
   def get_channel_policy(%Client{} = client, channel_group_name, channel_name, options \\ []) do
     url_path =
@@ -2059,6 +2072,7 @@ defmodule AWS.MediaPackageV2 do
   @spec get_harvest_job(map(), String.t(), String.t(), String.t(), String.t(), list()) ::
           {:ok, get_harvest_job_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_harvest_job_errors()}
   def get_harvest_job(
         %Client{} = client,
@@ -2087,6 +2101,7 @@ defmodule AWS.MediaPackageV2 do
   @spec get_origin_endpoint(map(), String.t(), String.t(), String.t(), list()) ::
           {:ok, get_origin_endpoint_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_origin_endpoint_errors()}
   def get_origin_endpoint(
         %Client{} = client,
@@ -2113,6 +2128,7 @@ defmodule AWS.MediaPackageV2 do
   @spec get_origin_endpoint_policy(map(), String.t(), String.t(), String.t(), list()) ::
           {:ok, get_origin_endpoint_policy_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_origin_endpoint_policy_errors()}
   def get_origin_endpoint_policy(
         %Client{} = client,
@@ -2139,6 +2155,7 @@ defmodule AWS.MediaPackageV2 do
   @spec list_channel_groups(map(), String.t() | nil, String.t() | nil, list()) ::
           {:ok, list_channel_groups_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_channel_groups_errors()}
   def list_channel_groups(
         %Client{} = client,
@@ -2177,6 +2194,7 @@ defmodule AWS.MediaPackageV2 do
   @spec list_channels(map(), String.t(), String.t() | nil, String.t() | nil, list()) ::
           {:ok, list_channels_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_channels_errors()}
   def list_channels(
         %Client{} = client,
@@ -2223,6 +2241,7 @@ defmodule AWS.MediaPackageV2 do
         ) ::
           {:ok, list_harvest_jobs_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_harvest_jobs_errors()}
   def list_harvest_jobs(
         %Client{} = client,
@@ -2292,6 +2311,7 @@ defmodule AWS.MediaPackageV2 do
         ) ::
           {:ok, list_origin_endpoints_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_origin_endpoints_errors()}
   def list_origin_endpoints(
         %Client{} = client,
@@ -2332,6 +2352,7 @@ defmodule AWS.MediaPackageV2 do
   @spec list_tags_for_resource(map(), String.t(), list()) ::
           {:ok, list_tags_for_resource_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_tags_for_resource_errors()}
   def list_tags_for_resource(%Client{} = client, resource_arn, options \\ []) do
     url_path = "/tags/#{AWS.Util.encode_uri(resource_arn)}"
@@ -2353,6 +2374,7 @@ defmodule AWS.MediaPackageV2 do
   @spec put_channel_policy(map(), String.t(), String.t(), put_channel_policy_request(), list()) ::
           {:ok, put_channel_policy_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, put_channel_policy_errors()}
   def put_channel_policy(
         %Client{} = client,
@@ -2398,6 +2420,7 @@ defmodule AWS.MediaPackageV2 do
         ) ::
           {:ok, put_origin_endpoint_policy_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, put_origin_endpoint_policy_errors()}
   def put_origin_endpoint_policy(
         %Client{} = client,
@@ -2447,6 +2470,7 @@ defmodule AWS.MediaPackageV2 do
   @spec tag_resource(map(), String.t(), tag_resource_request(), list()) ::
           {:ok, nil, any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, tag_resource_errors()}
   def tag_resource(%Client{} = client, resource_arn, input, options \\ []) do
     url_path = "/tags/#{AWS.Util.encode_uri(resource_arn)}"
@@ -2475,6 +2499,7 @@ defmodule AWS.MediaPackageV2 do
   @spec untag_resource(map(), String.t(), untag_resource_request(), list()) ::
           {:ok, nil, any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, untag_resource_errors()}
   def untag_resource(%Client{} = client, resource_arn, input, options \\ []) do
     url_path = "/tags/#{AWS.Util.encode_uri(resource_arn)}"
@@ -2516,6 +2541,7 @@ defmodule AWS.MediaPackageV2 do
   @spec update_channel(map(), String.t(), String.t(), update_channel_request(), list()) ::
           {:ok, update_channel_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_channel_errors()}
   def update_channel(%Client{} = client, channel_group_name, channel_name, input, options \\ []) do
     url_path =
@@ -2558,6 +2584,7 @@ defmodule AWS.MediaPackageV2 do
   @spec update_channel_group(map(), String.t(), update_channel_group_request(), list()) ::
           {:ok, update_channel_group_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_channel_group_errors()}
   def update_channel_group(%Client{} = client, channel_group_name, input, options \\ []) do
     url_path = "/channelGroup/#{AWS.Util.encode_uri(channel_group_name)}"
@@ -2605,6 +2632,7 @@ defmodule AWS.MediaPackageV2 do
         ) ::
           {:ok, update_origin_endpoint_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_origin_endpoint_errors()}
   def update_origin_endpoint(
         %Client{} = client,

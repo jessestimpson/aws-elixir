@@ -944,6 +944,7 @@ defmodule AWS.ApplicationSignals do
         ) ::
           {:ok, batch_get_service_level_objective_budget_report_output(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, batch_get_service_level_objective_budget_report_errors()}
   def batch_get_service_level_objective_budget_report(%Client{} = client, input, options \\ []) do
     url_path = "/budget-report"
@@ -1076,6 +1077,7 @@ defmodule AWS.ApplicationSignals do
   @spec create_service_level_objective(map(), create_service_level_objective_input(), list()) ::
           {:ok, create_service_level_objective_output(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, create_service_level_objective_errors()}
   def create_service_level_objective(%Client{} = client, input, options \\ []) do
     url_path = "/slo"
@@ -1109,6 +1111,7 @@ defmodule AWS.ApplicationSignals do
         ) ::
           {:ok, delete_service_level_objective_output(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, delete_service_level_objective_errors()}
   def delete_service_level_objective(%Client{} = client, id, input, options \\ []) do
     url_path = "/slo/#{AWS.Util.encode_uri(id)}"
@@ -1137,6 +1140,7 @@ defmodule AWS.ApplicationSignals do
   @spec get_service(map(), get_service_input(), list()) ::
           {:ok, get_service_output(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_service_errors()}
   def get_service(%Client{} = client, input, options \\ []) do
     url_path = "/service"
@@ -1171,6 +1175,7 @@ defmodule AWS.ApplicationSignals do
   @spec get_service_level_objective(map(), String.t(), list()) ::
           {:ok, get_service_level_objective_output(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, get_service_level_objective_errors()}
   def get_service_level_objective(%Client{} = client, id, options \\ []) do
     url_path = "/slo/#{AWS.Util.encode_uri(id)}"
@@ -1193,6 +1198,7 @@ defmodule AWS.ApplicationSignals do
   @spec list_service_dependencies(map(), list_service_dependencies_input(), list()) ::
           {:ok, list_service_dependencies_output(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_service_dependencies_errors()}
   def list_service_dependencies(%Client{} = client, input, options \\ []) do
     url_path = "/service-dependencies"
@@ -1234,6 +1240,7 @@ defmodule AWS.ApplicationSignals do
   @spec list_service_dependents(map(), list_service_dependents_input(), list()) ::
           {:ok, list_service_dependents_output(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_service_dependents_errors()}
   def list_service_dependents(%Client{} = client, input, options \\ []) do
     url_path = "/service-dependents"
@@ -1270,6 +1277,7 @@ defmodule AWS.ApplicationSignals do
   @spec list_service_level_objectives(map(), list_service_level_objectives_input(), list()) ::
           {:ok, list_service_level_objectives_output(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_service_level_objectives_errors()}
   def list_service_level_objectives(%Client{} = client, input, options \\ []) do
     url_path = "/slos"
@@ -1311,6 +1319,7 @@ defmodule AWS.ApplicationSignals do
   @spec list_service_operations(map(), list_service_operations_input(), list()) ::
           {:ok, list_service_operations_output(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_service_operations_errors()}
   def list_service_operations(%Client{} = client, input, options \\ []) do
     url_path = "/service-operations"
@@ -1360,6 +1369,7 @@ defmodule AWS.ApplicationSignals do
         ) ::
           {:ok, list_services_output(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_services_errors()}
   def list_services(
         %Client{} = client,
@@ -1430,6 +1440,7 @@ defmodule AWS.ApplicationSignals do
   @spec list_tags_for_resource(map(), String.t(), list()) ::
           {:ok, list_tags_for_resource_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, list_tags_for_resource_errors()}
   def list_tags_for_resource(%Client{} = client, resource_arn, options \\ []) do
     url_path = "/tags"
@@ -1495,6 +1506,7 @@ defmodule AWS.ApplicationSignals do
   @spec start_discovery(map(), start_discovery_input(), list()) ::
           {:ok, start_discovery_output(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, start_discovery_errors()}
   def start_discovery(%Client{} = client, input, options \\ []) do
     url_path = "/start-discovery"
@@ -1541,6 +1553,7 @@ defmodule AWS.ApplicationSignals do
   @spec tag_resource(map(), tag_resource_request(), list()) ::
           {:ok, tag_resource_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, tag_resource_errors()}
   def tag_resource(%Client{} = client, input, options \\ []) do
     url_path = "/tag-resource"
@@ -1569,6 +1582,7 @@ defmodule AWS.ApplicationSignals do
   @spec untag_resource(map(), untag_resource_request(), list()) ::
           {:ok, untag_resource_response(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, untag_resource_errors()}
   def untag_resource(%Client{} = client, input, options \\ []) do
     url_path = "/untag-resource"
@@ -1608,6 +1622,7 @@ defmodule AWS.ApplicationSignals do
         ) ::
           {:ok, update_service_level_objective_output(), any()}
           | {:error, {:unexpected_response, any()}}
+          | {:error, term()}
           | {:error, update_service_level_objective_errors()}
   def update_service_level_objective(%Client{} = client, id, input, options \\ []) do
     url_path = "/slo/#{AWS.Util.encode_uri(id)}"
