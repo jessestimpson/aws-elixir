@@ -22,9 +22,14 @@ defmodule AWS.RequestTest do
     def request(method, url, body, headers, options) do
       send(self(), {:request, method, url, body, headers, options})
 
-      {status, _opts} = Keyword.pop(options, :return_status_code, 200)
+      case Keyword.pop(options, :return_error) do
+        {nil, options} ->
+          {status, _opts} = Keyword.pop(options, :return_status_code, 200)
 
-      {:ok, %{status_code: status, headers: [], body: "{\"Response\":\"foo\"}"}}
+          {:ok, %{status_code: status, headers: [], body: "{\"Response\":\"foo\"}"}}
+        {reason, _opts} ->
+          {:error, reason}
+     end
     end
   end
 
@@ -228,6 +233,27 @@ defmodule AWS.RequestTest do
 
       assert {:unexpected_response,
               %{body: "{\"Response\":\"foo\"}", headers: [], status_code: 206}} = error
+    end
+
+    test "http client responds with error tuple", %{client: client} do
+      {http_client, _opts} = client.http_client
+      client = %{client | http_client: {http_client, [return_error: :timeout]}}
+
+      # Does not accept only if explicitly tells the expected code.
+      assert {:error, reason} =
+               Request.request_rest(
+                 client,
+                 @metadata,
+                 :post,
+                 "/foo/bar",
+                 [],
+                 [],
+                 %{"Body" => "data"},
+                 [],
+                 200
+               )
+
+      assert :timeout = reason
     end
 
     test "send get request with host prefix", %{client: client} do
